@@ -1,0 +1,30 @@
+---
+title: "AI for ledere: hvad et godt kursus bør dække"
+description: "Et lederkursus skal give beslutningsrammer — ikke kun demos af ChatGPT."
+pubDate: 2026-08-02
+author: "Mette Ravn"
+tags: ["ledelse", "strategi"]
+sources:
+  - title: "CBS"
+    url: https://www.cbs.dk
+  - title: "LearnAI"
+    url: https://learnai.nu
+---
+
+Ledere behøver ikke træne neurale netværk. De skal kunne **prioritere use cases, styre risici og skabe læringsrum**. Et godt lederkursus kombinerer overblik, cases og konkrete beslutningsværktøjer.
+
+## Fem emner der bør være med
+
+1. Muligheder og begrænsninger ved generative modeller
+2. Datagrundlag og privatliv
+3. Organisation og forandring
+4. Leverandørvalg og make/buy
+5. Måling af værdi (ikke kun “adoption”)
+
+Kurser som [AI for ledere](/ai-kurser/itu-ai-for-ledere), [AI Strategy for Business](/ai-kurser/cbs-ai-strategy) og [AI for danske ledere](/ai-kurser/learnai-lederkursus) dækker forskellige vinkler på samme behov.
+
+## Efter kurset
+
+Uden opfølgning bliver indsigt til slides. Planlæg en intern workshop — eller et forløb som [AI-workshop for teams](/ai-kurser/learnai-team-workshop).
+
+Se flere ledelseskurser under [AI-kurser · ledelse](/ai-kurser?category=ledelse). Klar til sparring? [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site).

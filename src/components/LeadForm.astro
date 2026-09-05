@@ -1,0 +1,68 @@
+---
+interface Props {
+  courseSlug?: string;
+  sourcePage?: string;
+}
+const { courseSlug = '', sourcePage = Astro.url.pathname } = Astro.props;
+---
+<form id="lead-form" class="card space-y-4 p-5 sm:p-6" method="post" action="/api/lead">
+  <div>
+    <h2 class="text-xl">Få sparring om AI-kurser</h2>
+    <p class="mt-1 text-sm text-stone-600">Vi deler din henvendelse med LearnAI. Ingen spam — kun relevant opfølgning.</p>
+  </div>
+  <input type="hidden" name="course_slug" value={courseSlug} />
+  <input type="hidden" name="source_page" value={sourcePage} />
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="block text-sm">
+      <span class="mb-1 block font-medium">Navn</span>
+      <input required name="name" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2 outline-none focus:border-moss-500 focus:ring-2 focus:ring-moss-200" />
+    </label>
+    <label class="block text-sm">
+      <span class="mb-1 block font-medium">E-mail</span>
+      <input required type="email" name="email" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2 outline-none focus:border-moss-500 focus:ring-2 focus:ring-moss-200" />
+    </label>
+  </div>
+  <label class="block text-sm">
+    <span class="mb-1 block font-medium">Virksomhed (valgfri)</span>
+    <input name="company" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2 outline-none focus:border-moss-500 focus:ring-2 focus:ring-moss-200" />
+  </label>
+  <label class="block text-sm">
+    <span class="mb-1 block font-medium">Hvad interesserer dig?</span>
+    <select name="interest" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2 outline-none focus:border-moss-500 focus:ring-2 focus:ring-moss-200">
+      <option value="overblik">Overblik over kurser</option>
+      <option value="team">Kursus til mit team</option>
+      <option value="leder">AI for ledere</option>
+      <option value="andet">Andet</option>
+    </select>
+  </label>
+  <label class="block text-sm">
+    <span class="mb-1 block font-medium">Besked (valgfri)</span>
+    <textarea name="message" rows="3" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2 outline-none focus:border-moss-500 focus:ring-2 focus:ring-moss-200"></textarea>
+  </label>
+  <button type="submit" class="btn-primary w-full sm:w-auto">Send henvendelse</button>
+  <p id="lead-status" class="text-sm text-stone-600" aria-live="polite"></p>
+</form>
+<script>
+  const form = document.getElementById('lead-form');
+  const status = document.getElementById('lead-status');
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!status) return;
+    status.textContent = 'Sender…';
+    const fd = new FormData(form);
+    const body = Object.fromEntries(fd.entries());
+    try {
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Noget gik galt');
+      status.textContent = data.message || 'Tak — vi vender tilbage.';
+      form.reset();
+    } catch (err) {
+      status.textContent = err instanceof Error ? err.message : 'Noget gik galt';
+    }
+  });
+</script>

@@ -1,0 +1,23 @@
+---
+import { learnAiUrl } from '../lib/seo';
+interface Props {
+  title?: string;
+  text?: string;
+  campaign?: string;
+}
+const {
+  title = 'Klar til næste skridt?',
+  text = 'LearnAI hjælper danske teams og ledere med praksisnære AI-forløb — uden hype.',
+  campaign = 'site',
+} = Astro.props;
+const href = learnAiUrl('/', campaign);
+---
+<aside class="rounded-3xl border border-moss-200 bg-gradient-to-br from-moss-50 to-paper p-6 sm:p-8 shadow-soft">
+  <p class="text-xs font-semibold uppercase tracking-[0.16em] text-moss-700">LearnAI</p>
+  <h2 class="mt-2 text-2xl text-moss-950">{title}</h2>
+  <p class="mt-2 max-w-2xl text-stone-700">{text}</p>
+  <div class="mt-5 flex flex-wrap gap-3">
+    <a class="btn-primary" href={href} rel="noopener">Se LearnAI</a>
+    <a class="btn-secondary" href="/ai-kurser">Fortsæt med kurseroversigten</a>
+  </div>
+</aside>

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  body {
+    @apply bg-paper text-paper-ink font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight text-balance;
+  }
+  a {
+    @apply underline-offset-4;
+  }
+  ::selection {
+    @apply bg-moss-200 text-paper-ink;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+  .prose-da {
+    @apply max-w-prose text-[1.05rem] leading-relaxed text-stone-800;
+  }
+  .prose-da h2 {
+    @apply mt-10 mb-3 text-2xl text-paper-ink;
+  }
+  .prose-da h3 {
+    @apply mt-8 mb-2 text-xl text-paper-ink;
+  }
+  .prose-da p {
+    @apply mb-4;
+  }
+  .prose-da ul {
+    @apply mb-4 list-disc pl-5 space-y-1;
+  }
+  .prose-da a {
+    @apply text-sea-700 underline decoration-moss-300 hover:decoration-sea-700;
+  }
+  .prose-da strong {
+    @apply font-semibold text-paper-ink;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-stone-300/80 bg-white/70 px-2.5 py-0.5 text-xs font-medium text-stone-700;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-moss-800 px-5 py-2.5 text-sm font-semibold text-paper shadow-soft transition hover:bg-moss-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-moss-500 focus-visible:ring-offset-2 focus-visible:ring-offset-paper;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-stone-300 bg-white/80 px-5 py-2.5 text-sm font-semibold text-paper-ink transition hover:border-moss-400 hover:bg-moss-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-moss-500 focus-visible:ring-offset-2 focus-visible:ring-offset-paper;
+  }
+  .card {
+    @apply rounded-2xl border border-stone-200/80 bg-white/80 shadow-soft;
+  }
+}

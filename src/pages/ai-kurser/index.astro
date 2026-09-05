@@ -1,0 +1,62 @@
+---
+export const prerender = false;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import CourseCard from '../../components/CourseCard.astro';
+import SoftCTA from '../../components/SoftCTA.astro';
+import { filterCourses, getCategories, getAllProviders, formatLabel } from '../../lib/courses';
+import { breadcrumbJsonLd } from '../../lib/seo';
+
+const url = Astro.url;
+const values = {
+  q: url.searchParams.get('q') || undefined,
+  category: url.searchParams.get('category') || undefined,
+  level: url.searchParams.get('level') || undefined,
+  format: url.searchParams.get('format') || undefined,
+  provider: url.searchParams.get('provider') || undefined,
+};
+const courses = filterCourses(values);
+const categories = getCategories();
+const providers = getAllProviders().map((p) => ({ slug: p.slug, name: p.name }));
+const crumbs = breadcrumbJsonLd([
+  { name: 'Forside', path: '/' },
+  { name: 'AI-kurser', path: '/ai-kurser' },
+]);
+---
+<BaseLayout
+  title="AI-kurser i Danmark"
+  description="Filtrer AI-kurser efter niveau, format, kategori og udbyder. Priser og datoer markeres som Ukendt, når de ikke er verificeret."
+  jsonLd={[crumbs]}
+>
+  <div class="container-site py-10">
+    <Breadcrumbs items={[{ label: 'Forside', href: '/' }, { label: 'AI-kurser' }]} />
+    <h1 class="text-4xl">AI-kurser i Danmark</h1>
+    <p class="mt-3 max-w-2xl text-stone-650 text-stone-600">
+      {courses.length} kurser matcher dine filtre. Klik ind på et kursus for kilde-URL og sidst verificeret dato.
+    </p>
+    <div class="mt-8">
+      <FilterBar categories={categories} providers={providers} values={values} />
+    </div>
+    {Object.values(values).some(Boolean) && (
+      <p class="mt-4 text-sm text-stone-500">
+        Aktive filtre:
+        {[values.q && `søg="${values.q}"`, values.category && formatLabel(values.category), values.level && formatLabel(values.level), values.format && formatLabel(values.format), values.provider && providers.find(p => p.slug === values.provider)?.name]
+          .filter(Boolean)
+          .join(' · ')}
+      </p>
+    )}
+    <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {courses.map((course) => <CourseCard course={course} />)}
+    </div>
+    {courses.length === 0 && (
+      <div class="card mt-8 p-8 text-center">
+        <p class="font-serif text-xl">Ingen kurser matchede.</p>
+        <p class="mt-2 text-stone-600">Prøv at fjerne et filter, eller se <a href="/ai-kurser">alle kurser</a>.</p>
+      </div>
+    )}
+    <div class="mt-14">
+      <SoftCTA campaign="course-list" title="Brug for hjælp til at vælge?" text="LearnAI kan hjælpe dig med at matche kursusniveau til dit teams behov." />
+    </div>
+  </div>
+</BaseLayout>

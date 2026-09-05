@@ -1,0 +1,19 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  date: Date;
+  author: string;
+}
+const { href, title, description, date, author } = Astro.props;
+const formatted = date.toLocaleDateString('da-DK', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<article class="card p-5">
+  <p class="text-xs uppercase tracking-[0.12em] text-stone-500">{formatted} · {author}</p>
+  <h3 class="mt-2 text-xl">
+    <a href={href} class="text-paper-ink no-underline hover:text-moss-800">{title}</a>
+  </h3>
+  <p class="mt-2 text-sm leading-relaxed text-stone-600">{description}</p>
+  <a href={href} class="mt-4 inline-block text-sm text-sea-700 no-underline hover:underline">Læs artikel →</a>
+</article>

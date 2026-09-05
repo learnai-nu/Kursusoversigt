@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import SoftCTA from '../../components/SoftCTA.astro';
+import { getCollection } from 'astro:content';
+import { breadcrumbJsonLd } from '../../lib/seo';
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const crumbs = breadcrumbJsonLd([
+  { name: 'Forside', path: '/' },
+  { name: 'Artikler', path: '/artikler' },
+]);
+---
+<BaseLayout
+  title="Artikler om AI-kurser"
+  description="Guider og analyser om AI-kompetencer, kursusvalg og læring i dansk kontekst."
+  jsonLd={[crumbs]}
+>
+  <div class="container-site py-10">
+    <Breadcrumbs items={[{ label: 'Forside', href: '/' }, { label: 'Artikler' }]} />
+    <h1 class="text-4xl">Artikler</h1>
+    <p class="mt-3 max-w-2xl text-stone-600">Redaktionelle tekster med kilder og interne links — skrevet til folk der vælger AI-kurser i Danmark.</p>
+    <div class="mt-8 grid gap-5 md:grid-cols-2">
+      {articles.map((a) => (
+        <ArticleCard
+          href={`/artikler/${a.slug}`}
+          title={a.data.title}
+          description={a.data.description}
+          date={a.data.pubDate}
+          author={a.data.author}
+        />
+      ))}
+    </div>
+    <div class="mt-14">
+      <SoftCTA campaign="articles" />
+    </div>
+  </div>
+</BaseLayout>

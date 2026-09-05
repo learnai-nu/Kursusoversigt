@@ -1,0 +1,73 @@
+---
+export const prerender = false;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllCourses, getAllProviders } from '../../lib/courses';
+import { isDemoMode } from '../../lib/supabase';
+
+const authed = Astro.cookies.get('ko_admin')?.value === '1';
+const demo = isDemoMode();
+const courses = getAllCourses();
+const providers = getAllProviders();
+const error = Astro.url.searchParams.get('error');
+---
+<BaseLayout title="Admin" description="Simpel demo-admin til Kursusoversigt." includeDefaults={false}>
+  <div class="container-site py-10 max-w-3xl">
+    <h1 class="text-3xl">Admin (demo)</h1>
+    <p class="mt-2 text-stone-600">
+      {demo
+        ? 'Demo-mode: ingen Supabase-env. Data kommer fra lokal JSON.'
+        : 'Supabase-env er sat. Lead-API kan skrive til databasen.'}
+    </p>
+
+    {!authed ? (
+      <form method="POST" action="/api/admin-login" class="card mt-8 space-y-4 p-6">
+        <p class="text-sm text-stone-600">Log ind med admin-adgangskode (standard i demo: <code>demo</code>).</p>
+        {error && <p class="text-sm text-red-700">Forkert adgangskode.</p>}
+        <label class="block text-sm">
+          <span class="mb-1 block font-medium">Adgangskode</span>
+          <input type="password" name="password" required class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2" />
+        </label>
+        <button class="btn-primary" type="submit">Log ind</button>
+      </form>
+    ) : (
+      <div class="mt-8 space-y-6">
+        <div class="card p-6">
+          <h2 class="text-xl">Status</h2>
+          <ul class="mt-3 space-y-1 text-sm text-stone-700">
+            <li>Kurser i seed: <strong>{courses.length}</strong></li>
+            <li>Udbydere: <strong>{providers.length}</strong></li>
+            <li>Mode: <strong>{demo ? 'demo/json' : 'supabase'}</strong></li>
+          </ul>
+          <form method="POST" action="/api/admin-logout" class="mt-4">
+            <button class="btn-secondary" type="submit">Log ud</button>
+          </form>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="border-b border-stone-200 px-4 py-3">
+            <h2 class="font-serif text-lg">Kurser (seed)</h2>
+          </div>
+          <div class="max-h-96 overflow-auto">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-stone-50 text-xs uppercase tracking-wide text-stone-500">
+                <tr>
+                  <th class="px-4 py-2">Titel</th>
+                  <th class="px-4 py-2">Udbyder</th>
+                  <th class="px-4 py-2">Verificeret</th>
+                </tr>
+              </thead>
+              <tbody>
+                {courses.map((c) => (
+                  <tr class="border-t border-stone-100">
+                    <td class="px-4 py-2"><a href={`/ai-kurser/${c.slug}`} class="text-sea-700 hover:underline">{c.title}</a></td>
+                    <td class="px-4 py-2">{c.provider_short}</td>
+                    <td class="px-4 py-2">{c.last_verified}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    )}
+  </div>
+</BaseLayout>

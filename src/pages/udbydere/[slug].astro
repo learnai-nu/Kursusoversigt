@@ -1,0 +1,52 @@
+---
+export const prerender = true;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CourseCard from '../../components/CourseCard.astro';
+import SoftCTA from '../../components/SoftCTA.astro';
+import { getAllProviders, getProviderBySlug, getCoursesByProvider } from '../../lib/courses';
+import { breadcrumbJsonLd } from '../../lib/seo';
+
+export function getStaticPaths() {
+  return getAllProviders().map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const provider = getProviderBySlug(slug!);
+if (!provider) {
+  return Astro.redirect('/ai-kurser');
+}
+const courses = getCoursesByProvider(provider.slug);
+const crumbs = breadcrumbJsonLd([
+  { name: 'Forside', path: '/' },
+  { name: 'AI-kurser', path: '/ai-kurser' },
+  { name: provider.name, path: `/udbydere/${provider.slug}` },
+]);
+---
+<BaseLayout
+  title={provider.name}
+  description={provider.description}
+  jsonLd={[crumbs]}
+>
+  <div class="container-site py-10">
+    <Breadcrumbs items={[
+      { label: 'Forside', href: '/' },
+      { label: 'AI-kurser', href: '/ai-kurser' },
+      { label: provider.name },
+    ]} />
+    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-moss-700">Udbyder</p>
+    <h1 class="mt-2 text-4xl">{provider.name}</h1>
+    <p class="mt-2 text-stone-600">{provider.city} · <a href={provider.website} rel="noopener noreferrer" class="text-sea-700 hover:underline">{provider.website.replace('https://','')}</a></p>
+    <p class="mt-5 max-w-2xl text-lg text-stone-700">{provider.description}</p>
+
+    <h2 class="mt-12 text-2xl">Kurser ({courses.length})</h2>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {courses.map((course) => <CourseCard course={course} />)}
+    </div>
+    {courses.length === 0 && <p class="mt-4 text-stone-600">Ingen kurser i demo-data for denne udbyder endnu.</p>}
+
+    <div class="mt-14">
+      <SoftCTA campaign="provider" />
+    </div>
+  </div>
+</BaseLayout>

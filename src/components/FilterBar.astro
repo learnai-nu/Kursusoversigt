@@ -1,0 +1,56 @@
+---
+interface Props {
+  categories: string[];
+  providers: { slug: string; name: string }[];
+  values: {
+    q?: string;
+    category?: string;
+    level?: string;
+    format?: string;
+    provider?: string;
+  };
+}
+const { categories, providers, values } = Astro.props;
+---
+<form method="get" action="/ai-kurser" class="card grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-6">
+  <label class="lg:col-span-2 text-sm">
+    <span class="mb-1 block text-xs font-medium uppercase tracking-wide text-stone-500">Søg</span>
+    <input name="q" value={values.q || ''} placeholder="Fx prompting, ledelse, ITU…" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2 outline-none focus:border-moss-500 focus:ring-2 focus:ring-moss-200" />
+  </label>
+  <label class="text-sm">
+    <span class="mb-1 block text-xs font-medium uppercase tracking-wide text-stone-500">Kategori</span>
+    <select name="category" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2">
+      <option value="">Alle</option>
+      {categories.map((c) => <option value={c} selected={values.category === c}>{c}</option>)}
+    </select>
+  </label>
+  <label class="text-sm">
+    <span class="mb-1 block text-xs font-medium uppercase tracking-wide text-stone-500">Niveau</span>
+    <select name="level" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2">
+      <option value="">Alle</option>
+      <option value="begynder" selected={values.level === 'begynder'}>Begynder</option>
+      <option value="mellemniveau" selected={values.level === 'mellemniveau'}>Mellemniveau</option>
+      <option value="avanceret" selected={values.level === 'avanceret'}>Avanceret</option>
+    </select>
+  </label>
+  <label class="text-sm">
+    <span class="mb-1 block text-xs font-medium uppercase tracking-wide text-stone-500">Format</span>
+    <select name="format" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2">
+      <option value="">Alle</option>
+      <option value="online" selected={values.format === 'online'}>Online</option>
+      <option value="onsite" selected={values.format === 'onsite'}>Fremmøde</option>
+      <option value="hybrid" selected={values.format === 'hybrid'}>Hybrid</option>
+    </select>
+  </label>
+  <label class="text-sm">
+    <span class="mb-1 block text-xs font-medium uppercase tracking-wide text-stone-500">Udbyder</span>
+    <select name="provider" class="w-full rounded-xl border border-stone-300 bg-white px-3 py-2">
+      <option value="">Alle</option>
+      {providers.map((p) => <option value={p.slug} selected={values.provider === p.slug}>{p.name}</option>)}
+    </select>
+  </label>
+  <div class="flex items-end gap-2 sm:col-span-2 lg:col-span-6">
+    <button class="btn-primary" type="submit">Filtrer</button>
+    <a class="btn-secondary" href="/ai-kurser">Nulstil</a>
+  </div>
+</form>

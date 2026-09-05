@@ -1,0 +1,31 @@
+---
+const path = Astro.url.pathname;
+const links = [
+  { href: '/ai-kurser', label: 'AI-kurser' },
+  { href: '/artikler', label: 'Artikler' },
+];
+---
+<header class="border-b border-stone-200/80 bg-paper/90 backdrop-blur-sm sticky top-0 z-40">
+  <div class="container-site flex h-16 items-center justify-between gap-4">
+    <a href="/" class="group flex items-baseline gap-2 no-underline">
+      <span class="font-serif text-xl font-semibold text-moss-900 group-hover:text-moss-700">Kursusoversigt</span>
+      <span class="hidden text-xs uppercase tracking-[0.14em] text-stone-500 sm:inline">AI · Danmark</span>
+    </a>
+    <nav class="flex items-center gap-1 sm:gap-2" aria-label="Hovednavigation">
+      {links.map((l) => (
+        <a
+          href={l.href}
+          class:list={[
+            'rounded-full px-3 py-1.5 text-sm font-medium no-underline transition',
+            path.startsWith(l.href)
+              ? 'bg-moss-100 text-moss-900'
+              : 'text-stone-700 hover:bg-stone-100 hover:text-paper-ink',
+          ]}
+        >
+          {l.label}
+        </a>
+      ))}
+      <a href="https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=nav" class="btn-primary ml-1 hidden sm:inline-flex text-xs sm:text-sm" rel="noopener">LearnAI</a>
+    </nav>
+  </div>
+</header>

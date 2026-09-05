@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "itu",
+    "name": "IT-Universitetet i København",
+    "short": "ITU",
+    "website": "https://itu.dk",
+    "city": "København",
+    "description": "Danmarks IT-universitet med forskning og efteruddannelse inden for digitalisering og AI."
+  },
+  {
+    "slug": "teknologisk-institut",
+    "name": "Teknologisk Institut",
+    "short": "TI",
+    "website": "https://www.teknologisk.dk",
+    "city": "Taastrup",
+    "description": "Praksisnær efteruddannelse og rådgivning inden for teknologi, innovation og AI."
+  },
+  {
+    "slug": "dtu",
+    "name": "Danmarks Tekniske Universitet",
+    "short": "DTU",
+    "website": "https://www.dtu.dk",
+    "city": "Lyngby",
+    "description": "Teknisk universitet med stærke tilbud inden for maskinlæring, data og AI-systemer."
+  },
+  {
+    "slug": "ku",
+    "name": "Københavns Universitet",
+    "short": "KU",
+    "website": "https://www.ku.dk",
+    "city": "København",
+    "description": "Bredt universitet med AI-relaterede kurser inden for data science, jura og samfund."
+  },
+  {
+    "slug": "cbs",
+    "name": "Copenhagen Business School",
+    "short": "CBS",
+    "website": "https://www.cbs.dk",
+    "city": "København",
+    "description": "Erhvervsorienterede kurser i AI-strategi, ledelse og transformation."
+  },
+  {
+    "slug": "au",
+    "name": "Aarhus Universitet",
+    "short": "AU",
+    "website": "https://www.au.dk",
+    "city": "Aarhus",
+    "description": "Forskningstunge AI-kurser og efteruddannelse i Midtjylland."
+  },
+  {
+    "slug": "aau",
+    "name": "Aalborg Universitet",
+    "short": "AAU",
+    "website": "https://www.aau.dk",
+    "city": "Aalborg",
+    "description": "Problembaseret læring med fokus på anvendt AI og software."
+  },
+  {
+    "slug": "sdu",
+    "name": "Syddansk Universitet",
+    "short": "SDU",
+    "website": "https://www.sdu.dk",
+    "city": "Odense",
+    "description": "AI og data science-kurser med regional forankring i Syddanmark."
+  },
+  {
+    "slug": "kea",
+    "name": "Københavns Erhvervsakademi",
+    "short": "KEA",
+    "website": "https://kea.dk",
+    "city": "København",
+    "description": "Praksisnære akademiuddannelser og kurser i digital produktudvikling og AI."
+  },
+  {
+    "slug": "dania",
+    "name": "Erhvervsakademi Dania",
+    "short": "Dania",
+    "website": "https://eadania.dk",
+    "city": "Randers",
+    "description": "Efteruddannelse i digitalisering og AI for virksomheder i Jylland."
+  },
+  {
+    "slug": "learnai",
+    "name": "LearnAI",
+    "short": "LearnAI",
+    "website": "https://learnai.nu",
+    "city": "Online / DK",
+    "description": "Praksisnære AI-kurser for teams og ledere med fokus på anvendelse i dansk kontekst."
+  },
+  {
+    "slug": "ida",
+    "name": "IDA Learning",
+    "short": "IDA",
+    "website": "https://ida.dk",
+    "city": "København",
+    "description": "Efteruddannelse for ingeniører og tekniske specialister, inkl. AI-temaer."
+  }
+]

@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CourseCard from '../components/CourseCard.astro';
+import SoftCTA from '../components/SoftCTA.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getAllCourses, getAllProviders } from '../lib/courses';
+import { getCollection } from 'astro:content';
+
+const courses = getAllCourses().slice(0, 6);
+const providers = getAllProviders();
+const allArticles = await getCollection('articles');
+const articles = allArticles
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+const articleCount = allArticles.length;
+const courseCount = getAllCourses().length;
+const providerCount = providers.length;
+---
+<BaseLayout>
+  <section class="border-b border-stone-200/80 bg-[radial-gradient(ellipse_at_top,_#e3ebe3_0%,_#f7f4ef_55%)]">
+    <div class="container-site grid gap-10 py-16 lg:grid-cols-[1.3fr_0.9fr] lg:items-end">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-moss-700">Dansk AI-kursusoversigt</p>
+        <h1 class="mt-3 max-w-2xl text-4xl leading-tight text-paper-ink sm:text-5xl">Find AI-kurser i Danmark — uden støj og uden opdigtede priser.</h1>
+        <p class="mt-5 max-w-xl text-lg leading-relaxed text-stone-700">
+          Vi samler offentlige forløb fra universiteter, teknologiske institutter og erhvervsakademier. Ukendte priser og datoer står som <strong>Ukendt</strong>. Klar til handling? LearnAI er næste skridt.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a class="btn-primary" href="/ai-kurser">Gå til kurser</a>
+          <a class="btn-secondary" href="/artikler">Læs artikler</a>
+        </div>
+      </div>
+      <div class="card p-6">
+        <p class="text-sm text-stone-500">Lige nu i oversigten</p>
+        <dl class="mt-4 grid grid-cols-3 gap-4 text-center">
+          <div>
+            <dt class="text-xs uppercase tracking-wide text-stone-400">Kurser</dt>
+            <dd class="font-serif text-3xl text-moss-900">{courseCount}</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-wide text-stone-400">Udbydere</dt>
+            <dd class="font-serif text-3xl text-moss-900">{providerCount}</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-wide text-stone-400">Artikler</dt>
+            <dd class="font-serif text-3xl text-moss-900">{articleCount}</dd>
+          </div>
+        </dl>
+        <p class="mt-5 text-xs leading-relaxed text-stone-500">Demo-mode kører på lokal JSON, når Supabase ikke er konfigureret.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-site py-14">
+    <div class="mb-6 flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-3xl">Udvalgte kurser</h2>
+        <p class="mt-1 text-stone-600">Et udsnit — brug filtrene for det fulde katalog.</p>
+      </div>
+      <a href="/ai-kurser" class="text-sm text-sea-700 no-underline hover:underline">Se alle →</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {courses.map((course) => <CourseCard course={course} />)}
+    </div>
+  </section>
+
+  <section class="container-site pb-14">
+    <h2 class="text-3xl">Udbydere</h2>
+    <p class="mt-1 text-stone-600">Universiteter, institutter og praktiske udbydere i Danmark.</p>
+    <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {providers.map((p) => (
+        <a href={`/udbydere/${p.slug}`} class="card block p-4 no-underline transition hover:border-moss-300">
+          <p class="font-serif text-lg text-paper-ink">{p.name}</p>
+          <p class="mt-1 text-sm text-stone-500">{p.city}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container-site pb-14">
+    <div class="mb-6 flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-3xl">Seneste artikler</h2>
+        <p class="mt-1 text-stone-600">Redaktionelle guider til AI-kompetencer i dansk kontekst.</p>
+      </div>
+      <a href="/artikler" class="text-sm text-sea-700 no-underline hover:underline">Alle artikler →</a>
+    </div>
+    <div class="grid gap-5 md:grid-cols-3">
+      {articles.map((a) => (
+        <ArticleCard
+          href={`/artikler/${a.slug}`}
+          title={a.data.title}
+          description={a.data.description}
+          date={a.data.pubDate}
+          author={a.data.author}
+        />
+      ))}
+    </div>
+  </section>
+
+  <section class="container-site pb-16">
+    <SoftCTA campaign="home" />
+  </section>
+</BaseLayout>
