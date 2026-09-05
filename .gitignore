@@ -7,3 +7,6 @@ dist/
 .DS_Store
 *.log
 .bun/
+PUT_KEYS_HERE.txt
+.vercel
+.env*
