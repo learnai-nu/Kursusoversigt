@@ -6,7 +6,7 @@ import FilterBar from '../../components/FilterBar.astro';
 import CourseCard from '../../components/CourseCard.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
 import { filterCourses, getCategories, getAllProviders, formatLabel } from '../../lib/courses';
-import { breadcrumbJsonLd } from '../../lib/seo';
+import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
 
 const url = Astro.url;
 const values = {
@@ -27,7 +27,18 @@ const crumbs = breadcrumbJsonLd([
 <BaseLayout
   title="AI-kurser i Danmark"
   description="Filtrer AI-kurser efter niveau, format, kategori og udbyder. Priser og datoer markeres som Ukendt, når de ikke er verificeret."
-  jsonLd={[crumbs]}
+  jsonLd={[
+    crumbs,
+    itemListJsonLd(
+      'AI-kurser i Danmark',
+      '/ai-kurser',
+      courses.slice(0, 50).map((c) => ({
+        name: c.title,
+        path: `/ai-kurser/${c.slug}`,
+        description: c.description,
+      }))
+    ),
+  ]}
 >
   <div class="container-site py-10">
     <Breadcrumbs items={[{ label: 'Forside', href: '/' }, { label: 'AI-kurser' }]} />

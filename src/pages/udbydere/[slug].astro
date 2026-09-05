@@ -5,7 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CourseCard from '../../components/CourseCard.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
 import { getAllProviders, getProviderBySlug, getCoursesByProvider } from '../../lib/courses';
-import { breadcrumbJsonLd } from '../../lib/seo';
+import { breadcrumbJsonLd, providerJsonLd, itemListJsonLd } from '../../lib/seo';
 
 export function getStaticPaths() {
   return getAllProviders().map((p) => ({ params: { slug: p.slug } }));
@@ -26,7 +26,19 @@ const crumbs = breadcrumbJsonLd([
 <BaseLayout
   title={provider.name}
   description={provider.description}
-  jsonLd={[crumbs]}
+  jsonLd={[
+    crumbs,
+    providerJsonLd(provider),
+    itemListJsonLd(
+      `Kurser fra ${provider.name}`,
+      `/udbydere/${provider.slug}`,
+      courses.map((c) => ({
+        name: c.title,
+        path: `/ai-kurser/${c.slug}`,
+        description: c.description,
+      }))
+    ),
+  ]}
 >
   <div class="container-site py-10">
     <Breadcrumbs items={[

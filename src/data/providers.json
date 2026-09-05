@@ -158,5 +158,29 @@
     "website": "https://efteruddannelse.eamv.dk",
     "city": "Kolding / Midtjylland",
     "description": "Efteruddannelse med AI i praksis og akademimoduler."
+  },
+  {
+    "slug": "aros",
+    "name": "Aros Business Academy",
+    "short": "Aros",
+    "website": "https://arosbusinessacademy.dk",
+    "city": "København / Aarhus",
+    "description": "Efteruddannelse og Mini MBA-forløb for ledere, inkl. Mini MBA i Artificial Intelligence."
+  },
+  {
+    "slug": "digital-forlomme",
+    "name": "Digital Forlomme",
+    "short": "Digital Forlomme",
+    "website": "https://digitalforlomme.dk",
+    "city": "København / Aarhus / Odense",
+    "description": "Hands-on 1-dags AI-kurser i ChatGPT, Claude, Gemini og Microsoft Copilot."
+  },
+  {
+    "slug": "kursusfabrikken",
+    "name": "Kursusfabrikken",
+    "short": "Kursusfabrikken",
+    "website": "https://www.kursusfabrikken.dk",
+    "city": "København / Aarhus",
+    "description": "Praksisnære AI-forløb med fokus på prompts, assistenter og værdi i organisationen."
   }
 ]
