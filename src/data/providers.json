@@ -102,5 +102,61 @@
     "website": "https://www.ai-savvy.dk",
     "city": "Lyngby / Aarhus / online",
     "description": "Dansk uddannelseshus med hands-on kurser i generativ AI for professionelle og virksomheder, drevet af David Guldager."
+  },
+  {
+    "slug": "promptly",
+    "name": "Promptly",
+    "short": "Promptly",
+    "website": "https://promptly.dk",
+    "city": "København / Odense / Aarhus",
+    "description": "Praksisnære AI-kurser i ChatGPT, Copilot og agenter, ofte udbudt via Mediernes Efteruddannelse."
+  },
+  {
+    "slug": "mediernes-efteruddannelse",
+    "name": "Mediernes Efteruddannelse",
+    "short": "ME",
+    "website": "https://mediernesefteruddannelse.dk",
+    "city": "København",
+    "description": "Brancheefteruddannelse for medie- og kommunikationsfolk med AI-kurser og PU-støtte."
+  },
+  {
+    "slug": "montus",
+    "name": "Montus Business Academy",
+    "short": "Montus",
+    "website": "https://montus.dk",
+    "city": "København / Aarhus",
+    "description": "Erhvervsakademi med praktiske AI-kurser i ChatGPT, Copilot og ledelse."
+  },
+  {
+    "slug": "ibc",
+    "name": "IBC International Business College",
+    "short": "IBC",
+    "website": "https://kurser.ibc.dk",
+    "city": "Kolding",
+    "description": "Erhvervsrettet efteruddannelse inkl. praktiske AI-kurser for fagprofessionelle."
+  },
+  {
+    "slug": "ek",
+    "name": "Erhvervsakademi København",
+    "short": "EK",
+    "website": "https://www.ek.dk",
+    "city": "København",
+    "description": "Akademiuddannelser og enkeltfag, inkl. Anvendelse af kunstig intelligens (10 ECTS)."
+  },
+  {
+    "slug": "iba",
+    "name": "IBA Erhvervsakademi Kolding",
+    "short": "IBA",
+    "website": "https://iba.dk",
+    "city": "Kolding",
+    "description": "Akademiuddannelser med AI-fag på Informationsteknologi."
+  },
+  {
+    "slug": "eamv",
+    "name": "Erhvervsakademi MidtVest",
+    "short": "EAMV",
+    "website": "https://efteruddannelse.eamv.dk",
+    "city": "Kolding / Midtjylland",
+    "description": "Efteruddannelse med AI i praksis og akademimoduler."
   }
 ]
