@@ -718,5 +718,55 @@
     "last_verified": "2026-08-11",
     "provider_name": "Aarhus Universitet",
     "provider_short": "AU"
+  },
+  {
+    "slug": "ai-savvy-ai-boost",
+    "title": "AI Boost",
+    "description": "3 timers fokuseret online-træning i ChatGPT eller Claude for professionelle, der hurtigt vil blive bedre til ét konkret AI-værktøj i det daglige arbejde. Masterprompts, AI-assistenter og workflows fra dag 1.",
+    "provider_slug": "ai-savvy",
+    "category": "praktisk",
+    "level": "begynder",
+    "format": "online",
+    "location": "Online",
+    "price_dkk": null,
+    "price_note": "Ukendt — se udbyder",
+    "duration": "3 timer",
+    "start_date": null,
+    "language": "da",
+    "tags": [
+      "chatgpt",
+      "claude",
+      "prompting",
+      "generativ-ai"
+    ],
+    "source_url": "https://www.ai-savvy.dk/kurser",
+    "last_verified": "2026-09-05",
+    "provider_name": "ai-savvy",
+    "provider_short": "ai-savvy"
+  },
+  {
+    "slug": "ai-savvy-ai-masterclass",
+    "title": "AI Masterclass",
+    "description": "2-dages certificeringsforløb i Lyngby: fra AI-bruger til AI-arkitekt. Byg din egen AI-assistent, lær masterprompts, vibe coding og strategisk AI-implementering. Undervises af David Guldager.",
+    "provider_slug": "ai-savvy",
+    "category": "praktisk",
+    "level": "mellemniveau",
+    "format": "onsite",
+    "location": "Lyngby",
+    "price_dkk": null,
+    "price_note": "Ukendt — se udbyder",
+    "duration": "2 dage",
+    "start_date": null,
+    "language": "da",
+    "tags": [
+      "certificering",
+      "ai-assistenter",
+      "prompting",
+      "strategi"
+    ],
+    "source_url": "https://www.ai-savvy.dk/kurser",
+    "last_verified": "2026-09-05",
+    "provider_name": "ai-savvy",
+    "provider_short": "ai-savvy"
   }
 ]

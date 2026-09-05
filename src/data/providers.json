@@ -94,5 +94,13 @@
     "website": "https://ida.dk",
     "city": "København",
     "description": "Efteruddannelse for ingeniører og tekniske specialister, inkl. AI-temaer."
+  },
+  {
+    "slug": "ai-savvy",
+    "name": "ai-savvy",
+    "short": "ai-savvy",
+    "website": "https://www.ai-savvy.dk",
+    "city": "Lyngby / Aarhus / online",
+    "description": "Dansk uddannelseshus med hands-on kurser i generativ AI for professionelle og virksomheder, drevet af David Guldager."
   }
 ]
