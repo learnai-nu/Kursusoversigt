@@ -182,5 +182,29 @@
     "website": "https://www.kursusfabrikken.dk",
     "city": "København / Aarhus",
     "description": "Praksisnære AI-forløb med fokus på prompts, assistenter og værdi i organisationen."
+  },
+  {
+    "slug": "claude-academy",
+    "name": "Claude Academy (Anthropic)",
+    "short": "Claude Academy",
+    "website": "https://academy.claude.com",
+    "city": "Online (global)",
+    "description": "Anthropics officielle læringsakademi med kurser i AI Fluency, Claude-værktøjer og menneske–agent-samarbejde."
+  },
+  {
+    "slug": "openai-academy",
+    "name": "OpenAI Academy",
+    "short": "OpenAI Academy",
+    "website": "https://academy.openai.com/pages/courses",
+    "city": "Online (global)",
+    "description": "OpenAIs officielle kursuspathway for AI Foundations, Applied AI og Agents and Workflows med completion certificates."
+  },
+  {
+    "slug": "google-ai-skills",
+    "name": "Google Learn AI Skills",
+    "short": "Google AI",
+    "website": "https://ai.google/learn-ai-skills/",
+    "city": "Online (global)",
+    "description": "Googles AI-skills hub med generative AI, Gemini, Workspace-power-ups og professionelle certifikater."
   }
 ]
