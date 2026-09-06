@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { getSupabaseService, isDemoMode } from '../../lib/supabase';
+import { isDemoMode } from '../../lib/supabase';
 
 export const prerender = false;
 
@@ -8,6 +8,32 @@ function json(data: unknown, status = 200) {
     status,
     headers: { 'Content-Type': 'application/json' },
   });
+}
+
+function env(name: string): string | undefined {
+  return (import.meta.env[name] as string | undefined) || process.env[name];
+}
+
+async function supabaseRestInsert(table: string, row: Record<string, unknown>) {
+  const url = env('PUBLIC_SUPABASE_URL');
+  const key = env('SUPABASE_SERVICE_ROLE_KEY');
+  if (!url || !key) {
+    throw new Error('missing_supabase_env');
+  }
+  const res = await fetch(`${url.replace(/\/$/, '')}/rest/v1/${table}`, {
+    method: 'POST',
+    headers: {
+      apikey: key,
+      Authorization: `Bearer ${key}`,
+      'Content-Type': 'application/json',
+      Prefer: 'return=minimal',
+    },
+    body: JSON.stringify(row),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`supabase_${table}_${res.status}:${text.slice(0, 200)}`);
+  }
 }
 
 export const POST: APIRoute = async ({ request }) => {
@@ -39,12 +65,7 @@ export const POST: APIRoute = async ({ request }) => {
       });
     }
 
-    const supabase = getSupabaseService();
-    if (!supabase) {
-      return json({ error: 'Supabase er ikke konfigureret korrekt.' }, 500);
-    }
-
-    const { error } = await supabase.from('leads').insert({
+    await supabaseRestInsert('leads', {
       name,
       email,
       company,
@@ -54,15 +75,14 @@ export const POST: APIRoute = async ({ request }) => {
       source_page,
     });
 
-    if (error) {
-      console.error('lead insert failed', error.message);
-      return json({ error: 'Kunne ikke gemme lead.' }, 500);
+    try {
+      await supabaseRestInsert('events', {
+        event_type: 'lead_submitted',
+        payload: { email, course_slug, source_page },
+      });
+    } catch (err) {
+      console.error('lead event insert failed', err);
     }
-
-    await supabase.from('events').insert({
-      event_type: 'lead_submitted',
-      payload: { email, course_slug, source_page },
-    });
 
     return json({ ok: true, message: 'Tak — vi vender tilbage snarest.' });
   } catch (err) {
