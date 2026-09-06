@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { isDemoMode } from '../../lib/supabase';
+import { supabaseRestInsert } from '../../lib/supabase-rest';
 
 export const prerender = false;
 
@@ -8,32 +9,6 @@ function json(data: unknown, status = 200) {
     status,
     headers: { 'Content-Type': 'application/json' },
   });
-}
-
-function env(name: string): string | undefined {
-  return (import.meta.env[name] as string | undefined) || process.env[name];
-}
-
-async function supabaseRestInsert(table: string, row: Record<string, unknown>) {
-  const url = env('PUBLIC_SUPABASE_URL');
-  const key = env('SUPABASE_SERVICE_ROLE_KEY');
-  if (!url || !key) {
-    throw new Error('missing_supabase_env');
-  }
-  const res = await fetch(`${url.replace(/\/$/, '')}/rest/v1/${table}`, {
-    method: 'POST',
-    headers: {
-      apikey: key,
-      Authorization: `Bearer ${key}`,
-      'Content-Type': 'application/json',
-      Prefer: 'return=minimal',
-    },
-    body: JSON.stringify(row),
-  });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`supabase_${table}_${res.status}:${text.slice(0, 200)}`);
-  }
 }
 
 export const POST: APIRoute = async ({ request }) => {
