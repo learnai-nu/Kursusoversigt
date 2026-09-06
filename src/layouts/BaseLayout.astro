@@ -61,5 +61,32 @@ const schemas = includeDefaults
       <slot />
     </main>
     <Footer />
+    <script is:inline>
+      (function () {
+        try {
+          var path = location.pathname || '/';
+          if (path.indexOf('/admin') === 0 || path.indexOf('/api') === 0) return;
+          var params = new URLSearchParams(location.search);
+          var payload = {
+            path: path,
+            referrer: document.referrer || '',
+            utm_source: params.get('utm_source') || '',
+            utm_medium: params.get('utm_medium') || '',
+            utm_campaign: params.get('utm_campaign') || ''
+          };
+          var body = JSON.stringify(payload);
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon('/api/pageview', new Blob([body], { type: 'application/json' }));
+          } else {
+            fetch('/api/pageview', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: body,
+              keepalive: true
+            }).catch(function () {});
+          }
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>

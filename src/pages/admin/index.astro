@@ -3,7 +3,7 @@ export const prerender = false;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllCourses, getAllProviders } from '../../lib/courses';
 import { isDemoMode } from '../../lib/supabase';
-import { fetchLeads } from '../../lib/supabase-rest';
+import { fetchLeads, fetchAnalyticsSummary } from '../../lib/supabase-rest';
 
 const authed = Astro.cookies.get('ko_admin')?.value === '1';
 const demo = isDemoMode();
@@ -20,10 +20,16 @@ const interestLabels: Record<string, string> = {
 
 let leads: Awaited<ReturnType<typeof fetchLeads>>['leads'] = [];
 let leadsError: string | undefined;
+let analytics: Awaited<ReturnType<typeof fetchAnalyticsSummary>> | null = null;
+
 if (authed && !demo) {
-  const result = await fetchLeads(100);
-  leads = result.leads;
-  leadsError = result.error;
+  const [leadResult, analyticsResult] = await Promise.all([
+    fetchLeads(100),
+    fetchAnalyticsSummary(2000),
+  ]);
+  leads = leadResult.leads;
+  leadsError = leadResult.error;
+  analytics = analyticsResult;
 }
 
 function formatDk(iso: string) {
@@ -38,17 +44,17 @@ function formatDk(iso: string) {
   }
 }
 ---
-<BaseLayout title="Admin" description="Simpel demo-admin til Kursusoversigt." includeDefaults={false}>
+<BaseLayout title="Admin" description="Admin til Kursusoversigt." includeDefaults={false}>
   <div class="container-site py-10 max-w-5xl">
     <h1 class="text-3xl">Admin</h1>
     <p class="mt-2 text-stone-600">
       {demo
         ? 'Demo-mode: ingen Supabase-env. Data kommer fra lokal JSON.'
-        : 'Supabase er koblet på. Leads gemmes i databasen.'}
+        : 'Supabase er koblet på. Leads og pageviews gemmes i databasen.'}
     </p>
 
     {!authed ? (
-      <form method="POST" action="/api/admin-login" class="card mt-8 space-y-4 p-6 max-w-md">
+      <form method="POST" action="/api/admin-login" class="card mt-8 max-w-md space-y-4 p-6">
         <p class="text-sm text-stone-600">Log ind med admin-adgangskode.</p>
         {error && <p class="text-sm text-red-700">Forkert adgangskode.</p>}
         <label class="block text-sm">
@@ -77,12 +83,104 @@ function formatDk(iso: string) {
         </div>
 
         <div class="card overflow-hidden">
-          <div class="border-b border-stone-200 px-4 py-3 flex items-center justify-between gap-3">
+          <div class="border-b border-stone-200 px-4 py-3">
+            <h2 class="font-serif text-lg">Analytics-overblik</h2>
+            <p class="mt-1 text-xs text-stone-500">Baseret på egne pageviews (seneste {analytics?.sampleSize ?? 0} events). Admin-sider tælles ikke.</p>
+          </div>
+          {demo ? (
+            <p class="p-4 text-sm text-stone-600">Analytics kræver Supabase.</p>
+          ) : analytics?.error ? (
+            <p class="p-4 text-sm text-red-700">{analytics.error}</p>
+          ) : (
+            <div class="space-y-6 p-4">
+              <div class="grid gap-3 sm:grid-cols-3">
+                <div class="rounded-2xl bg-stone-50 p-4">
+                  <p class="text-xs uppercase tracking-wide text-stone-500">Besøg (7 dage)</p>
+                  <p class="mt-1 text-3xl font-serif">{analytics?.visits7d ?? 0}</p>
+                </div>
+                <div class="rounded-2xl bg-stone-50 p-4">
+                  <p class="text-xs uppercase tracking-wide text-stone-500">Besøg (30 dage)</p>
+                  <p class="mt-1 text-3xl font-serif">{analytics?.visits30d ?? 0}</p>
+                </div>
+                <div class="rounded-2xl bg-stone-50 p-4">
+                  <p class="text-xs uppercase tracking-wide text-stone-500">I udsnit</p>
+                  <p class="mt-1 text-3xl font-serif">{analytics?.totalVisits ?? 0}</p>
+                </div>
+              </div>
+
+              <div class="grid gap-6 lg:grid-cols-2">
+                <div>
+                  <h3 class="text-sm font-semibold uppercase tracking-wide text-stone-500">Trafikkilder</h3>
+                  {(analytics?.sources.length ?? 0) === 0 ? (
+                    <p class="mt-2 text-sm text-stone-600">Ingen data endnu — besøg siden for at starte tracking.</p>
+                  ) : (
+                    <ul class="mt-2 divide-y divide-stone-100 text-sm">
+                      {analytics?.sources.map((s) => (
+                        <li class="flex items-center justify-between py-2">
+                          <span>{s.label}</span>
+                          <strong>{s.count}</strong>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold uppercase tracking-wide text-stone-500">Mest besøgte sider</h3>
+                  {(analytics?.topPages.length ?? 0) === 0 ? (
+                    <p class="mt-2 text-sm text-stone-600">Ingen data endnu.</p>
+                  ) : (
+                    <ul class="mt-2 divide-y divide-stone-100 text-sm">
+                      {analytics?.topPages.map((p) => (
+                        <li class="flex items-center justify-between gap-3 py-2">
+                          <a class="truncate text-sea-700 hover:underline" href={p.path}>{p.path}</a>
+                          <strong>{p.count}</strong>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold uppercase tracking-wide text-stone-500">Mest besøgte kurser</h3>
+                  {(analytics?.topCourses.length ?? 0) === 0 ? (
+                    <p class="mt-2 text-sm text-stone-600">Ingen kursusbesøg endnu.</p>
+                  ) : (
+                    <ul class="mt-2 divide-y divide-stone-100 text-sm">
+                      {analytics?.topCourses.map((c) => (
+                        <li class="flex items-center justify-between gap-3 py-2">
+                          <a class="truncate text-sea-700 hover:underline" href={c.path}>{c.slug}</a>
+                          <strong>{c.count}</strong>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold uppercase tracking-wide text-stone-500">Mest besøgte artikler</h3>
+                  {(analytics?.topArticles.length ?? 0) === 0 ? (
+                    <p class="mt-2 text-sm text-stone-600">Ingen artikelbesøg endnu.</p>
+                  ) : (
+                    <ul class="mt-2 divide-y divide-stone-100 text-sm">
+                      {analytics?.topArticles.map((a) => (
+                        <li class="flex items-center justify-between gap-3 py-2">
+                          <a class="truncate text-sea-700 hover:underline" href={a.path}>{a.slug}</a>
+                          <strong>{a.count}</strong>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div class="card overflow-hidden">
+          <div class="flex items-center justify-between gap-3 border-b border-stone-200 px-4 py-3">
             <h2 class="font-serif text-lg">Henvendelser (leads)</h2>
             {!demo && <span class="text-xs text-stone-500">Seneste {leads.length}</span>}
           </div>
           {demo ? (
-            <p class="p-4 text-sm text-stone-600">Leads gemmes ikke i demo-mode. Sæt Supabase-env for at se henvendelser her.</p>
+            <p class="p-4 text-sm text-stone-600">Leads gemmes ikke i demo-mode.</p>
           ) : leadsError ? (
             <p class="p-4 text-sm text-red-700">{leadsError}</p>
           ) : leads.length === 0 ? (
@@ -104,14 +202,14 @@ function formatDk(iso: string) {
                 <tbody>
                   {leads.map((lead) => (
                     <tr class="border-t border-stone-100 align-top">
-                      <td class="px-4 py-2 whitespace-nowrap text-stone-500">{formatDk(lead.created_at)}</td>
+                      <td class="whitespace-nowrap px-4 py-2 text-stone-500">{formatDk(lead.created_at)}</td>
                       <td class="px-4 py-2 font-medium">{lead.name}</td>
                       <td class="px-4 py-2">
                         <a class="text-sea-700 hover:underline" href={`mailto:${lead.email}`}>{lead.email}</a>
                       </td>
                       <td class="px-4 py-2">{lead.company || '—'}</td>
                       <td class="px-4 py-2">{interestLabels[lead.interest || ''] || lead.interest || '—'}</td>
-                      <td class="px-4 py-2 max-w-xs">
+                      <td class="max-w-xs px-4 py-2">
                         <span class="line-clamp-3 text-stone-700">{lead.message || '—'}</span>
                       </td>
                       <td class="px-4 py-2 text-xs text-stone-500">
