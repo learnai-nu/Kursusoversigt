@@ -30,7 +30,7 @@ import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
-  site: 'https://kursusoversigt.dk',
+  site: 'https://kursusoversigten.dk',
   output: 'hybrid',
   adapter: vercel(),
   integrations: [tailwind({ applyBaseStyles: false })],
@@ -124,7 +124,7 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 ADMIN_PASSWORD=change-me
 
 # Site
-PUBLIC_SITE_URL=https://kursusoversigt.dk
+PUBLIC_SITE_URL=https://kursusoversigten.dk
 PUBLIC_LEARNAI_URL=https://learnai.nu
 """, encoding="utf-8")
 

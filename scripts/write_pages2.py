@@ -333,7 +333,7 @@ ${urls
 (ROOT / "public" / "robots.txt").write_text("""User-agent: *
 Allow: /
 
-Sitemap: https://kursusoversigt.dk/sitemap.xml
+Sitemap: https://kursusoversigten.dk/sitemap.xml
 """, encoding="utf-8")
 
 (ROOT / "public" / "favicon.svg").write_text("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">

@@ -4,7 +4,7 @@ export const DEFAULT_DESCRIPTION =
   'Uafhængigt overblik over AI-kurser i Danmark. Filtrer efter niveau, format og udbyder — og find det næste skridt med LearnAI.';
 
 export function siteUrl(): string {
-  return (import.meta.env.PUBLIC_SITE_URL || 'https://kursusoversigt.dk').replace(/\/$/, '');
+  return (import.meta.env.PUBLIC_SITE_URL || 'https://kursusoversigten.dk').replace(/\/$/, '');
 }
 
 export function learnAiUrl(path = '/', campaign = 'site'): string {
