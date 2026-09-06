@@ -1,23 +1,23 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 
+function env(name: string): string | undefined {
+  return (import.meta.env[name] as string | undefined) || process.env[name];
+}
+
 export function hasSupabaseEnv(): boolean {
-  return Boolean(
-    import.meta.env.PUBLIC_SUPABASE_URL &&
-      import.meta.env.PUBLIC_SUPABASE_ANON_KEY
-  );
+  return Boolean(env('PUBLIC_SUPABASE_URL') && env('PUBLIC_SUPABASE_ANON_KEY'));
 }
 
 export function getSupabaseBrowser(): SupabaseClient | null {
-  if (!hasSupabaseEnv()) return null;
-  return createClient(
-    import.meta.env.PUBLIC_SUPABASE_URL!,
-    import.meta.env.PUBLIC_SUPABASE_ANON_KEY!
-  );
+  const url = env('PUBLIC_SUPABASE_URL');
+  const key = env('PUBLIC_SUPABASE_ANON_KEY');
+  if (!url || !key) return null;
+  return createClient(url, key);
 }
 
 export function getSupabaseService(): SupabaseClient | null {
-  const url = import.meta.env.PUBLIC_SUPABASE_URL;
-  const key = import.meta.env.SUPABASE_SERVICE_ROLE_KEY;
+  const url = env('PUBLIC_SUPABASE_URL');
+  const key = env('SUPABASE_SERVICE_ROLE_KEY');
   if (!url || !key) return null;
   return createClient(url, key, {
     auth: { persistSession: false, autoRefreshToken: false },

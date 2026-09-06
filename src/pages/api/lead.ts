@@ -11,8 +11,14 @@ function json(data: unknown, status = 200) {
 }
 
 export const POST: APIRoute = async ({ request }) => {
+  let body: Record<string, unknown>;
   try {
-    const body = await request.json();
+    body = await request.json();
+  } catch {
+    return json({ error: 'Ugyldig forespørgsel.' }, 400);
+  }
+
+  try {
     const name = String(body.name || '').trim();
     const email = String(body.email || '').trim();
     const company = String(body.company || '').trim() || null;
@@ -49,6 +55,7 @@ export const POST: APIRoute = async ({ request }) => {
     });
 
     if (error) {
+      console.error('lead insert failed', error.message);
       return json({ error: 'Kunne ikke gemme lead.' }, 500);
     }
 
@@ -58,7 +65,8 @@ export const POST: APIRoute = async ({ request }) => {
     });
 
     return json({ ok: true, message: 'Tak — vi vender tilbage snarest.' });
-  } catch {
-    return json({ error: 'Ugyldig forespørgsel.' }, 400);
+  } catch (err) {
+    console.error('lead api failed', err);
+    return json({ error: 'Kunne ikke sende henvendelsen lige nu.' }, 500);
   }
 };
