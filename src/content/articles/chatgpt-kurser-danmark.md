@@ -26,7 +26,7 @@ Et solidt forløb går ud over “skriv en prompt”. Det bør typisk rumme:
 
 Hvis I primært skal beslutte strategi eller governance, er et [leder-orienteret forløb](/ai-kurser/itu-ai-for-ledere) ofte bedre end et rent værktøjskursus. Skal teamet *bruge* værktøjet i hverdagen, så kig efter praktiske workshops.
 
-## Danske udbydere med ChatGPT i fokusis
+## Danske udbydere med ChatGPT i fokus
 
 **Korte, praktiske dage**
 

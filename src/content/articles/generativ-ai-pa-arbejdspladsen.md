@@ -8,8 +8,6 @@ sources:
   - title: "Teknologisk Institut"
     url: https://www.teknologisk.dk
   - title: "LearnAI"
-Hvis I konkret skal vælge et værktøjsforløb, har vi samlet [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) med links til både danske workshops og OpenAI Academy.
-
     url: https://learnai.nu
 ---
 
@@ -26,6 +24,8 @@ Et kursus som [Prompt engineering for praktikere](/ai-kurser/kea-prompt-engineer
 ## Undgå “ChatGPT-only”-fælden
 
 Et endagskursus i [ChatGPT og AI på kontoret](/ai-kurser/dania-chatgpt-for-kontoret) kan være et godt første skridt — men uden opfølgning bliver gevinsten personlig, ikke organisatorisk.
+
+Hvis I konkret skal vælge et værktøjsforløb, har vi samlet [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) med links til både danske workshops og OpenAI Academy.
 
 Filtrer kurser under [AI-kurser](/ai-kurser?category=praktisk), eller tag en [AI-workshop for teams](/ai-kurser/learnai-team-workshop).
 
