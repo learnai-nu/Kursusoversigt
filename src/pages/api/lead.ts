@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { isDemoMode } from '../../lib/supabase';
 import { supabaseRestInsert } from '../../lib/supabase-rest';
+import { notifyLeadEmail } from '../../lib/notify';
 
 export const prerender = false;
 
@@ -58,6 +59,16 @@ export const POST: APIRoute = async ({ request }) => {
     } catch (err) {
       console.error('lead event insert failed', err);
     }
+
+    await notifyLeadEmail({
+      name,
+      email,
+      company,
+      interest,
+      message,
+      course_slug,
+      source_page,
+    });
 
     return json({ ok: true, message: 'Tak — vi vender tilbage snarest.' });
   } catch (err) {

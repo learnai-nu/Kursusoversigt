@@ -8,6 +8,8 @@ sources:
   - title: "Teknologisk Institut"
     url: https://www.teknologisk.dk
   - title: "LearnAI"
+Hvis I konkret skal vælge et værktøjsforløb, har vi samlet [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) med links til både danske workshops og OpenAI Academy.
+
     url: https://learnai.nu
 ---
 
