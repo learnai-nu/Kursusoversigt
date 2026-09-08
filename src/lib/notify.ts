@@ -18,7 +18,7 @@ export async function notifyLeadEmail(lead: LeadNotifyPayload): Promise<void> {
   const apiKey = env('RESEND_API_KEY');
   if (!to || !apiKey) return;
 
-  const from = env('LEAD_NOTIFY_FROM') || 'Kursusoversigten <onboarding@resend.dev>';
+  const from = env('LEAD_NOTIFY_FROM') || 'Kursusoversigten <leads@learnai.nu>';
   const lines = [
     `Navn: ${lead.name}`,
     `E-mail: ${lead.email}`,
