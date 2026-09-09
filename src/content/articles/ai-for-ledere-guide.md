@@ -2,6 +2,7 @@
 title: "AI for ledere: hvad et godt kursus bør dække"
 description: "Et lederkursus skal give beslutningsrammer — ikke kun demos af ChatGPT."
 pubDate: 2026-08-02
+updatedDate: 2026-09-09
 author: "Mette Ravn"
 tags: ["ledelse", "strategi"]
 sources:
@@ -22,6 +23,8 @@ Ledere behøver ikke træne neurale netværk. De skal kunne **prioritere use cas
 5. Måling af værdi (ikke kun “adoption”)
 
 Kurser som [AI for ledere](/ai-kurser/itu-ai-for-ledere), [AI Strategy for Business](/ai-kurser/cbs-ai-strategy) og [AI for danske ledere](/ai-kurser/learnai-lederkursus) dækker forskellige vinkler på samme behov.
+
+Se den konkrete katalogoversigt: [AI-kurser for ledere i Danmark 2026](/artikler/ai-kurser-for-ledere-2026).
 
 ## Efter kurset
 

@@ -22,6 +22,6 @@ Hvis målet er bedre beslutninger som leder, er et kursus i [AI for ledere](/ai-
 
 På Kursusoversigt markerer vi manglende information som **Ukendt**. Det er bevidst: mange kataloger viser priser, der ikke længere gælder. Gå altid til udbyderens egen side via kilde-URL’en på kursussiden.
 
-Se det fulde katalog under [AI-kurser](/ai-kurser), og brug filtrene på niveau og format. Kigger du specifikt efter værktøjskurser, så start med vores oversigt over [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark).
+Se det fulde katalog under [AI-kurser](/ai-kurser), og brug filtrene på niveau og format. Kigger du specifikt efter værktøjskurser, så start med vores oversigt over [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark). Er du leder, så start med [AI-kurser for ledere 2026](/artikler/ai-kurser-for-ledere-2026).
 
 Når du er klar til sparring om næste skridt for dit team, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site) hjælpe med at oversætte kursusvalg til konkrete kompetencemål.

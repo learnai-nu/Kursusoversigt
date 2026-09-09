@@ -60,3 +60,5 @@ Vælg Academy, når I vil have officielt produktfokus og kan arbejde asynkront. 
 Læs også [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen).
 
 Når du er klar til sparring om, hvilket ChatGPT- eller teamforløb der matcher jeres behov, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=chatgpt-article) hjælpe med at oversætte kataloget til en konkret læringsplan.
+
+Hvis målet er bedre beslutninger som leder, er et kursus i [AI for ledere](/ai-kurser/itu-ai-for-ledere) eller [AI for danske ledere](/ai-kurser/learnai-lederkursus) mere relevant end deep learning. Se hele lederoversigten: [AI-kurser for ledere 2026](/artikler/ai-kurser-for-ledere-2026).
