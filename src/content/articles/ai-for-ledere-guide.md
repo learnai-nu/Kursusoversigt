@@ -28,6 +28,6 @@ Se den konkrete katalogoversigt: [AI-kurser for ledere i Danmark 2026](/artikler
 
 ## Efter kurset
 
-Uden opfølgning bliver indsigt til slides. Planlæg en intern workshop — eller et forløb som [AI-workshop for teams](/ai-kurser/learnai-team-workshop).
+Uden opfølgning bliver indsigt til slides. Planlæg en intern workshop — eller et forløb som [AI-workshop for teams](/ai-kurser/learnai-team-workshop). Se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 
 Se flere ledelseskurser under [AI-kurser · ledelse](/ai-kurser?category=ledelse). Klar til sparring? [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site).

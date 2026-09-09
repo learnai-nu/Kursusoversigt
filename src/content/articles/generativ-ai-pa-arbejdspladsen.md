@@ -27,6 +27,6 @@ Et endagskursus i [ChatGPT og AI på kontoret](/ai-kurser/dania-chatgpt-for-kont
 
 Hvis I konkret skal vælge et værktøjsforløb, har vi samlet [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) med links til både danske workshops og OpenAI Academy. Der er også en samlet guide til [gratis AI-kurser](/artikler/gratis-ai-kurser).
 
-Filtrer kurser under [AI-kurser](/ai-kurser?category=praktisk), eller tag en [AI-workshop for teams](/ai-kurser/learnai-team-workshop).
+Filtrer kurser under [AI-kurser](/ai-kurser?category=praktisk), eller tag en [AI-workshop for teams](/ai-kurser/learnai-team-workshop). Mere om hold- og firmakurser: [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 
 Vil I have faciliteret opstart, så kig forbi [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site).

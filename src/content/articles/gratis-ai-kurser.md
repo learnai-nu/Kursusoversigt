@@ -74,7 +74,7 @@ Udbyderside: [Google Learn AI Skills](/udbydere/google-ai-skills).
 | Styrke | Produkt + fundament | Kontekst, vane, team |
 | Svaghed | Mindre facilitering | Kræver budget/kalender |
 
-Mange teams kombinerer: academy først, derefter en [praktisk workshop](/ai-kurser?category=praktisk) eller [LearnAI team-forløb](/ai-kurser/learnai-team-workshop).
+Mange teams kombinerer: academy først, derefter en [praktisk workshop](/ai-kurser?category=praktisk) eller [LearnAI team-forløb](/ai-kurser/learnai-team-workshop). Når I skal vælge firmakursus eller holdforløb, se [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 
 ## Sådan vælger du
 

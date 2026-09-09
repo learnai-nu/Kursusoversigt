@@ -26,4 +26,4 @@ Praktiske indgange: [AI Fundamentals](/ai-kurser/sdu-ai-fundamentals), [Digital 
 
 Produktionstunge SMV’er kan kigge på [AI i produktionsvirksomheder](/ai-kurser/ti-ai-i-produktion).
 
-Browse [AI-kurser](/ai-kurser) efter format “online”, hvis tiden er knap. Og når I vil have et faciliteret forløb til hele teamet, er [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site) bygget til netop det.
+Browse [AI-kurser](/ai-kurser) efter format “online”, hvis tiden er knap. Og når I vil have et faciliteret forløb til hele teamet, er [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site) bygget til netop det — se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
