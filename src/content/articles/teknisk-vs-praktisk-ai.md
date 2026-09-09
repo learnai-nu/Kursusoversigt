@@ -26,3 +26,5 @@ Her bygges modeller, pipelines og infrastruktur. Eksempler: [Deep Learning](/ai-
 “Avanceret” på et universitetsforløb forudsætter ofte matematik og programmering. Et “avanceret” ledelseskursus gør det ikke. Brug filtrene på [AI-kurser](/ai-kurser) og kig på udbydere som [ITU](/udbydere/itu) og [Teknologisk Institut](/udbydere/teknologisk-institut).
 
 Når I skal sammensætte et blandet forløb til både specialister og forretning, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site) hjælpe med prioritering.
+
+Vil I starte billigt online, før I vælger teknisk eller praktisk spor i DK, så se [gratis AI-kurser (Claude, OpenAI, Google)](/artikler/gratis-ai-kurser).

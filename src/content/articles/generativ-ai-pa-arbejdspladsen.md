@@ -25,7 +25,7 @@ Et kursus som [Prompt engineering for praktikere](/ai-kurser/kea-prompt-engineer
 
 Et endagskursus i [ChatGPT og AI på kontoret](/ai-kurser/dania-chatgpt-for-kontoret) kan være et godt første skridt — men uden opfølgning bliver gevinsten personlig, ikke organisatorisk.
 
-Hvis I konkret skal vælge et værktøjsforløb, har vi samlet [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) med links til både danske workshops og OpenAI Academy.
+Hvis I konkret skal vælge et værktøjsforløb, har vi samlet [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) med links til både danske workshops og OpenAI Academy. Der er også en samlet guide til [gratis AI-kurser](/artikler/gratis-ai-kurser).
 
 Filtrer kurser under [AI-kurser](/ai-kurser?category=praktisk), eller tag en [AI-workshop for teams](/ai-kurser/learnai-team-workshop).
 

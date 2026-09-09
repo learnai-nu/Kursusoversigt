@@ -48,7 +48,7 @@ Se også det fulde katalog under [AI-kurser](/ai-kurser) og filtrer på praktisk
 
 [OpenAI Academy — AI Foundations](/ai-kurser/openai-academy-ai-foundations) (og de øvrige Academy-forløb) er **globale, ofte self-paced** forløb fra OpenAI. De er stærke til fundament og certificeringslignende completion — men de er ikke et dansk hold med lokal underviser, DK-cases eller virksomhedstilpasning.
 
-Vælg Academy, når I vil have officielt produktfokus og kan arbejde asynkront. Vælg en dansk udbyder, når I vil have dialog, holddynamik, dansk kontekst eller et skræddersyet teamforløb.
+Vælg Academy, når I vil have officielt produktfokus og kan arbejde asynkront. Vælg en dansk udbyder, når I vil have dialog, holddynamik, dansk kontekst eller et skræddersyet teamforløb. Se hele gratis-sporet i [Gratis AI-kurser: Claude, OpenAI og Google](/artikler/gratis-ai-kurser).
 
 ## Sådan vælger du i praksis
 
