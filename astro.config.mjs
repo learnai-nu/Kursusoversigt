@@ -4,6 +4,7 @@ import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
   site: 'https://kursusoversigten.dk',
+  trailingSlash: 'never',
   output: 'hybrid',
   adapter: vercel(),
   integrations: [tailwind({ applyBaseStyles: false })],

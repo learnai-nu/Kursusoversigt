@@ -6,7 +6,18 @@ import ArticleCard from '../components/ArticleCard.astro';
 import { getAllCourses, getAllProviders } from '../lib/courses';
 import { getCollection } from 'astro:content';
 
-const courses = getAllCourses().slice(0, 6);
+const featuredSlugs = [
+  'digital-forlomme-chatgpt',
+  'learnai-lederkursus',
+  'itu-ai-for-ledere',
+  'promptly-ai-grundkursus',
+  'aros-mini-mba-ai',
+  'ti-generativ-ai-i-praksis',
+];
+const allCourses = getAllCourses();
+const courses = featuredSlugs
+  .map((slug) => allCourses.find((c) => c.slug === slug))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c));
 const providers = getAllProviders();
 const allArticles = await getCollection('articles');
 const articles = allArticles
@@ -46,7 +57,7 @@ const providerCount = providers.length;
             <dd class="font-serif text-3xl text-moss-900">{articleCount}</dd>
           </div>
         </dl>
-        <p class="mt-5 text-xs leading-relaxed text-stone-500">Demo-mode kører på lokal JSON, når Supabase ikke er konfigureret.</p>
+        <p class="mt-5 text-xs leading-relaxed text-stone-500">Priser og datoer verificeres løbende. Ukendt betyder, at vi ikke vil gætte.</p>
       </div>
     </div>
   </section>

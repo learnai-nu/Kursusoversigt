@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SoftCTA from '../components/SoftCTA.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Forside', path: '/' },
+  { name: 'Om Kursusoversigt', path: '/om' },
+]);
+---
+<BaseLayout
+  title="Om Kursusoversigt"
+  description="Kursusoversigt er et uafhængigt overblik over AI-kurser i Danmark. Vi linker til originale kilder, markerer usikre data som Ukendt og hjælper dig videre til LearnAI."
+  canonicalPath="/om"
+  jsonLd={jsonLd}
+>
+  <div class="container-site py-12 max-w-3xl">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-moss-700">Om os</p>
+    <h1 class="mt-3 text-4xl">Uafhængigt overblik over AI-kurser i Danmark</h1>
+    <div class="prose-site mt-8 space-y-5 text-stone-700">
+      <p>
+        Kursusoversigt samler offentlige AI-kurser fra universiteter, erhvervsakademier, teknologiske institutter og praktiske udbydere.
+        Formålet er at gøre det nemmere at sammenligne niveau, format og fokus — uden opdigtede priser.
+      </p>
+      <p>
+        Når pris eller startdato ikke er tydeligt offentliggjort, skriver vi <strong>Ukendt</strong>. Hvert kursus har en kilde-URL og en
+        “sidst verificeret”-dato, så du kan tjekke udbyderen direkte før tilmelding.
+      </p>
+      <p>
+        Sitet drives i tilknytning til <a href="https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=om">LearnAI</a>.
+        LearnAI er næste skridt, når du vil have sparring om teamforløb eller lederkompetencer — Kursusoversigt er selve oversigten.
+      </p>
+      <h2 class="text-2xl text-paper-ink">Sådan arbejder vi</h2>
+      <ul class="list-disc space-y-2 pl-5">
+        <li>Vi linker til originale udbydersider</li>
+        <li>Vi gætter ikke på priser eller datoer</li>
+        <li>Vi opdaterer kataloget løbende</li>
+        <li>Vi skelner mellem danske hold og globale online-academies</li>
+      </ul>
+      <p>
+        Læs mere i <a href="/artikler/hvordan-vi-verificerer-kurser">Hvordan vi verificerer kurser</a>
+        og gå til <a href="/ai-kurser">AI-kurser</a>.
+      </p>
+    </div>
+    <div class="mt-12">
+      <SoftCTA campaign="om" title="Klar til næste skridt?" text="Når kataloget er for bredt, hjælper LearnAI med at matche kursus eller teamforløb til jeres behov." />
+    </div>
+  </div>
+</BaseLayout>

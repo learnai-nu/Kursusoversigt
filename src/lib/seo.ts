@@ -17,8 +17,13 @@ export function learnAiUrl(path = '/', campaign = 'site'): string {
 }
 
 export function absoluteUrl(path: string): string {
-  const p = path.startsWith('/') ? path : `/${path}`;
+  let p = path.startsWith('/') ? path : `/${path}`;
+  if (p.length > 1) p = p.replace(/\/+$/, '');
   return `${siteUrl()}${p}`;
+}
+
+export function defaultOgImage(): string {
+  return absoluteUrl('/og-default.png');
 }
 
 export function organizationJsonLd() {
