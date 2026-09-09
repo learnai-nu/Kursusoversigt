@@ -5,6 +5,10 @@ interface Props {
   course: Course;
 }
 const { course } = Astro.props;
+const excerpt =
+  course.description.length > 160
+    ? `${course.description.slice(0, 157).trim()}…`
+    : course.description;
 ---
 <article class="card flex h-full flex-col p-5 transition hover:border-moss-300">
   <div class="flex flex-wrap gap-2">
@@ -16,10 +20,10 @@ const { course } = Astro.props;
     <a href={`/ai-kurser/${course.slug}`} class="text-paper-ink no-underline hover:text-moss-800">{course.title}</a>
   </h3>
   <p class="mt-1 text-sm text-stone-500">
-    <a href={`/udbydere/${course.provider_slug}`} class="no-underline hover:underline">{course.provider_name}</a>
+    <a href={`/udbydere/${course.provider_slug}`} class="no-underline hover:underline">{course.provider_short || course.provider_name}</a>
     · {course.location}
   </p>
-  <p class="mt-3 flex-1 text-sm leading-relaxed text-stone-600">{course.description}</p>
+  <p class="mt-3 flex-1 text-sm leading-relaxed text-stone-600">{excerpt}</p>
   <div class="mt-4 flex items-end justify-between gap-3 border-t border-stone-100 pt-4 text-sm">
     <div>
       <p class="text-xs uppercase tracking-wide text-stone-400">Pris</p>

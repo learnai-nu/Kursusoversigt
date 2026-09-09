@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CourseCard from '../../components/CourseCard.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
-import { getAllProviders, getProviderBySlug, getCoursesByProvider } from '../../lib/courses';
+import { getAllProviders, getProviderBySlug, getCoursesByProvider, formatLabel } from '../../lib/courses';
 import { breadcrumbJsonLd, providerJsonLd, itemListJsonLd } from '../../lib/seo';
 
 export function getStaticPaths() {
@@ -17,6 +17,9 @@ if (!provider) {
   return Astro.redirect('/ai-kurser');
 }
 const courses = getCoursesByProvider(provider.slug);
+const categories = [...new Set(courses.map((c) => c.category))];
+const levels = [...new Set(courses.map((c) => c.level))];
+const formats = [...new Set(courses.map((c) => c.format))];
 const crumbs = breadcrumbJsonLd([
   { name: 'Forside', path: '/' },
   { name: 'AI-kurser', path: '/ai-kurser' },
@@ -24,8 +27,9 @@ const crumbs = breadcrumbJsonLd([
 ]);
 ---
 <BaseLayout
-  title={provider.name}
+  title={`${provider.name} — AI-kurser`}
   description={provider.description}
+  canonicalPath={`/udbydere/${provider.slug}`}
   jsonLd={[
     crumbs,
     providerJsonLd(provider),
@@ -48,14 +52,32 @@ const crumbs = breadcrumbJsonLd([
     ]} />
     <p class="text-xs font-semibold uppercase tracking-[0.16em] text-moss-700">Udbyder</p>
     <h1 class="mt-2 text-4xl">{provider.name}</h1>
-    <p class="mt-2 text-stone-600">{provider.city} · <a href={provider.website} rel="noopener noreferrer" class="text-sea-700 hover:underline">{provider.website.replace('https://','')}</a></p>
-    <p class="mt-5 max-w-2xl text-lg text-stone-700">{provider.description}</p>
+    <p class="mt-2 text-stone-600">{provider.city} · <a href={provider.website} rel="noopener noreferrer" class="text-sea-700 hover:underline">{provider.website.replace(/^https?:\/\//,'')}</a></p>
+    <p class="mt-5 max-w-3xl text-lg text-stone-700">{provider.description}</p>
 
-    <h2 class="mt-12 text-2xl">Kurser ({courses.length})</h2>
+    {courses.length > 0 && (
+      <div class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="card p-4">
+          <p class="text-xs uppercase tracking-wide text-stone-400">I kataloget</p>
+          <p class="mt-1 font-serif text-2xl">{courses.length} kurser</p>
+        </div>
+        <div class="card p-4">
+          <p class="text-xs uppercase tracking-wide text-stone-400">Kategorier</p>
+          <p class="mt-1 text-sm text-stone-700">{categories.map(formatLabel).join(' · ') || '—'}</p>
+        </div>
+        <div class="card p-4">
+          <p class="text-xs uppercase tracking-wide text-stone-400">Niveau / format</p>
+          <p class="mt-1 text-sm text-stone-700">{[...levels, ...formats].map(formatLabel).join(' · ') || '—'}</p>
+        </div>
+      </div>
+    )}
+
+    <h2 class="mt-12 text-2xl">Kurser fra {provider.short || provider.name}</h2>
+    <p class="mt-2 max-w-2xl text-stone-600">Klik ind på et kursus for kilde-URL, prisstatus og sidst verificeret dato.</p>
     <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {courses.map((course) => <CourseCard course={course} />)}
     </div>
-    {courses.length === 0 && <p class="mt-4 text-stone-600">Ingen kurser i demo-data for denne udbyder endnu.</p>}
+    {courses.length === 0 && <p class="mt-4 text-stone-600">Ingen kurser i kataloget for denne udbyder endnu.</p>}
 
     <div class="mt-14">
       <SoftCTA campaign="provider" />

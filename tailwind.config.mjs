@@ -33,8 +33,8 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['"Source Serif 4"', 'Georgia', 'Cambria', 'serif'],
-        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        serif: ['Georgia', 'Cambria', '"Times New Roman"', 'serif'],
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
       },
       maxWidth: {
         prose: '68ch',

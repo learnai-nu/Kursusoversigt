@@ -32,10 +32,9 @@ const crumbs = breadcrumbJsonLd([
     itemListJsonLd(
       'AI-kurser i Danmark',
       '/ai-kurser',
-      courses.slice(0, 50).map((c) => ({
+      courses.slice(0, 24).map((c) => ({
         name: c.title,
         path: `/ai-kurser/${c.slug}`,
-        description: c.description,
       }))
     ),
   ]}

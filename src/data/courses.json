@@ -19,7 +19,7 @@
       "strategi"
     ],
     "source_url": "https://itu.dk/Efteruddannelse",
-    "last_verified": "2026-08-15",
+    "last_verified": "2026-09-09",
     "provider_name": "IT-Universitetet i København",
     "provider_short": "ITU"
   },
@@ -43,7 +43,7 @@
       "data"
     ],
     "source_url": "https://itu.dk/Efteruddannelse",
-    "last_verified": "2026-08-15",
+    "last_verified": "2026-09-09",
     "provider_name": "IT-Universitetet i København",
     "provider_short": "ITU"
   },
@@ -67,7 +67,7 @@
       "rag"
     ],
     "source_url": "https://www.teknologisk.dk",
-    "last_verified": "2026-08-20",
+    "last_verified": "2026-09-09",
     "provider_name": "Teknologisk Institut",
     "provider_short": "TI"
   },
@@ -91,7 +91,7 @@
       "roi"
     ],
     "source_url": "https://www.teknologisk.dk",
-    "last_verified": "2026-08-20",
+    "last_verified": "2026-09-09",
     "provider_name": "Teknologisk Institut",
     "provider_short": "TI"
   },
@@ -115,7 +115,7 @@
       "edge"
     ],
     "source_url": "https://www.teknologisk.dk",
-    "last_verified": "2026-08-12",
+    "last_verified": "2026-09-09",
     "provider_name": "Teknologisk Institut",
     "provider_short": "TI"
   },
@@ -139,7 +139,7 @@
       "python"
     ],
     "source_url": "https://www.dtu.dk",
-    "last_verified": "2026-08-10",
+    "last_verified": "2026-09-09",
     "provider_name": "Danmarks Tekniske Universitet",
     "provider_short": "DTU"
   },
@@ -163,7 +163,7 @@
       "governance"
     ],
     "source_url": "https://www.dtu.dk",
-    "last_verified": "2026-08-10",
+    "last_verified": "2026-09-09",
     "provider_name": "Danmarks Tekniske Universitet",
     "provider_short": "DTU"
   },
@@ -187,7 +187,7 @@
       "ai"
     ],
     "source_url": "https://www.ku.dk",
-    "last_verified": "2026-08-18",
+    "last_verified": "2026-09-09",
     "provider_name": "Københavns Universitet",
     "provider_short": "KU"
   },
@@ -211,7 +211,7 @@
       "jura"
     ],
     "source_url": "https://www.ku.dk",
-    "last_verified": "2026-08-18",
+    "last_verified": "2026-09-09",
     "provider_name": "Københavns Universitet",
     "provider_short": "KU"
   },
@@ -235,7 +235,7 @@
       "transformation"
     ],
     "source_url": "https://www.cbs.dk",
-    "last_verified": "2026-08-14",
+    "last_verified": "2026-09-09",
     "provider_name": "Copenhagen Business School",
     "provider_short": "CBS"
   },
@@ -259,7 +259,7 @@
       "content"
     ],
     "source_url": "https://www.cbs.dk",
-    "last_verified": "2026-08-14",
+    "last_verified": "2026-09-09",
     "provider_name": "Copenhagen Business School",
     "provider_short": "CBS"
   },
@@ -283,7 +283,7 @@
       "dansk"
     ],
     "source_url": "https://www.au.dk",
-    "last_verified": "2026-08-11",
+    "last_verified": "2026-09-09",
     "provider_name": "Aarhus Universitet",
     "provider_short": "AU"
   },
@@ -307,7 +307,7 @@
       "regulering"
     ],
     "source_url": "https://www.au.dk",
-    "last_verified": "2026-08-11",
+    "last_verified": "2026-09-09",
     "provider_name": "Aarhus Universitet",
     "provider_short": "AU"
   },
@@ -331,7 +331,7 @@
       "produktion"
     ],
     "source_url": "https://www.aau.dk",
-    "last_verified": "2026-08-09",
+    "last_verified": "2026-09-09",
     "provider_name": "Aalborg Universitet",
     "provider_short": "AAU"
   },
@@ -355,7 +355,7 @@
       "industri"
     ],
     "source_url": "https://www.aau.dk",
-    "last_verified": "2026-08-09",
+    "last_verified": "2026-09-09",
     "provider_name": "Aalborg Universitet",
     "provider_short": "AAU"
   },
@@ -379,7 +379,7 @@
       "organisation"
     ],
     "source_url": "https://www.sdu.dk",
-    "last_verified": "2026-08-16",
+    "last_verified": "2026-09-09",
     "provider_name": "Syddansk Universitet",
     "provider_short": "SDU"
   },
@@ -403,7 +403,7 @@
       "ansvar"
     ],
     "source_url": "https://www.sdu.dk",
-    "last_verified": "2026-08-16",
+    "last_verified": "2026-09-09",
     "provider_name": "Syddansk Universitet",
     "provider_short": "SDU"
   },
@@ -427,7 +427,7 @@
       "produktivitet"
     ],
     "source_url": "https://kea.dk",
-    "last_verified": "2026-08-21",
+    "last_verified": "2026-09-09",
     "provider_name": "Københavns Erhvervsakademi",
     "provider_short": "KEA"
   },
@@ -451,7 +451,7 @@
       "mvp"
     ],
     "source_url": "https://kea.dk",
-    "last_verified": "2026-08-21",
+    "last_verified": "2026-09-09",
     "provider_name": "Københavns Erhvervsakademi",
     "provider_short": "KEA"
   },
@@ -475,7 +475,7 @@
       "forandring"
     ],
     "source_url": "https://eadania.dk",
-    "last_verified": "2026-08-13",
+    "last_verified": "2026-09-09",
     "provider_name": "Erhvervsakademi Dania",
     "provider_short": "Dania"
   },
@@ -499,7 +499,7 @@
       "produktivitet"
     ],
     "source_url": "https://eadania.dk",
-    "last_verified": "2026-08-13",
+    "last_verified": "2026-09-09",
     "provider_name": "Erhvervsakademi Dania",
     "provider_short": "Dania"
   },
@@ -523,7 +523,7 @@
       "use-cases"
     ],
     "source_url": "https://learnai.nu",
-    "last_verified": "2026-08-25",
+    "last_verified": "2026-09-09",
     "provider_name": "LearnAI",
     "provider_short": "LearnAI"
   },
@@ -547,7 +547,7 @@
       "risici"
     ],
     "source_url": "https://learnai.nu",
-    "last_verified": "2026-08-25",
+    "last_verified": "2026-09-09",
     "provider_name": "LearnAI",
     "provider_short": "LearnAI"
   },
@@ -571,7 +571,7 @@
       "data"
     ],
     "source_url": "https://ida.dk",
-    "last_verified": "2026-08-17",
+    "last_verified": "2026-09-09",
     "provider_name": "IDA Learning",
     "provider_short": "IDA"
   },
@@ -595,7 +595,7 @@
       "udvikling"
     ],
     "source_url": "https://ida.dk",
-    "last_verified": "2026-08-17",
+    "last_verified": "2026-09-09",
     "provider_name": "IDA Learning",
     "provider_short": "IDA"
   },
@@ -619,7 +619,7 @@
       "monitoring"
     ],
     "source_url": "https://www.dtu.dk",
-    "last_verified": "2026-08-10",
+    "last_verified": "2026-09-09",
     "provider_name": "Danmarks Tekniske Universitet",
     "provider_short": "DTU"
   },
@@ -643,7 +643,7 @@
       "predictive"
     ],
     "source_url": "https://www.teknologisk.dk",
-    "last_verified": "2026-08-20",
+    "last_verified": "2026-09-09",
     "provider_name": "Teknologisk Institut",
     "provider_short": "TI"
   },
@@ -667,7 +667,7 @@
       "samfund"
     ],
     "source_url": "https://www.ku.dk",
-    "last_verified": "2026-08-18",
+    "last_verified": "2026-09-09",
     "provider_name": "Københavns Universitet",
     "provider_short": "KU"
   },
@@ -691,7 +691,7 @@
       "risiko"
     ],
     "source_url": "https://www.cbs.dk",
-    "last_verified": "2026-08-14",
+    "last_verified": "2026-09-09",
     "provider_name": "Copenhagen Business School",
     "provider_short": "CBS"
   },
@@ -715,7 +715,7 @@
       "algoritmer"
     ],
     "source_url": "https://www.au.dk",
-    "last_verified": "2026-08-11",
+    "last_verified": "2026-09-09",
     "provider_name": "Aarhus Universitet",
     "provider_short": "AU"
   },
@@ -740,7 +740,7 @@
       "generativ-ai"
     ],
     "source_url": "https://www.ai-savvy.dk/kurser",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "ai-savvy",
     "provider_short": "ai-savvy"
   },
@@ -765,7 +765,7 @@
       "strategi"
     ],
     "source_url": "https://www.ai-savvy.dk/kurser",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "ai-savvy",
     "provider_short": "ai-savvy"
   },
@@ -790,7 +790,7 @@
       "gdpr"
     ],
     "source_url": "https://mediernesefteruddannelse.dk/kurser/kickstart-chatgpt-fra-ideer-til-resultater-med-ai-kbh/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Promptly",
     "provider_short": "Promptly"
   },
@@ -814,7 +814,7 @@
       "produktivitet"
     ],
     "source_url": "https://mediernesefteruddannelse.dk/kurser/avanceret-chatgpt-naeste-niveau-for-erfarne-brugere-kbh/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Promptly",
     "provider_short": "Promptly"
   },
@@ -839,7 +839,7 @@
       "no-code"
     ],
     "source_url": "https://promptly.dk/kurser/ai-masterclass-kursus",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Promptly",
     "provider_short": "Promptly"
   },
@@ -863,7 +863,7 @@
       "produktivitet"
     ],
     "source_url": "https://montus.dk/produkt/ai-kursus-chatgpt-copilot/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Montus Business Academy",
     "provider_short": "Montus"
   },
@@ -888,7 +888,7 @@
       "kommunikation"
     ],
     "source_url": "https://kurser.ibc.dk/ai-kursus",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "IBC International Business College",
     "provider_short": "IBC"
   },
@@ -912,7 +912,7 @@
       "virksomhed"
     ],
     "source_url": "https://ida.dk/arrangementer-og-kurser/kurser/ai-kunstig-intelligens/ai-i-virksomheden-teknologi-sikkerhed-og-implementering",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "IDA Learning",
     "provider_short": "IDA"
   },
@@ -936,7 +936,7 @@
       "forretning"
     ],
     "source_url": "https://www.teknologisk.dk/kurser/kom-godt-i-gang-med-ai-forstaa-potentialer-og-skab-vaerdi/k91720",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Teknologisk Institut",
     "provider_short": "TI"
   },
@@ -960,7 +960,7 @@
       "forretning"
     ],
     "source_url": "https://www.teknologisk.dk/kurser/strategi-for-ai-vaerdiskabende-brug-af-kunstig-intelligens-i-forretningen/k91626",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Teknologisk Institut",
     "provider_short": "TI"
   },
@@ -984,7 +984,7 @@
       "strategi"
     ],
     "source_url": "https://www.teknologisk.dk/kurser/ai-academy-firmakursus/k91749",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Teknologisk Institut",
     "provider_short": "TI"
   },
@@ -1008,7 +1008,7 @@
       "chatgpt"
     ],
     "source_url": "https://www.ek.dk/efteruddannelse/akademiuddannelsen-i-informationsteknologi/anvendelse-af-kunstig-intelligens",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Erhvervsakademi København",
     "provider_short": "EK"
   },
@@ -1032,7 +1032,7 @@
       "generativ-ai"
     ],
     "source_url": "https://iba.dk/efteruddannelser/akademiuddannelser/akademi-informationsteknologi/anvendelse-af-kunstig-intelligens-ai/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "IBA Erhvervsakademi Kolding",
     "provider_short": "IBA"
   },
@@ -1056,7 +1056,7 @@
       "hybrid"
     ],
     "source_url": "https://efteruddannelse.eamv.dk/efteruddannelser/kommunikation-og-formidling/ai-i-praksis",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Erhvervsakademi MidtVest",
     "provider_short": "EAMV"
   },
@@ -1080,7 +1080,7 @@
       "ledelse"
     ],
     "source_url": "https://arosbusinessacademy.dk/kursus/artificial-intelligence/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Aros Business Academy",
     "provider_short": "Aros"
   },
@@ -1103,7 +1103,7 @@
       "custom-gpt"
     ],
     "source_url": "https://digitalforlomme.dk/ai-kurser/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },
@@ -1126,7 +1126,7 @@
       "microsoft-365"
     ],
     "source_url": "https://digitalforlomme.dk/copilot-kursus/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },
@@ -1149,7 +1149,7 @@
       "dokumenter"
     ],
     "source_url": "https://digitalforlomme.dk/ai-kurser-aarhus/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },
@@ -1172,7 +1172,7 @@
       "google-workspace"
     ],
     "source_url": "https://digitalforlomme.dk/ai-kurser/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },
@@ -1196,7 +1196,7 @@
       "chatgpt"
     ],
     "source_url": "https://www.kursusfabrikken.dk/ai-master/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Kursusfabrikken",
     "provider_short": "Kursusfabrikken"
   },
@@ -1220,7 +1220,7 @@
       "prompting"
     ],
     "source_url": "https://academy.claude.com",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Claude Academy (Anthropic)",
     "provider_short": "Claude Academy"
   },
@@ -1244,7 +1244,7 @@
       "fundament"
     ],
     "source_url": "https://academy.claude.com",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Claude Academy (Anthropic)",
     "provider_short": "Claude Academy"
   },
@@ -1268,7 +1268,7 @@
       "claude"
     ],
     "source_url": "https://academy.claude.com",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Claude Academy (Anthropic)",
     "provider_short": "Claude Academy"
   },
@@ -1292,7 +1292,7 @@
       "fundament"
     ],
     "source_url": "https://academy.openai.com/pages/courses",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "OpenAI Academy",
     "provider_short": "OpenAI Academy"
   },
@@ -1316,7 +1316,7 @@
       "openai"
     ],
     "source_url": "https://academy.openai.com/pages/courses",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "OpenAI Academy",
     "provider_short": "OpenAI Academy"
   },
@@ -1340,7 +1340,7 @@
       "openai"
     ],
     "source_url": "https://academy.openai.com/pages/courses",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "OpenAI Academy",
     "provider_short": "OpenAI Academy"
   },
@@ -1364,7 +1364,7 @@
       "fundament"
     ],
     "source_url": "https://ai.google/learn-ai-skills/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Google Learn AI Skills",
     "provider_short": "Google AI"
   },
@@ -1388,7 +1388,7 @@
       "essentials"
     ],
     "source_url": "https://ai.google/learn-ai-skills/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Google Learn AI Skills",
     "provider_short": "Google AI"
   },
@@ -1411,7 +1411,7 @@
       "google-workspace"
     ],
     "source_url": "https://ai.google/learn-ai-skills/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Google Learn AI Skills",
     "provider_short": "Google AI"
   },
@@ -1435,7 +1435,7 @@
       "ai-fluency"
     ],
     "source_url": "https://ai.google/learn-ai-skills/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Google Learn AI Skills",
     "provider_short": "Google AI"
   },
@@ -1459,7 +1459,7 @@
       "google-cloud"
     ],
     "source_url": "https://ai.google/learn-ai-skills/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Google Learn AI Skills",
     "provider_short": "Google AI"
   },
@@ -1483,7 +1483,7 @@
       "google"
     ],
     "source_url": "https://ai.google/learn-ai-skills/",
-    "last_verified": "2026-09-05",
+    "last_verified": "2026-09-09",
     "provider_name": "Google Learn AI Skills",
     "provider_short": "Google AI"
   }

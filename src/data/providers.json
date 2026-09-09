@@ -5,7 +5,7 @@
     "short": "ITU",
     "website": "https://itu.dk",
     "city": "København",
-    "description": "Danmarks IT-universitet med forskning og efteruddannelse inden for digitalisering og AI."
+    "description": "Danmarks IT-universitet med forskning og efteruddannelse inden for digitalisering og AI. ITU Efteruddannelse henvender sig til ledere og specialister, der vil forstå digitalisering og generativ AI uden at blive softwareudviklere. I kataloget finder du typisk leder- og ML-introduktioner med akademisk tyngde."
   },
   {
     "slug": "teknologisk-institut",
@@ -13,7 +13,7 @@
     "short": "TI",
     "website": "https://www.teknologisk.dk",
     "city": "Taastrup",
-    "description": "Praksisnær efteruddannelse og rådgivning inden for teknologi, innovation og AI."
+    "description": "Praksisnær efteruddannelse og rådgivning inden for teknologi, innovation og AI. Teknologisk Institut er stærk på praksisnære forløb for virksomheder: generativ AI, projektledelse, strategi og branchespecifikke spor. Godt match når I vil fra pilot til drift."
   },
   {
     "slug": "dtu",
@@ -21,7 +21,7 @@
     "short": "DTU",
     "website": "https://www.dtu.dk",
     "city": "Lyngby",
-    "description": "Teknisk universitet med stærke tilbud inden for maskinlæring, data og AI-systemer."
+    "description": "Teknisk universitet med stærke tilbud inden for maskinlæring, data og AI-systemer. DTU’s AI-tilbud er teknisk tunge — deep learning, MLOps og ansvarlig AI. Vælg DTU, når deltagerne har teknisk ballast og skal bygge eller drive modeller."
   },
   {
     "slug": "ku",
@@ -29,7 +29,7 @@
     "short": "KU",
     "website": "https://www.ku.dk",
     "city": "København",
-    "description": "Bredt universitet med AI-relaterede kurser inden for data science, jura og samfund."
+    "description": "Bredt universitet med AI-relaterede kurser inden for data science, jura og samfund. Københavns Universitet dækker AI fra data science til jura og kritiske perspektiver på sprogmodeller. Relevant for både analytikere og dem, der arbejder med regulering."
   },
   {
     "slug": "cbs",
@@ -37,7 +37,7 @@
     "short": "CBS",
     "website": "https://www.cbs.dk",
     "city": "København",
-    "description": "Erhvervsorienterede kurser i AI-strategi, ledelse og transformation."
+    "description": "Erhvervsorienterede kurser i AI-strategi, ledelse og transformation. CBS fokuserer på forretning, strategi, marketing og governance. Kurserne passer til ledere og bestyrelser, der skal træffe beslutninger om AI — ikke kode dem."
   },
   {
     "slug": "au",
@@ -45,7 +45,7 @@
     "short": "AU",
     "website": "https://www.au.dk",
     "city": "Aarhus",
-    "description": "Forskningstunge AI-kurser og efteruddannelse i Midtjylland."
+    "description": "Forskningstunge AI-kurser og efteruddannelse i Midtjylland. Aarhus Universitet byder på tekniske og domænespecifikke spor, bl.a. NLP og sundhed. Typisk for deltagere med faglig dybde inden for data eller domænet."
   },
   {
     "slug": "aau",
@@ -53,7 +53,7 @@
     "short": "AAU",
     "website": "https://www.aau.dk",
     "city": "Aalborg",
-    "description": "Problembaseret læring med fokus på anvendt AI og software."
+    "description": "Problembaseret læring med fokus på anvendt AI og software. Aalborg Universitet er kendt for anvendt ML og robotik. Forløbene er ofte tekniske og rettet mod specialister i produktion og automation."
   },
   {
     "slug": "sdu",
@@ -61,7 +61,7 @@
     "short": "SDU",
     "website": "https://www.sdu.dk",
     "city": "Odense",
-    "description": "AI og data science-kurser med regional forankring i Syddanmark."
+    "description": "AI og data science-kurser med regional forankring i Syddanmark. Syddansk Universitet kombinerer AI-fundamentals med dataetik. Et godt sted at starte, hvis organisationen både skal forstå værktøjerne og de etiske rammer."
   },
   {
     "slug": "kea",
@@ -69,7 +69,7 @@
     "short": "KEA",
     "website": "https://kea.dk",
     "city": "København",
-    "description": "Praksisnære akademiuddannelser og kurser i digital produktudvikling og AI."
+    "description": "Praksisnære akademiuddannelser og kurser i digital produktudvikling og AI. KEA’s AI-kurser er praktiske og produktnære — prompt engineering og AI i produktudvikling. Velegnet til designere, produktfolk og praktikere i København."
   },
   {
     "slug": "dania",
@@ -77,7 +77,7 @@
     "short": "Dania",
     "website": "https://eadania.dk",
     "city": "Randers",
-    "description": "Efteruddannelse i digitalisering og AI for virksomheder i Jylland."
+    "description": "Efteruddannelse i digitalisering og AI for virksomheder i Jylland. Erhvervsakademi Dania tilbyder tilgængelige forløb i ChatGPT på kontoret og digital transformation. Ofte et pragmatisk første skridt for administration og SMV-ledelse."
   },
   {
     "slug": "learnai",
@@ -85,7 +85,7 @@
     "short": "LearnAI",
     "website": "https://learnai.nu",
     "city": "Online / DK",
-    "description": "Praksisnære AI-kurser for teams og ledere med fokus på anvendelse i dansk kontekst."
+    "description": "Praksisnære AI-kurser for teams og ledere med fokus på anvendelse i dansk kontekst. LearnAI leverer praksisnære leder- og teamforløb i dansk kontekst. Fokus er kompetenceplan, sparring og overførsel til arbejdspladsen — ikke et generisk værktøjskursus alene."
   },
   {
     "slug": "ida",
@@ -93,7 +93,7 @@
     "short": "IDA",
     "website": "https://ida.dk",
     "city": "København",
-    "description": "Efteruddannelse for ingeniører og tekniske specialister, inkl. AI-temaer."
+    "description": "Efteruddannelse for ingeniører og tekniske specialister, inkl. AI-temaer. IDA Learning retter sig mod ingeniører og tekniske specialister: AI i virksomheden, Python og LLM-integration. Godt, når I skal kombinere teknologi, sikkerhed og implementering."
   },
   {
     "slug": "ai-savvy",
@@ -101,7 +101,7 @@
     "short": "ai-savvy",
     "website": "https://www.ai-savvy.dk",
     "city": "Lyngby / Aarhus / online",
-    "description": "Dansk uddannelseshus med hands-on kurser i generativ AI for professionelle og virksomheder, drevet af David Guldager."
+    "description": "Dansk uddannelseshus med hands-on kurser i generativ AI for professionelle og virksomheder, drevet af David Guldager. ai-savvy kører kompakte Boost- og Masterclass-forløb i ChatGPT/Claude med fokus på prompts, assistenter og workflows. Typisk intensive dage for professionelle brugere."
   },
   {
     "slug": "promptly",
@@ -109,7 +109,7 @@
     "short": "Promptly",
     "website": "https://promptly.dk",
     "city": "København / Odense / Aarhus",
-    "description": "Praksisnære AI-kurser i ChatGPT, Copilot og agenter, ofte udbudt via Mediernes Efteruddannelse."
+    "description": "Praksisnære AI-kurser i ChatGPT, Copilot og agenter, ofte udbudt via Mediernes Efteruddannelse. Promptly udbyder grundkurser, avanceret ChatGPT og agent-masterclasses, ofte via Mediernes Efteruddannelse. Stærkt valg til kommunikatører og kontorprofessionelle."
   },
   {
     "slug": "mediernes-efteruddannelse",
@@ -117,7 +117,7 @@
     "short": "ME",
     "website": "https://mediernesefteruddannelse.dk",
     "city": "København",
-    "description": "Brancheefteruddannelse for medie- og kommunikationsfolk med AI-kurser og PU-støtte."
+    "description": "Brancheefteruddannelse for medie- og kommunikationsfolk med AI-kurser og PU-støtte. Mediernes Efteruddannelse formidler AI-kurser til medie- og kommunikationsbranchen, ofte i samarbejde med specialiserede undervisere. Praktisk fokus, brancheforståelse."
   },
   {
     "slug": "montus",
@@ -125,7 +125,7 @@
     "short": "Montus",
     "website": "https://montus.dk",
     "city": "København / Aarhus",
-    "description": "Erhvervsakademi med praktiske AI-kurser i ChatGPT, Copilot og ledelse."
+    "description": "Erhvervsakademi med praktiske AI-kurser i ChatGPT, Copilot og ledelse. Montus Business Academy underviser i AI i arbejdsdagen med ChatGPT, Copilot og flere værktøjer. Passer til teams, der vil have værktøjerne ind i hverdagsopgaver."
   },
   {
     "slug": "ibc",
@@ -133,7 +133,7 @@
     "short": "IBC",
     "website": "https://kurser.ibc.dk",
     "city": "Kolding",
-    "description": "Erhvervsrettet efteruddannelse inkl. praktiske AI-kurser for fagprofessionelle."
+    "description": "Erhvervsrettet efteruddannelse inkl. praktiske AI-kurser for fagprofessionelle. IBC i Kolding tilbyder grundlæggende AI-kurser for fagprofessionelle inden for kommunikation, projektledelse og administration. Regionalt forankret og praksisorienteret."
   },
   {
     "slug": "ek",
@@ -141,7 +141,7 @@
     "short": "EK",
     "website": "https://www.ek.dk",
     "city": "København",
-    "description": "Akademiuddannelser og enkeltfag, inkl. Anvendelse af kunstig intelligens (10 ECTS)."
+    "description": "Akademiuddannelser og enkeltfag, inkl. Anvendelse af kunstig intelligens (10 ECTS). Erhvervsakademi København har akademifag om anvendelse af AI (ECTS). Relevant, hvis I vil have formel efteruddannelse — ikke kun en workshop."
   },
   {
     "slug": "iba",
@@ -149,7 +149,7 @@
     "short": "IBA",
     "website": "https://iba.dk",
     "city": "Kolding",
-    "description": "Akademiuddannelser med AI-fag på Informationsteknologi."
+    "description": "Akademiuddannelser med AI-fag på Informationsteknologi. IBA Kolding udbyder akademifag i generativ AI med metode, etik og kritisk vurdering. Godt for dem, der vil merit og dybde frem for et enkelt værktøjsfokus."
   },
   {
     "slug": "eamv",
@@ -157,7 +157,7 @@
     "short": "EAMV",
     "website": "https://efteruddannelse.eamv.dk",
     "city": "Kolding / Midtjylland",
-    "description": "Efteruddannelse med AI i praksis og akademimoduler."
+    "description": "Efteruddannelse med AI i praksis og akademimoduler. Erhvervsakademi MidtVest har hybridmoduler i AI i praksis. Henvender sig til professionelle i Midtjylland/Kolding, der skal integrere AI i egen rolle."
   },
   {
     "slug": "aros",
@@ -165,7 +165,7 @@
     "short": "Aros",
     "website": "https://arosbusinessacademy.dk",
     "city": "København / Aarhus",
-    "description": "Efteruddannelse og Mini MBA-forløb for ledere, inkl. Mini MBA i Artificial Intelligence."
+    "description": "Efteruddannelse og Mini MBA-forløb for ledere, inkl. Mini MBA i Artificial Intelligence. Aros Business Academy er kendt for Mini MBA i AI — et længere executive-forløb i strategi, generativ AI og governance. Til ledere, der vil investere flere måneder."
   },
   {
     "slug": "digital-forlomme",
@@ -173,7 +173,7 @@
     "short": "Digital Forlomme",
     "website": "https://digitalforlomme.dk",
     "city": "København / Aarhus / Odense",
-    "description": "Hands-on 1-dags AI-kurser i ChatGPT, Claude, Gemini og Microsoft Copilot."
+    "description": "Hands-on 1-dags AI-kurser i ChatGPT, Claude, Gemini og Microsoft Copilot. Digital Forlomme kører små hold (max 8) i ChatGPT, Claude, Gemini og Copilot. Intensive 1-dags kurser i København, Aarhus og Odense med høj hands-on-andel."
   },
   {
     "slug": "kursusfabrikken",
@@ -181,7 +181,7 @@
     "short": "Kursusfabrikken",
     "website": "https://www.kursusfabrikken.dk",
     "city": "København / Aarhus",
-    "description": "Praksisnære AI-forløb med fokus på prompts, assistenter og værdi i organisationen."
+    "description": "Praksisnære AI-forløb med fokus på prompts, assistenter og værdi i organisationen. Kursusfabrikken tilbyder længere AI Master-forløb på tværs af ChatGPT, Copilot og Claude. Passer til dem, der vil bygge assistenter og workflows over flere dage."
   },
   {
     "slug": "claude-academy",
@@ -189,7 +189,7 @@
     "short": "Claude Academy",
     "website": "https://academy.claude.com",
     "city": "Online (global)",
-    "description": "Anthropics officielle læringsakademi med kurser i AI Fluency, Claude-værktøjer og menneske–agent-samarbejde."
+    "description": "Anthropics officielle læringsakademi med kurser i AI Fluency, Claude-værktøjer og menneske–agent-samarbejde. Claude Academy er Anthropics globale, ofte self-paced akademi i AI fluency og menneske–agent-samarbejde. Engelsk online-indhold — ikke et dansk hold med lokal underviser."
   },
   {
     "slug": "openai-academy",
@@ -197,7 +197,7 @@
     "short": "OpenAI Academy",
     "website": "https://academy.openai.com/pages/courses",
     "city": "Online (global)",
-    "description": "OpenAIs officielle kursuspathway for AI Foundations, Applied AI og Agents and Workflows med completion certificates."
+    "description": "OpenAIs officielle kursuspathway for AI Foundations, Applied AI og Agents and Workflows med completion certificates. OpenAI Academy er OpenAIs officielle pathway fra AI Foundations til Agents and Workflows. Globalt og self-paced; stærkt produktfokus, begrænset dansk kontekst."
   },
   {
     "slug": "google-ai-skills",
@@ -205,6 +205,6 @@
     "short": "Google AI",
     "website": "https://ai.google/learn-ai-skills/",
     "city": "Online (global)",
-    "description": "Googles AI-skills hub med generative AI, Gemini, Workspace-power-ups og professionelle certifikater."
+    "description": "Googles AI-skills hub med generative AI, Gemini, Workspace-power-ups og professionelle certifikater. Google Learn AI Skills samler intros, Workspace-power-ups, certifikater og agent-kurser omkring Gemini og Google Cloud. Primært online/global, ofte gratis eller self-paced."
   }
 ]
