@@ -3,8 +3,15 @@ export const prerender = true;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
+import ArticleToc from '../../components/ArticleToc.astro';
 import { getCollection } from 'astro:content';
 import { articleJsonLd, breadcrumbJsonLd, personJsonLd, JESPER_AUTHOR_NAME, JESPER_AUTHOR_PATH, authorSlug } from '../../lib/seo';
+import {
+  buildToc,
+  formatArticleDate,
+  hasDistinctUpdatedDate,
+  readingTimeMinutes,
+} from '../../lib/article';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -15,10 +22,14 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props;
-const { Content } = await article.render();
-const formatted = article.data.pubDate.toLocaleDateString('da-DK', {
-  year: 'numeric', month: 'long', day: 'numeric',
-});
+const { Content, headings } = await article.render();
+const formatted = formatArticleDate(article.data.pubDate);
+const showUpdated = hasDistinctUpdatedDate(article.data.pubDate, article.data.updatedDate);
+const updatedFormatted = showUpdated && article.data.updatedDate
+  ? formatArticleDate(article.data.updatedDate)
+  : null;
+const minutes = readingTimeMinutes(article.body);
+const toc = buildToc(headings);
 const authorName = article.data.author;
 const authorHref =
   authorSlug(authorName) === 'jesper-gunris-schneider' || authorName === JESPER_AUTHOR_NAME
@@ -61,9 +72,15 @@ const crumbs = breadcrumbJsonLd([
         ) : (
           authorName
         )}
+        {' · '}
+        <span>{minutes} min. læsning</span>
       </p>
+      {updatedFormatted && (
+        <p class="mt-1 text-sm text-stone-500">Opdateret {updatedFormatted}</p>
+      )}
       <h1 class="mt-2 text-4xl sm:text-5xl">{article.data.title}</h1>
       <p class="mt-4 text-lg text-stone-600">{article.data.description}</p>
+      <ArticleToc headings={toc} />
       <div class="prose-da mt-10">
         <Content />
       </div>

@@ -33,6 +33,9 @@
   .prose-da h3 {
     @apply mt-8 mb-2 text-xl text-paper-ink;
   }
+  .prose-da :is(h2, h3)[id] {
+    scroll-margin-top: 5.5rem;
+  }
   .prose-da p {
     @apply mb-4;
   }
