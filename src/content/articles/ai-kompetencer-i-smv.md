@@ -1,6 +1,6 @@
 ---
 title: "AI-kompetencer i danske SMV’er"
-description: "Små og mellemstore virksomheder behøver ikke et research-lab — men de har brug for struktureret læring."
+description: "Små og mellemstore virksomheder behøver ikke et forskningsafdeling — men de har brug for struktureret læring."
 pubDate: 2026-08-10
 author: "Anders Holm"
 tags: ["smv", "kompetencer", "transformation"]
@@ -16,7 +16,7 @@ I SMV’er er AI ofte allerede i mailen, regnearket og kundeservice — uformelt
 ## Et realistisk kompetenceløft starter småt
 
 1. Fælles sprog (hvad er AI / hvad er det ikke?)
-2. 2–3 use cases med tydelig ejer
+2. 2–3 brugssituationer med tydelig ejer
 3. Simpel policy for data og kvalitet
 4. Ét kursusforløb + intern opfølgning
 

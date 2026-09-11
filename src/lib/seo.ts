@@ -1,5 +1,5 @@
 export const SITE_NAME = 'Kursusoversigt';
-export const SITE_TAGLINE = 'AI-kurser i Danmark — overblik uden støj';
+export const SITE_TAGLINE = 'AI-kurser i Danmark — overblik uden gætterier';
 export const DEFAULT_DESCRIPTION =
   'Uafhængigt overblik over AI-kurser i Danmark. Filtrer efter niveau, format og udbyder — og find det næste skridt med LearnAI.';
 

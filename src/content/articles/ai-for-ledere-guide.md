@@ -12,7 +12,7 @@ sources:
     url: https://learnai.nu
 ---
 
-Du behøver ikke træne neurale netværk som leder. Du skal kunne **prioritere use cases, styre risici og skabe læringsrum**. Et godt lederkursus kombinerer overblik, cases og konkrete beslutningsværktøjer.
+Du behøver ikke træne neurale netværk som leder. Du skal kunne **prioritere anvendelser, styre risici og skabe læringsrum**. Et godt lederkursus kombinerer overblik, cases og konkrete beslutningsværktøjer.
 
 ## Fem emner der bør være med
 

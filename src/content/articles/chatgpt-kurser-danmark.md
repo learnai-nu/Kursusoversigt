@@ -46,15 +46,15 @@ Se også det fulde katalog under [AI-kurser](/ai-kurser) og filtrer på praktisk
 
 ## OpenAI Academy vs. dansk kursus
 
-[OpenAI Academy — AI Foundations](/ai-kurser/openai-academy-ai-foundations) (og de øvrige Academy-forløb) er **globale, ofte self-paced** forløb fra OpenAI. De er stærke til fundament og certificeringslignende completion — men de er ikke et dansk hold med lokal underviser, DK-cases eller virksomhedstilpasning.
+[OpenAI Academy — AI Foundations](/ai-kurser/openai-academy-ai-foundations) (og de øvrige Academy-forløb) er **globale, ofte i eget tempo** forløb fra OpenAI. De giver fundament og certificeringslignende completion — men de er ikke et dansk hold med lokal underviser, DK-cases eller virksomhedstilpasning.
 
 Vælg Academy, når I vil have officielt produktfokus og kan arbejde asynkront. Vælg en dansk udbyder, når I vil have dialog, holddynamik, dansk kontekst eller et skræddersyet teamforløb. Se hele gratis-sporet i [Gratis AI-kurser: Claude, OpenAI og Google](/artikler/gratis-ai-kurser).
 
 ## Sådan vælger du i praksis
 
-1. **Outcome først:** Skal I spare tid i mail, forbedre kundesvar, eller bygge interne guides?
+1. **Resultat først:** Skal I spare tid i mail, forbedre kundesvar, eller bygge interne guides?
 2. **Niveau:** Begynder-workshop vs. avanceret prompting — bland ikke de to på samme hold uden plan.
-3. **Format:** Én dag kan kickstarte; længere forløb (eller [LearnAI team-workshop](/ai-kurser/learnai-team-workshop)) skaber vaner — se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
+3. **Format:** Én dag kan sætte i gang; længere forløb (eller [LearnAI team-workshop](/ai-kurser/learnai-team-workshop)) skaber vaner — se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 4. **Pris og dato:** På Kursusoversigten står ukendte priser som **Ukendt** med vilje. Vi gætter ikke. Tjek altid udbyderens egen side via kilde-URL’en.
 
 Læs også [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen).

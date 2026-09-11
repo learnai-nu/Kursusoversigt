@@ -50,7 +50,7 @@
   {
     "slug": "ti-generativ-ai-i-praksis",
     "title": "Generativ AI i praksis",
-    "description": "Hands-on kursus i prompt design, RAG og sikker brug af generative modeller i virksomheden.",
+    "description": "Praktisk kursus i prompt design, RAG og sikker brug af generative modeller i virksomheden.",
     "provider_slug": "teknologisk-institut",
     "category": "praktisk",
     "level": "begynder",
@@ -290,7 +290,7 @@
   {
     "slug": "au-ai-i-sundhed",
     "title": "AI i sundhedssektoren",
-    "description": "Kliniske use cases, datakvalitet og regulatoriske krav til medicinsk AI.",
+    "description": "Kliniske anvendelser, datakvalitet og regulatoriske krav til medicinsk AI.",
     "provider_slug": "au",
     "category": "brancher",
     "level": "mellemniveau",
@@ -458,7 +458,7 @@
   {
     "slug": "dania-digital-transformation",
     "title": "Digital transformation med AI",
-    "description": "Kortlægning af processer, use case-prioritering og forandringsledelse.",
+    "description": "Kortlægning af processer, prioritering af brugssituationer og forandringsledelse.",
     "provider_slug": "dania",
     "category": "ledelse",
     "level": "begynder",
@@ -506,7 +506,7 @@
   {
     "slug": "learnai-team-workshop",
     "title": "AI-workshop for teams",
-    "description": "Faciliteret workshop hvor teamet finder og afprøver AI-use cases på egne opgaver.",
+    "description": "Faciliteret workshop hvor teamet finder og afprøver AI-anvendelser på egne opgaver.",
     "provider_slug": "learnai",
     "category": "praktisk",
     "level": "begynder",
@@ -967,7 +967,7 @@
   {
     "slug": "ti-ai-academy-firma",
     "title": "AI Academy (firmakursus)",
-    "description": "Flerdages firmakursus i AI-kompetencer, use cases, data og implementering. Standardformat typisk 4 blokke à 1 dag, tilpasses virksomheden.",
+    "description": "Flerdages firmakursus i AI-kompetencer, anvendelser, data og implementering. Standardformat typisk 4 blokke à 1 dag, tilpasses virksomheden.",
     "provider_slug": "teknologisk-institut",
     "category": "virksomhed",
     "level": "mellemniveau",
@@ -1087,7 +1087,7 @@
   {
     "slug": "digital-forlomme-chatgpt",
     "title": "ChatGPT-kursus (1 dag)",
-    "description": "1-dags hands-on kursus i ChatGPT: Custom GPTs, research og dataanalyse. Max 8 deltagere.",
+    "description": "1-dags praktisk kursus i ChatGPT: Custom GPTs, research og dataanalyse. Max 8 deltagere.",
     "provider_slug": "digital-forlomme",
     "category": "praktisk",
     "level": "begynder",
@@ -1210,7 +1210,7 @@
     "format": "online",
     "location": "Online (global)",
     "price_dkk": null,
-    "price_note": "Se Anthropic Academy (ofte gratis/self-paced)",
+    "price_note": "Se Anthropic Academy (ofte gratis/i eget tempo)",
     "duration": "Ca. 4 timer (14 lessons)",
     "start_date": null,
     "language": "en",
@@ -1299,7 +1299,7 @@
   {
     "slug": "openai-academy-applied-ai",
     "title": "Applied AI Foundations",
-    "description": "Gør en tilbagevendende arbejdsopgave til et gentageligt workflow med ChatGPT, inkl. review-punkter i processen.",
+    "description": "Gør en tilbagevendende arbejdsopgave til et gentageligt workflow med ChatGPT, inkl. tjekpunkter i processen.",
     "provider_slug": "openai-academy",
     "category": "praktisk",
     "level": "mellemniveau",
@@ -1418,7 +1418,7 @@
   {
     "slug": "google-ai-professional-certificate",
     "title": "Google AI Professional Certificate",
-    "description": "Professionelt certifikat med 20+ hands-on aktiviteter for at bygge AI-fluency ud over basics. Kan inkludere Google AI Pro-tilbud (se vilkår).",
+    "description": "Professionelt certifikat med 20+ praktiske aktiviteter for at bygge AI-færdighed ud over grundlag. Kan inkludere Google AI Pro-tilbud (se vilkår).",
     "provider_slug": "google-ai-skills",
     "category": "praktisk",
     "level": "mellemniveau",
@@ -1466,7 +1466,7 @@
   {
     "slug": "google-build-ai-agents",
     "title": "Build AI Agents with Google",
-    "description": "Hands-on træning i at bygge og skalere AI-agenter med Google Skills / Gemini Enterprise Agent Ready (GEAR).",
+    "description": "Praktisk træning i at bygge og skalere AI-agenter med Google Skills / Gemini Enterprise Agent Ready (GEAR).",
     "provider_slug": "google-ai-skills",
     "category": "teknisk",
     "level": "avanceret",

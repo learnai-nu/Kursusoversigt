@@ -15,7 +15,7 @@ Danske AI-kurser falder groft i to spor: **praktiske anvendelseskurser** og **te
 
 ## Praktisk spor: brug og beslutning
 
-Her lærer du at bruge værktøjer, designe prompts, finde use cases og styre projekter. Eksempler: [Generativ AI i praksis](/ai-kurser/ti-generativ-ai-i-praksis), [Marketing med AI](/ai-kurser/cbs-marketing-med-ai), [Digital transformation med AI](/ai-kurser/dania-digital-transformation).
+Her lærer du at bruge værktøjer, designe prompts, finde brugssituationer og styre projekter. Eksempler: [Generativ AI i praksis](/ai-kurser/ti-generativ-ai-i-praksis), [Marketing med AI](/ai-kurser/cbs-marketing-med-ai), [Digital transformation med AI](/ai-kurser/dania-digital-transformation).
 
 ## Teknisk spor: modeller og infrastruktur
 

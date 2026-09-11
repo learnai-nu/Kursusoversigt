@@ -1,6 +1,6 @@
 ---
 title: "Gratis AI-kurser: Claude, OpenAI og Google"
-description: "Hvilke gratis og self-paced AI-kurser kan du tage online via Claude Academy, OpenAI Academy og Google Learn AI Skills — og hvornår er et dansk hold bedre?"
+description: "Hvilke gratis AI-kurser i eget tempo kan du tage online via Claude Academy, OpenAI Academy og Google Learn AI Skills — og hvornår er et dansk hold bedre?"
 pubDate: 2026-09-09
 author: "Mette Ravn"
 tags: ["gratis", "online", "openai", "claude", "google"]
@@ -13,7 +13,7 @@ sources:
     url: https://ai.google/learn-ai-skills/
 ---
 
-“Gratis AI-kursus” betyder ofte **self-paced materiale fra de store model-leverandører** — ikke et dansk hold med underviser. Det kan stadig være nyttigt: du får produktnært indhold, engelsk fagterminologi og et fundament, før I investerer i workshops. Her er en oversigt over det, vi har i kataloget fra Claude Academy, OpenAI Academy og Google Learn AI Skills.
+“Gratis AI-kursus” betyder ofte **materiale i eget tempo fra de store model-leverandører** — ikke et dansk hold med underviser. Det kan stadig være nyttigt: du får produktnært indhold, engelsk fagterminologi og et fundament, før I investerer i workshops. Her er en oversigt over det, vi har i kataloget fra Claude Academy, OpenAI Academy og Google Learn AI Skills.
 
 **Vigtigt:** Priser og adgang kan ændre sig. Vi markerer ofte prisen som Ukendt / “se academy”. Tjek altid kilde-URL’en på kursussiden. Forløbene er **globale/online**, ikke Danmark-specifikke hold. Vi driver dem ikke.
 
@@ -28,7 +28,7 @@ Vælg hellere et [dansk ChatGPT-/værktøjskursus](/artikler/chatgpt-kurser-danm
 
 ## Claude Academy (Anthropic)
 
-Claude Academy fokuserer på AI fluency og samarbejde med Claude.
+Claude Academy fokuserer på AI-færdighed og samarbejde med Claude.
 
 - [AI Fluency: Framework & Foundations](/ai-kurser/claude-ai-fluency-foundations) — 4D-framework (Delegation, Description, Discernment, Diligence)
 - [AI Capabilities and Limitations](/ai-kurser/claude-ai-capabilities-limitations) — mental model for LLM’er
@@ -38,10 +38,10 @@ Udbyderside: [Claude Academy](/udbydere/claude-academy).
 
 ## OpenAI Academy
 
-OpenAI’s pathway går fra forståelse til workflows og agenter.
+OpenAI’s forløb går fra forståelse til workflows og agenter.
 
-- [AI Foundations](/ai-kurser/openai-academy-ai-foundations) — basics i AI, LLM’er og ChatGPT
-- [Applied AI Foundations](/ai-kurser/openai-academy-applied-ai) — gentagelige workflows med review-punkter
+- [AI Foundations](/ai-kurser/openai-academy-ai-foundations) — grundlag i AI, LLM’er og ChatGPT
+- [Applied AI Foundations](/ai-kurser/openai-academy-applied-ai) — gentagelige workflows med tjekpunkter
 - [Agents and Workflows](/ai-kurser/openai-academy-agents-workflows) — styre agenter i struktureret arbejde
 
 Udbyderside: [OpenAI Academy](/udbydere/openai-academy). Se også, hvordan Academy adskiller sig fra danske workshops i [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark).
@@ -50,7 +50,7 @@ Udbyderside: [OpenAI Academy](/udbydere/openai-academy). Se også, hvordan Acade
 
 Google’s hub spænder fra korte intros til certifikater og agent-bygning.
 
-**Basics**
+**Grundlag**
 
 - [Introduction to Generative AI](/ai-kurser/google-intro-generative-ai)
 - [Google AI Essentials](/ai-kurser/google-ai-essentials)
@@ -68,7 +68,7 @@ Udbyderside: [Google Learn AI Skills](/udbydere/google-ai-skills).
 
 | | Vendor academy | Dansk kursus/workshop |
 | --- | --- | --- |
-| Pris | Ofte gratis / self-paced | Typisk betalt |
+| Pris | Ofte gratis / i eget tempo | Typisk betalt |
 | Sprog | Primært engelsk | Ofte dansk |
 | Format | Online, eget tempo | Hold, datoer, dialog |
 | Styrke | Produkt + fundament | Kontekst, vane, team |
@@ -81,6 +81,6 @@ Teams kombinerer ofte: academy først, derefter en [praktisk workshop](/ai-kurse
 1. **Én academy ad gangen** — match det værktøj I faktisk bruger (ChatGPT, Claude eller Gemini).
 2. **Sæt et tidsskema** — ellers bliver “gratis” til “aldrig færdig”.
 3. **Planlæg overførsel** — hvad skal ændre sig i jeres uge efter forløbet?
-4. **Escalér bevidst** — når fundamentet er på plads, kig [kataloget](/ai-kurser) eller [sådan vælger du AI-kursus](/artikler/vaelg-ai-kursus-danmark).
+4. **Gå videre bevidst** — når fundamentet er på plads, kig [kataloget](/ai-kurser) eller [sådan vælger du AI-kursus](/artikler/vaelg-ai-kursus-danmark).
 
 Når du vil oversætte gratis læring til en konkret kompetenceplan for teamet, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=gratis-ai) hjælpe med næste skridt.

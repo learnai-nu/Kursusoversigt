@@ -15,7 +15,7 @@ sources:
     url: https://learnai.nu
 ---
 
-Du behøver sjældent et deep-learning-kursus som leder. Du har brug for **beslutningsrammer, risikostyring og evnen til at prioritere use cases**. Her er en oversigt over AI-kurser i Danmark, der især rammer ledere, bestyrelser og projektledere i 2026.
+Du behøver sjældent et kursus i dyb læring som leder. Du har brug for **beslutningsrammer, risikostyring og evnen til at prioritere anvendelser**. Her er en oversigt over AI-kurser i Danmark, der især rammer ledere, bestyrelser og projektledere i 2026.
 
 Læs også den mere principielle guide: [AI for ledere: hvad et godt kursus bør dække](/artikler/ai-for-ledere-guide).
 
@@ -59,7 +59,7 @@ Filtrer selv under [AI-kurser · ledelse](/ai-kurser?category=ledelse).
 
 ## Sådan vælger du som leder
 
-1. **Outcome:** Skal du kunne sige ja/nej til AI-initiativer, styre risiko, eller drive et program?
+1. **Resultat:** Skal du kunne sige ja/nej til AI-initiativer, styre risiko, eller drive et program?
 2. **Niveau:** Undgå rene værktøjsdage, hvis målet er strategi — og omvendt.
 3. **Hold vs. individuelt:** Firmakurser og team-workshops skaber fælles sprog hurtigere end enkeltbilletter — mere i [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 4. **Pris og dato:** Ukendte priser står som **Ukendt** her. Vi gætter ikke. Tjek altid udbyderens egen side via kilde-URL’en på kursussiden.

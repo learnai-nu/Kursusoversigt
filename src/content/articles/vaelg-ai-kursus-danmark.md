@@ -14,7 +14,7 @@ sources:
 
 Vælg AI-kursus ud fra **hvad du skal kunne bagefter** — ikke det nyeste værktøj. Brug tre spørgsmål: Hvilket job skal AI hjælpe med? Hvor teknisk er du i dag? Skal læringen ske online, på campus eller i et teamforløb?
 
-## Start med outcome, ikke værktøj
+## Start med resultatet, ikke værktøjet
 
 Hvis målet er bedre beslutninger som leder, er et kursus i [AI for ledere](/ai-kurser/itu-ai-for-ledere) eller [AI for danske ledere](/ai-kurser/learnai-lederkursus) mere relevant end deep learning. Skal I bygge produkter, så kig mod [AI i produktudvikling](/ai-kurser/kea-ai-produktudvikling) eller mere tekniske forløb hos [DTU](/udbydere/dtu).
 

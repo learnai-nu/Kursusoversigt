@@ -13,7 +13,7 @@
     "short": "TI",
     "website": "https://www.teknologisk.dk",
     "city": "Taastrup",
-    "description": "Praksisnær efteruddannelse og rådgivning inden for teknologi, innovation og AI. Teknologisk Institut er stærk på praksisnære forløb for virksomheder: generativ AI, projektledelse, strategi og branchespecifikke spor. Godt match når I vil fra pilot til drift."
+    "description": "Praksisnær efteruddannelse og rådgivning inden for teknologi, innovation og AI. Tilbyder praksisnære forløb for virksomheder: generativ AI, projektledelse, strategi og branchespecifikke spor — fra pilot til drift."
   },
   {
     "slug": "dtu",
@@ -21,7 +21,7 @@
     "short": "DTU",
     "website": "https://www.dtu.dk",
     "city": "Lyngby",
-    "description": "Teknisk universitet med stærke tilbud inden for maskinlæring, data og AI-systemer. DTU’s AI-tilbud er teknisk tunge — deep learning, MLOps og ansvarlig AI. Vælg DTU, når deltagerne har teknisk ballast og skal bygge eller drive modeller."
+    "description": "Teknisk universitet med tilbud inden for maskinlæring, data og AI-systemer. DTU’s AI-tilbud er teknisk tunge — deep learning, MLOps og ansvarlig AI. Relevant når deltagerne har teknisk ballast og skal bygge eller drive modeller."
   },
   {
     "slug": "ku",
@@ -101,7 +101,7 @@
     "short": "ai-savvy",
     "website": "https://www.ai-savvy.dk",
     "city": "Lyngby / Aarhus / online",
-    "description": "Dansk uddannelseshus med hands-on kurser i generativ AI for professionelle og virksomheder, drevet af David Guldager. ai-savvy kører kompakte Boost- og Masterclass-forløb i ChatGPT/Claude med fokus på prompts, assistenter og workflows. Typisk intensive dage for professionelle brugere."
+    "description": "Dansk uddannelseshus med praktiske kurser i generativ AI for professionelle og virksomheder, drevet af David Guldager. ai-savvy kører kompakte Boost- og Masterclass-forløb i ChatGPT/Claude med fokus på prompts, assistenter og workflows. Typisk intensive dage for professionelle brugere."
   },
   {
     "slug": "promptly",
@@ -173,7 +173,7 @@
     "short": "Digital Forlomme",
     "website": "https://digitalforlomme.dk",
     "city": "København / Aarhus / Odense",
-    "description": "Hands-on 1-dags AI-kurser i ChatGPT, Claude, Gemini og Microsoft Copilot. Digital Forlomme kører små hold (max 8) i ChatGPT, Claude, Gemini og Copilot. Intensive 1-dags kurser i København, Aarhus og Odense med høj hands-on-andel."
+    "description": "Praktiske 1-dags AI-kurser i ChatGPT, Claude, Gemini og Microsoft Copilot. Digital Forlomme kører små hold (max 8) i ChatGPT, Claude, Gemini og Copilot. Intensive 1-dags kurser i København, Aarhus og Odense med høj praktisk andel."
   },
   {
     "slug": "kursusfabrikken",
@@ -189,7 +189,7 @@
     "short": "Claude Academy",
     "website": "https://academy.claude.com",
     "city": "Online (global)",
-    "description": "Anthropics officielle læringsakademi med kurser i AI Fluency, Claude-værktøjer og menneske–agent-samarbejde. Claude Academy er Anthropics globale, ofte self-paced akademi i AI fluency og menneske–agent-samarbejde. Engelsk online-indhold — ikke et dansk hold med lokal underviser."
+    "description": "Anthropics officielle læringsakademi med kurser i AI-færdighed, Claude-værktøjer og menneske–agent-samarbejde. Claude Academy er Anthropics globale akademi i eget tempo om AI-færdighed og menneske–agent-samarbejde. Engelsk online-indhold — ikke et dansk hold med lokal underviser."
   },
   {
     "slug": "openai-academy",
@@ -197,7 +197,7 @@
     "short": "OpenAI Academy",
     "website": "https://academy.openai.com/pages/courses",
     "city": "Online (global)",
-    "description": "OpenAIs officielle kursuspathway for AI Foundations, Applied AI og Agents and Workflows med completion certificates. OpenAI Academy er OpenAIs officielle pathway fra AI Foundations til Agents and Workflows. Globalt og self-paced; stærkt produktfokus, begrænset dansk kontekst."
+    "description": "OpenAIs officielle kursusforløb for AI Foundations, Applied AI og Agents and Workflows med completion certificates. OpenAI Academy er OpenAIs officielle forløb fra AI Foundations til Agents and Workflows. Globalt og i eget tempo; produktfokus, begrænset dansk kontekst."
   },
   {
     "slug": "google-ai-skills",
@@ -205,6 +205,6 @@
     "short": "Google AI",
     "website": "https://ai.google/learn-ai-skills/",
     "city": "Online (global)",
-    "description": "Googles AI-skills hub med generative AI, Gemini, Workspace-power-ups og professionelle certifikater. Google Learn AI Skills samler intros, Workspace-power-ups, certifikater og agent-kurser omkring Gemini og Google Cloud. Primært online/global, ofte gratis eller self-paced."
+    "description": "Googles AI-skills hub med generative AI, Gemini, Workspace-power-ups og professionelle certifikater. Google Learn AI Skills samler intros, Workspace-power-ups, certifikater og agent-kurser omkring Gemini og Google Cloud. Primært online/global, ofte gratis eller i eget tempo."
   }
 ]

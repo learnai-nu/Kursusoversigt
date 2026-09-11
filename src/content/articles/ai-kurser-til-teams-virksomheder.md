@@ -15,7 +15,7 @@ sources:
     url: https://eadania.dk
 ---
 
-En individuel billet giver personlig færdighed — men sjældent **fælles praksis**. Teams har brug for fælles sprog, konkrete use cases, en simpel datapolitik og opfølgning. Ellers bliver gevinsten hos den ene medarbejder, der prøvede ChatGPT. Her er en oversigt over AI-kurser i Danmark, der især rammer hold, afdelinger og firmakurser.
+En individuel billet giver personlig færdighed — men sjældent **fælles praksis**. Teams har brug for fælles sprog, konkrete anvendelser, en simpel datapolitik og opfølgning. Ellers bliver gevinsten hos den ene medarbejder, der prøvede ChatGPT. Her er en oversigt over AI-kurser i Danmark, der især rammer hold, afdelinger og firmakurser.
 
 ## Match format til jeres teambehov
 
@@ -25,7 +25,7 @@ En individuel billet giver personlig færdighed — men sjældent **fælles prak
 | Kontorværktøjer (ChatGPT/Copilot) | 1-dags praktisk | [Dania ChatGPT for kontoret](/ai-kurser/dania-chatgpt-for-kontoret), [Montus AI i arbejdsdagen](/ai-kurser/montus-ai-i-arbejdsdagen), [Digital Forlomme ChatGPT](/ai-kurser/digital-forlomme-chatgpt) / [Copilot](/ai-kurser/digital-forlomme-copilot) |
 | Ledelse + implementering i virksomheden | Ledelse | [IDA AI i virksomheden](/ai-kurser/ida-ai-i-virksomheden), [Dania digital transformation](/ai-kurser/dania-digital-transformation) |
 | Produktion / branche | Brancher | [TI AI i produktion](/ai-kurser/ti-ai-i-produktion) |
-| Gratis fundament først | Academy / self-paced | Se [gratis AI-kurser](/artikler/gratis-ai-kurser) |
+| Gratis fundament først | Academy / i eget tempo | Se [gratis AI-kurser](/artikler/gratis-ai-kurser) |
 
 Filtrer selv under [AI-kurser · praktisk](/ai-kurser?category=praktisk). Firmakurser ligger også som konkrete slug-sider (fx TI AI Academy) — kategorien `virksomhed` findes, men er smal i kataloget.
 
@@ -33,7 +33,7 @@ Filtrer selv under [AI-kurser · praktisk](/ai-kurser?category=praktisk). Firmak
 
 ### Fælles opstart for hele teamet
 
-- [AI-workshop for teams (LearnAI)](/ai-kurser/learnai-team-workshop) — holdforløb med fælles sprog og use cases.
+- [AI-workshop for teams (LearnAI)](/ai-kurser/learnai-team-workshop) — holdforløb med fælles sprog og anvendelser.
 - [AI Academy firmakursus (Teknologisk Institut)](/ai-kurser/ti-ai-academy-firma) — når ledelses- eller afdelingsteamet skal med sammen.
 
 ### Kontorværktøjer: ChatGPT og Copilot
@@ -53,7 +53,7 @@ Se også den fulde værktøjsoversigt: [ChatGPT-kurser i Danmark](/artikler/chat
 
 ### Produktion og branche
 
-- [AI i produktionsvirksomheder (Teknologisk Institut)](/ai-kurser/ti-ai-i-produktion) — når use cases ligger på gulvet, ikke kun i kontoret.
+- [AI i produktionsvirksomheder (Teknologisk Institut)](/ai-kurser/ti-ai-i-produktion) — når anvendelserne ligger på gulvet, ikke kun i kontoret.
 
 ### Fundament før I investerer i hold
 
@@ -65,7 +65,7 @@ Gratis academy-forløb er samlet i [Gratis AI-kurser: Claude, OpenAI og Google](
 
 ## Sådan vælger I som virksomhed
 
-1. **Outcome:** Skal I have fælles sprog, spare tid i kontorværktøjer, lande et pilotprojekt — eller styre risiko og governance?
+1. **Resultat:** Skal I have fælles sprog, spare tid i kontorværktøjer, lande et pilotprojekt — eller styre risiko og governance?
 2. **Fælles vs. individuelt:** Én billet giver personlig færdighed; workshop/firmakursus skaber fælles praksis hurtigere.
 3. **Data og sikkerhed:** Hvad må indtastes? Hvem godkender værktøjer? Et kursus uden policy-snak løser ikke compliance.
 4. **Opfølgning:** Book intern øvelse eller næste hold, før I går hjem — ellers bliver indsigter til slides.
