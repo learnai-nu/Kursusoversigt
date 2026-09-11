@@ -13,9 +13,7 @@ if (headings.length === 0) return;
   <ol class="mt-3 space-y-1.5 text-sm text-stone-700">
     {headings.map((h) => (
       <li class:list={[h.depth === 3 && 'pl-4']}>
-        <a href={`#${h.slug}`} class="text-sea-700 no-underline hover:underline decoration-moss-300">
-          {h.text}
-        </a>
+        <a href={`#${h.slug}`} class="text-sea-700 no-underline hover:underline decoration-moss-300">{h.text}</a>
       </li>
     ))}
   </ol>
