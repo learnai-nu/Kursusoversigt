@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
 import { getCollection } from 'astro:content';
-import { articleJsonLd, breadcrumbJsonLd } from '../../lib/seo';
+import { articleJsonLd, breadcrumbJsonLd, personJsonLd } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -31,6 +31,7 @@ const crumbs = breadcrumbJsonLd([
   ogType="article"
   jsonLd={[
     crumbs,
+    personJsonLd(article.data.author),
     articleJsonLd({
       title: article.data.title,
       description: article.data.description,

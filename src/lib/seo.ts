@@ -26,30 +26,66 @@ export function defaultOgImage(): string {
   return absoluteUrl('/og-default.png');
 }
 
+/** Stable entity ids for linked JSON-LD @graph */
+export function orgId(): string {
+  return `${siteUrl()}/#organization`;
+}
+
+export function websiteId(): string {
+  return `${siteUrl()}/#website`;
+}
+
+export function logoId(): string {
+  return `${siteUrl()}/#logo`;
+}
+
+/** Ascii kebab slug for Person @id (e.g. "Mette Ravn" → mette-ravn) */
+export function authorSlug(name: string): string {
+  return name
+    .replace(/æ/gi, 'ae')
+    .replace(/ø/gi, 'oe')
+    .replace(/å/gi, 'aa')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+export function authorId(name: string): string {
+  return `${siteUrl()}/#author-${authorSlug(name)}`;
+}
+
 export function organizationJsonLd() {
   return {
-    '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': orgId(),
     name: SITE_NAME,
     url: siteUrl(),
     description: DEFAULT_DESCRIPTION,
+    logo: {
+      '@type': 'ImageObject',
+      '@id': logoId(),
+      url: defaultOgImage(),
+    },
     sameAs: ['https://learnai.nu'],
+    inLanguage: 'da-DK',
+    areaServed: {
+      '@type': 'Country',
+      name: 'Denmark',
+    },
   };
 }
 
 export function websiteJsonLd() {
   return {
-    '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': websiteId(),
     name: SITE_NAME,
     url: siteUrl(),
     description: DEFAULT_DESCRIPTION,
     inLanguage: 'da-DK',
-    publisher: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: siteUrl(),
-    },
+    publisher: { '@id': orgId() },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -61,9 +97,21 @@ export function websiteJsonLd() {
   };
 }
 
+export function personJsonLd(name: string) {
+  const data: Record<string, unknown> = {
+    '@type': 'Person',
+    '@id': authorId(name),
+    name,
+  };
+  // No dedicated author pages yet; redaktion may point at /om
+  if (authorSlug(name) === 'kursusoversigt-redaktionen') {
+    data.url = absoluteUrl('/om');
+  }
+  return data;
+}
+
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   return {
-    '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: items.map((item, i) => ({
       '@type': 'ListItem',
@@ -102,19 +150,22 @@ export function courseJsonLd(course: {
   price_dkk?: number | null;
   price_note?: string | null;
 }) {
+  const courseUrl = absoluteUrl(`/ai-kurser/${course.slug}`);
+  const providerUrl = absoluteUrl(`/udbydere/${course.provider_slug}`);
   const data: Record<string, unknown> = {
-    '@context': 'https://schema.org',
     '@type': 'Course',
-    '@id': absoluteUrl(`/ai-kurser/${course.slug}`),
+    '@id': courseUrl,
     name: course.title,
     description: course.description,
-    url: absoluteUrl(`/ai-kurser/${course.slug}`),
+    url: courseUrl,
     provider: {
       '@type': 'EducationalOrganization',
+      '@id': providerUrl,
       name: course.provider_name,
-      url: absoluteUrl(`/udbydere/${course.provider_slug}`),
+      url: providerUrl,
       sameAs: course.source_url,
     },
+    isPartOf: { '@id': websiteId() },
     inLanguage: course.language === 'da' ? 'da-DK' : 'en',
     isAccessibleForFree: false,
     educationalLevel: course.level ? levelLabel(course.level) : undefined,
@@ -148,7 +199,7 @@ export function courseJsonLd(course: {
     '@type': 'CourseInstance',
     name: course.title,
     courseMode: course.format ? courseMode(course.format) : undefined,
-    url: absoluteUrl(`/ai-kurser/${course.slug}`),
+    url: courseUrl,
   };
   if (course.location) {
     instance.location = {
@@ -177,7 +228,6 @@ export function providerJsonLd(provider: {
   city?: string;
 }) {
   return {
-    '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
     '@id': absoluteUrl(`/udbydere/${provider.slug}`),
     name: provider.name,
@@ -200,7 +250,6 @@ export function itemListJsonLd(
   items: { name: string; path: string; description?: string }[]
 ) {
   return {
-    '@context': 'https://schema.org',
     '@type': 'ItemList',
     name,
     url: absoluteUrl(path),
@@ -223,24 +272,47 @@ export function articleJsonLd(article: {
   pubDate: Date;
   updatedDate?: Date;
 }) {
+  const articleUrl = absoluteUrl(`/artikler/${article.slug}`);
   return {
-    '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': articleUrl,
     headline: article.title,
     description: article.description,
-    url: absoluteUrl(`/artikler/${article.slug}`),
-    mainEntityOfPage: absoluteUrl(`/artikler/${article.slug}`),
+    url: articleUrl,
+    mainEntityOfPage: articleUrl,
     datePublished: article.pubDate.toISOString(),
     dateModified: (article.updatedDate || article.pubDate).toISOString(),
-    author: {
-      '@type': 'Person',
-      name: article.author,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: siteUrl(),
-    },
+    author: { '@id': authorId(article.author) },
+    publisher: { '@id': orgId() },
+    isPartOf: { '@id': websiteId() },
     inLanguage: 'da-DK',
+  };
+}
+
+/**
+ * Build a single schema.org @graph document.
+ * Strips per-node @context and dedupes nodes that share an @id (first wins).
+ */
+export function buildJsonLdGraph(nodes: Record<string, unknown>[]) {
+  const seen = new Set<string>();
+  const graph: Record<string, unknown>[] = [];
+
+  for (const node of nodes) {
+    if (!node || typeof node !== 'object') continue;
+    const cleaned: Record<string, unknown> = { ...node };
+    delete cleaned['@context'];
+
+    const id = cleaned['@id'];
+    if (typeof id === 'string' && id.length > 0) {
+      if (seen.has(id)) continue;
+      seen.add(id);
+    }
+
+    graph.push(cleaned);
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': graph,
   };
 }
