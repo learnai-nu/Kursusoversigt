@@ -75,4 +75,6 @@ Til sammenligning: hvis I først skal beslutte *hvad* der skal læres, start med
 
 ## Næste skridt
 
+Samlet emnehub: [Teams & virksomheder](/emner/teams) — firmakurser, team-workshops og matchende artikler.
+
 Når kataloget er for bredt, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=teams-2026) hjælpe jer med at matche team-workshop, firmakursus eller en blandet kompetenceplan. Kursusoversigt rangerer ikke betalte placeringer — I vælger selv.

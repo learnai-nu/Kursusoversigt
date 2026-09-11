@@ -83,4 +83,6 @@ Teams kombinerer ofte: academy først, derefter en [praktisk workshop](/ai-kurse
 3. **Planlæg overførsel** — hvad skal ændre sig i jeres uge efter forløbet?
 4. **Gå videre bevidst** — når fundamentet er på plads, kig [kataloget](/ai-kurser) eller [sådan vælger du AI-kursus](/artikler/vaelg-ai-kursus-danmark).
 
+Se også emnehubben [Gratis academies](/emner/gratis) for hele academy-sporet i kataloget.
+
 Når du vil oversætte gratis læring til en konkret kompetenceplan for teamet, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=gratis-ai) hjælpe med næste skridt.

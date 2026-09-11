@@ -10,6 +10,11 @@ export const GET: APIRoute = async () => {
   const urls = [
     '/',
     '/ai-kurser',
+    '/emner',
+    '/emner/chatgpt',
+    '/emner/ledelse',
+    '/emner/teams',
+    '/emner/gratis',
     '/artikler',
     '/om',
     '/forfattere',

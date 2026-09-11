@@ -57,6 +57,8 @@ Vælg Academy, når I vil have officielt produktfokus og kan arbejde asynkront. 
 3. **Format:** Én dag kan sætte i gang; længere forløb (eller [LearnAI team-workshop](/ai-kurser/learnai-team-workshop)) skaber vaner — se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 4. **Pris og dato:** På Kursusoversigten står ukendte priser som **Ukendt** med vilje. Vi gætter ikke. Tjek altid udbyderens egen side via kildeadressen.
 
+Se også emnehubben [ChatGPT & generative værktøjer](/emner/chatgpt) for kurser og relaterede guider samlet ét sted.
+
 Læs også [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen).
 
 Når du er klar til sparring om, hvilket ChatGPT- eller teamforløb der matcher jeres behov, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=chatgpt-article) hjælpe med at oversætte kataloget til en konkret læringsplan.

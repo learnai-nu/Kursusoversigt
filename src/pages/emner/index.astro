@@ -1,0 +1,80 @@
+---
+export const prerender = true;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SoftCTA from '../../components/SoftCTA.astro';
+import { getAllHubs, matchCoursesForHub } from '../../data/hubs';
+import { absoluteUrl, breadcrumbJsonLd, itemListJsonLd, siteUrl } from '../../lib/seo';
+
+const hubs = getAllHubs();
+const hubsWithCounts = hubs.map((h) => ({
+  hub: h,
+  courseCount: matchCoursesForHub(h).length,
+}));
+
+const crumbs = breadcrumbJsonLd([
+  { name: 'Forside', path: '/' },
+  { name: 'Emner', path: '/emner' },
+]);
+
+const collectionPage = {
+  '@type': 'CollectionPage',
+  '@id': absoluteUrl('/emner'),
+  name: 'Emner',
+  description:
+    'Emnehubs for AI-kurser i Danmark: ChatGPT & generative værktøjer, AI for ledere, teams & virksomheder, og gratis academies.',
+  url: absoluteUrl('/emner'),
+  isPartOf: { '@id': `${siteUrl()}/#website` },
+  inLanguage: 'da-DK',
+};
+
+const hubList = itemListJsonLd(
+  'Emnehubs',
+  '/emner',
+  hubs.map((h) => ({
+    name: h.title,
+    path: `/emner/${h.slug}`,
+    description: h.description,
+  }))
+);
+---
+<BaseLayout
+  title="Emner — AI-kursus hubs"
+  description="Fire emnehubs der samler AI-kurser og artikler: ChatGPT & generative værktøjer, AI for ledere, teams & virksomheder, og gratis academies."
+  canonicalPath="/emner"
+  jsonLd={[crumbs, collectionPage, hubList]}
+>
+  <div class="container-site py-10">
+    <Breadcrumbs items={[
+      { label: 'Forside', href: '/' },
+      { label: 'Emner' },
+    ]} />
+
+    <h1 class="max-w-3xl text-4xl leading-tight sm:text-5xl">Emner: start med hensigt, ikke hele kataloget.</h1>
+    <p class="mt-5 max-w-2xl text-lg leading-relaxed text-stone-700">
+      Emnehubs ejer en klar hensigt — værktøjer, ledelse, teams eller gratis academy — og linker videre til matchende kurser og artikler. Brug dem, når filtrene i kataloget føles for brede.
+    </p>
+
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {hubsWithCounts.map(({ hub, courseCount }) => (
+        <a
+          href={`/emner/${hub.slug}`}
+          class="card block p-6 no-underline transition hover:border-moss-300"
+        >
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-moss-700">Emnehub</p>
+          <h2 class="mt-2 text-2xl text-paper-ink">{hub.title}</h2>
+          <p class="mt-2 text-sm leading-relaxed text-stone-600">{hub.description}</p>
+          <p class="mt-4 text-sm text-sea-700">{courseCount} kurser i hubben →</p>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-14">
+      <SoftCTA
+        campaign="hub-index"
+        title="Når emner og katalog stadig føles for bredt"
+        text="LearnAI hjælper dig med at oversætte behov til en konkret læringsplan for dig eller dit team."
+      />
+    </div>
+  </div>
+</BaseLayout>

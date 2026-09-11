@@ -4,6 +4,7 @@ import CourseCard from '../components/CourseCard.astro';
 import SoftCTA from '../components/SoftCTA.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getAllCourses, getAllProviders } from '../lib/courses';
+import { getAllHubs, matchCoursesForHub } from '../data/hubs';
 import { getCollection } from 'astro:content';
 
 const featuredSlugs = [
@@ -26,6 +27,7 @@ const articles = allArticles
 const articleCount = allArticles.length;
 const courseCount = getAllCourses().length;
 const providerCount = providers.length;
+const hubs = getAllHubs().map((h) => ({ ...h, courseCount: matchCoursesForHub(h).length }));
 ---
 <BaseLayout>
   <section class="border-b border-stone-200/80 bg-[radial-gradient(ellipse_at_top,_#e3ebe3_0%,_#f7f4ef_55%)]">
@@ -38,6 +40,7 @@ const providerCount = providers.length;
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a class="btn-primary" href="/ai-kurser">Gå til kurser</a>
+          <a class="btn-secondary" href="/emner">Udforsk emner</a>
           <a class="btn-secondary" href="/artikler">Læs artikler</a>
         </div>
       </div>
@@ -83,6 +86,27 @@ const providerCount = providers.length;
         <a href={`/udbydere/${p.slug}`} class="card block p-4 no-underline transition hover:border-moss-300">
           <p class="font-serif text-lg text-paper-ink">{p.name}</p>
           <p class="mt-1 text-sm text-stone-500">{p.city}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+
+  <section class="container-site pb-14">
+    <div class="mb-6 flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-3xl">Emner: start med hensigt</h2>
+        <p class="mt-1 text-stone-600">Hubs der samler kurser og artikler omkring ChatGPT, ledelse, teams og gratis academy.</p>
+      </div>
+      <a href="/emner" class="text-sm text-sea-700 no-underline hover:underline">Alle emner →</a>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {hubs.map((h) => (
+        <a href={`/emner/${h.slug}`} class="card block p-5 no-underline transition hover:border-moss-300">
+          <p class="text-xs font-semibold uppercase tracking-[0.12em] text-moss-700">Emne</p>
+          <p class="mt-2 font-serif text-lg text-paper-ink">{h.title}</p>
+          <p class="mt-2 text-sm text-stone-600 line-clamp-3">{h.description}</p>
+          <p class="mt-3 text-xs text-sea-700">{h.courseCount} kurser →</p>
         </a>
       ))}
     </div>

@@ -68,4 +68,6 @@ Til sammenligning: hvis behovet er værktøjsfærdigheder i teamet (ChatGPT, Cop
 
 ## Næste skridt
 
+Samlet emnehub: [AI for ledere](/emner/ledelse) — kurser i lederkategorien plus relaterede guider.
+
 Når kataloget er for bredt, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=ledere-2026) hjælpe dig med at matche lederkursus, teamforløb eller en blandet kompetenceplan. Vi driver ikke kurserne selv — vi hjælper dig med at vælge.
