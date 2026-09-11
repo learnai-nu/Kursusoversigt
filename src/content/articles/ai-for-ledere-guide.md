@@ -3,7 +3,7 @@ title: "AI for ledere: hvad et godt kursus bør dække"
 description: "Et lederkursus skal give beslutningsrammer — ikke kun demos af ChatGPT."
 pubDate: 2026-08-02
 updatedDate: 2026-09-09
-author: "Mette Ravn"
+author: "Jesper Gunris Schneider"
 tags: ["ledelse", "strategi"]
 sources:
   - title: "CBS"

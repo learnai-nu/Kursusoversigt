@@ -2,7 +2,7 @@
 title: "AI-kompetencer i danske SMV’er"
 description: "Små og mellemstore virksomheder behøver ikke et forskningsafdeling — men de har brug for struktureret læring."
 pubDate: 2026-08-10
-author: "Anders Holm"
+author: "Jesper Gunris Schneider"
 tags: ["smv", "kompetencer", "transformation"]
 sources:
   - title: "Erhvervsstyrelsen"

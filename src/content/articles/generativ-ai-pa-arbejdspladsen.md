@@ -2,7 +2,7 @@
 title: "Generativ AI på arbejdspladsen: hvad skal I lære først?"
 description: "Prompting er starten — ikke slutningen. Sådan prioriterer danske teams de første kompetencer."
 pubDate: 2026-07-01
-author: "Anders Holm"
+author: "Jesper Gunris Schneider"
 tags: ["generativ-ai", "teams", "produktivitet"]
 sources:
   - title: "Teknologisk Institut"

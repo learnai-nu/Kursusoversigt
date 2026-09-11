@@ -2,7 +2,7 @@
 title: "Teknisk eller praktisk AI-kursus — hvad er forskellen?"
 description: "Machine learning hos universitetet er ikke det samme som en workshop i prompting. Her er en klar opdeling."
 pubDate: 2026-05-28
-author: "Jonas Berg"
+author: "Jesper Gunris Schneider"
 tags: ["teknisk", "praktisk", "niveau"]
 sources:
   - title: "ITU Efteruddannelse"

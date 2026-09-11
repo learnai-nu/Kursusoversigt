@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
 import { getCollection } from 'astro:content';
-import { articleJsonLd, breadcrumbJsonLd, personJsonLd } from '../../lib/seo';
+import { articleJsonLd, breadcrumbJsonLd, personJsonLd, JESPER_AUTHOR_NAME, JESPER_AUTHOR_PATH, authorSlug } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -19,6 +19,11 @@ const { Content } = await article.render();
 const formatted = article.data.pubDate.toLocaleDateString('da-DK', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
+const authorName = article.data.author;
+const authorHref =
+  authorSlug(authorName) === 'jesper-gunris-schneider' || authorName === JESPER_AUTHOR_NAME
+    ? JESPER_AUTHOR_PATH
+    : null;
 const crumbs = breadcrumbJsonLd([
   { name: 'Forside', path: '/' },
   { name: 'Artikler', path: '/artikler' },
@@ -49,7 +54,14 @@ const crumbs = breadcrumbJsonLd([
       { label: article.data.title },
     ]} />
     <article class="mx-auto max-w-3xl">
-      <p class="text-sm text-stone-500">{formatted} · {article.data.author}</p>
+      <p class="text-sm text-stone-500">
+        {formatted} ·{' '}
+        {authorHref ? (
+          <a href={authorHref} class="text-sea-700 hover:underline">{authorName}</a>
+        ) : (
+          authorName
+        )}
+      </p>
       <h1 class="mt-2 text-4xl sm:text-5xl">{article.data.title}</h1>
       <p class="mt-4 text-lg text-stone-600">{article.data.description}</p>
       <div class="prose-da mt-10">

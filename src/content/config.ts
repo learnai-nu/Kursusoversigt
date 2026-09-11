@@ -7,7 +7,7 @@ const articles = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
-    author: z.string().default('Kursusoversigt-redaktionen'),
+    author: z.string().default('Jesper Gunris Schneider'),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     sources: z

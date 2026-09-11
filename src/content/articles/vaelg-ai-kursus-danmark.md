@@ -3,7 +3,7 @@ title: "Sådan vælger du AI-kursus i Danmark"
 description: "En praktisk ramme til at matche niveau, format og udbyder — uden at lade dig lokke af hype."
 pubDate: 2026-06-12
 updatedDate: 2026-08-20
-author: "Mette Ravn"
+author: "Jesper Gunris Schneider"
 tags: ["kursusvalg", "begynder", "danmark"]
 sources:
   - title: "Digitaliseringsstyrelsen — AI"

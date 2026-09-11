@@ -2,7 +2,7 @@
 title: "Gratis AI-kurser: Claude, OpenAI og Google"
 description: "Hvilke gratis AI-kurser i eget tempo kan du tage online via Claude Academy, OpenAI Academy og Google Learn AI Skills — og hvornår er et dansk hold bedre?"
 pubDate: 2026-09-09
-author: "Mette Ravn"
+author: "Jesper Gunris Schneider"
 tags: ["gratis", "online", "openai", "claude", "google"]
 sources:
   - title: "Claude Academy"

@@ -1,0 +1,93 @@
+---
+export const prerender = true;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SoftCTA from '../../components/SoftCTA.astro';
+import { getCollection } from 'astro:content';
+import {
+  breadcrumbJsonLd,
+  jesperPersonJsonLd,
+  learnAiUrl,
+  absoluteUrl,
+  authorId,
+  JESPER_AUTHOR_NAME,
+  JESPER_AUTHOR_PATH,
+} from '../../lib/seo';
+
+const articles = (await getCollection('articles'))
+  .filter((a) => a.data.author === JESPER_AUTHOR_NAME)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const crumbs = breadcrumbJsonLd([
+  { name: 'Forside', path: '/' },
+  { name: 'Forfattere', path: '/forfattere' },
+  { name: JESPER_AUTHOR_NAME, path: JESPER_AUTHOR_PATH },
+]);
+
+const person = jesperPersonJsonLd();
+const profilePage = {
+  '@type': 'ProfilePage',
+  '@id': absoluteUrl(JESPER_AUTHOR_PATH),
+  url: absoluteUrl(JESPER_AUTHOR_PATH),
+  name: `${JESPER_AUTHOR_NAME} — forfatter på Kursusoversigt`,
+  mainEntity: { '@id': authorId(JESPER_AUTHOR_NAME) },
+  inLanguage: 'da-DK',
+};
+---
+<BaseLayout
+  title="Jesper Gunris Schneider"
+  description="Jesper Gunris Schneider står bag Kursusoversigten — chef for digital forretningsudvikling i TEKNIQ og driver af LearnAI.nu."
+  canonicalPath={JESPER_AUTHOR_PATH}
+  jsonLd={[crumbs, person, profilePage]}
+>
+  <div class="container-site py-10">
+    <Breadcrumbs items={[
+      { label: 'Forside', href: '/' },
+      { label: 'Forfattere', href: '/forfattere' },
+      { label: JESPER_AUTHOR_NAME },
+    ]} />
+    <article class="mx-auto max-w-3xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-moss-700">Forfatter</p>
+      <h1 class="mt-3 text-4xl sm:text-5xl">Jesper Gunris Schneider står bag Kursusoversigten.</h1>
+      <p class="mt-4 text-lg text-stone-600">
+        Chef for digital forretningsudvikling i TEKNIQ. Driver LearnAI.nu. Ansvarlig for Kursusoversigten som uafhængigt overblik over AI-kurser i Danmark.
+      </p>
+
+      <div class="prose-da mt-10 space-y-5 text-stone-700">
+        <p>
+          Jesper har arbejdet med digital forretningsudvikling i mere end 25 år — fra e-commerce og telecom til AI-transformation.
+        </p>
+        <p>
+          Hos TEKNIQ har han stået for AI-adoptionen: 100 medarbejdere trænet · 12 AI-ambassadører · 84&nbsp;% daglig brug · 95&nbsp;% oplevet kompetence.
+          Tallene er fra TEKNIQ, hvor Jesper har stået for indsatsen — ikke resultater hos en kunde.
+          Et CBS-speciale fra 2026 vurderede forankringen som &ldquo;meget stærk&rdquo;.
+        </p>
+        <p>
+          Kataloget er stadig et uafhængigt overblik — ikke betalt ranking. LearnAI er næste skridt, når oversigten skal omsættes til sparring eller teamforløb.
+        </p>
+        <p class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          <a href="https://jesperschneider.dk" rel="noopener noreferrer" class="text-sea-700 hover:underline">jesperschneider.dk</a>
+          <a href={learnAiUrl('/', 'author')} rel="noopener" class="text-sea-700 hover:underline">LearnAI.nu</a>
+        </p>
+      </div>
+
+      {articles.length > 0 && (
+        <section class="mt-12 border-t border-stone-200 pt-8">
+          <h2 class="text-2xl">Artikler på Kursusoversigt</h2>
+          <ul class="mt-4 space-y-3">
+            {articles.map((a) => (
+              <li>
+                <a href={`/artikler/${a.slug}`} class="text-sea-700 hover:underline font-medium">{a.data.title}</a>
+                <p class="text-sm text-stone-500 mt-0.5">{a.data.description}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <div class="mt-12">
+        <SoftCTA campaign="author" />
+      </div>
+    </article>
+  </div>
+</BaseLayout>

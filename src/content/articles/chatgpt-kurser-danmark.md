@@ -2,7 +2,7 @@
 title: "ChatGPT-kurser i Danmark: oversigt og hvordan du vælger"
 description: "Hvilke ChatGPT- og generativ AI-kurser findes i Danmark, hvordan adskiller de sig fra OpenAI Academy — og hvad skal du vælge til dig eller dit team?"
 pubDate: 2026-09-08
-author: "Mette Ravn"
+author: "Jesper Gunris Schneider"
 tags: ["chatgpt", "generativ-ai", "kursusvalg", "danmark"]
 sources:
   - title: "OpenAI Academy"

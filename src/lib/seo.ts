@@ -68,7 +68,7 @@ export function organizationJsonLd() {
       '@id': logoId(),
       url: defaultOgImage(),
     },
-    sameAs: ['https://learnai.nu'],
+    sameAs: ['https://learnai.nu', 'https://jesperschneider.dk'],
     inLanguage: 'da-DK',
     areaServed: {
       '@type': 'Country',
@@ -97,13 +97,41 @@ export function websiteJsonLd() {
   };
 }
 
+export const JESPER_AUTHOR_NAME = 'Jesper Gunris Schneider';
+export const JESPER_AUTHOR_PATH = '/forfattere/jesper-gunris-schneider';
+
+/** Canonical Person node for Jesper — reuse on articles + author page */
+export function jesperPersonJsonLd() {
+  return {
+    '@type': 'Person',
+    '@id': authorId(JESPER_AUTHOR_NAME),
+    name: JESPER_AUTHOR_NAME,
+    url: absoluteUrl(JESPER_AUTHOR_PATH),
+    jobTitle: 'Chef for digital forretningsudvikling',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'TEKNIQ',
+    },
+    sameAs: ['https://jesperschneider.dk', 'https://learnai.nu'],
+    knowsAbout: [
+      'AI-adoption',
+      'AI-kurser',
+      'digital ledelse',
+      'digital forretningsudvikling',
+      'kompetenceudvikling',
+    ],
+  };
+}
+
 export function personJsonLd(name: string) {
+  if (authorSlug(name) === 'jesper-gunris-schneider' || name === JESPER_AUTHOR_NAME) {
+    return jesperPersonJsonLd();
+  }
   const data: Record<string, unknown> = {
     '@type': 'Person',
     '@id': authorId(name),
     name,
   };
-  // No dedicated author pages yet; redaktion may point at /om
   if (authorSlug(name) === 'kursusoversigt-redaktionen') {
     data.url = absoluteUrl('/om');
   }

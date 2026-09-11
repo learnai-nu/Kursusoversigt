@@ -1,0 +1,42 @@
+---
+export const prerender = true;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import {
+  breadcrumbJsonLd,
+  JESPER_AUTHOR_NAME,
+  JESPER_AUTHOR_PATH,
+} from '../../lib/seo';
+
+const crumbs = breadcrumbJsonLd([
+  { name: 'Forside', path: '/' },
+  { name: 'Forfattere', path: '/forfattere' },
+]);
+---
+<BaseLayout
+  title="Forfattere"
+  description="Forfattere bag Kursusoversigtens artikler om AI-kurser i Danmark."
+  canonicalPath="/forfattere"
+  jsonLd={[crumbs]}
+>
+  <div class="container-site py-10">
+    <Breadcrumbs items={[
+      { label: 'Forside', href: '/' },
+      { label: 'Forfattere' },
+    ]} />
+    <h1 class="text-4xl">Forfattere</h1>
+    <p class="mt-3 max-w-2xl text-stone-600">
+      Redaktionelle guider på Kursusoversigt skrives af den ansvarlige bag kataloget.
+    </p>
+    <ul class="mt-8 max-w-xl space-y-4">
+      <li class="rounded-2xl border border-stone-200 bg-paper p-5 shadow-soft">
+        <a href={JESPER_AUTHOR_PATH} class="text-xl font-serif font-semibold text-moss-900 no-underline hover:underline">
+          {JESPER_AUTHOR_NAME}
+        </a>
+        <p class="mt-1 text-sm text-stone-600">
+          Chef for digital forretningsudvikling i TEKNIQ · ansvarlig for Kursusoversigten
+        </p>
+      </li>
+    </ul>
+  </div>
+</BaseLayout>

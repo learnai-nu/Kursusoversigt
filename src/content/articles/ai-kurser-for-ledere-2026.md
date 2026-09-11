@@ -2,7 +2,7 @@
 title: "AI-kurser for ledere i Danmark 2026"
 description: "Oversigt over aktuelle AI-kurser til ledere og beslutningstagere i Danmark — fra ITU og CBS til Aros Mini MBA og LearnAI."
 pubDate: 2026-09-09
-author: "Mette Ravn"
+author: "Jesper Gunris Schneider"
 tags: ["ledelse", "strategi", "kursusvalg", "2026"]
 sources:
   - title: "ITU Efteruddannelse"

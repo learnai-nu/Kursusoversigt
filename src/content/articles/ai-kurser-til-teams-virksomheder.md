@@ -2,7 +2,7 @@
 title: "AI-kurser til teams og virksomheder i Danmark"
 description: "Firmakurser, team-workshops og kompetenceløft: sådan vælger danske virksomheder AI-uddannelse — fra LearnAI og TI til IDA og praktiske ChatGPT-hold."
 pubDate: 2026-09-09
-author: "Mette Ravn"
+author: "Jesper Gunris Schneider"
 tags: ["teams", "virksomheder", "firmakursus", "kompetenceudvikling"]
 sources:
   - title: "LearnAI"

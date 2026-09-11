@@ -2,7 +2,7 @@
 title: "Hvordan vi verificerer kurser (og hvorfor priser kan være Ukendt)"
 description: "Transparens om metode: vi tjekker udbyderens egen side, noterer hvornår vi sidst har tjekket, og sætter pris til Ukendt når vi ikke kan bekræfte."
 pubDate: 2026-06-30
-author: "Kursusoversigt-redaktionen"
+author: "Jesper Gunris Schneider"
 tags: ["metode", "transparens", "data"]
 sources:
   - title: "Schema.org Course"

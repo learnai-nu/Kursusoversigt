@@ -3,7 +3,7 @@ title: "EU AI Act og danske kursusbehov"
 description: "Hvad betyder reguleringen for kompetencer — og hvilke kurser dækker jura, governance og ansvar?"
 pubDate: 2026-07-18
 updatedDate: 2026-08-22
-author: "Sofie Lind"
+author: "Jesper Gunris Schneider"
 tags: ["ai-act", "jura", "governance"]
 sources:
   - title: "European Commission — AI Act"
