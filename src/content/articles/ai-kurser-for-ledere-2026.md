@@ -62,7 +62,7 @@ Filtrer selv under [AI-kurser · ledelse](/ai-kurser?category=ledelse).
 1. **Resultat:** Skal du kunne sige ja/nej til AI-initiativer, styre risiko, eller drive et program?
 2. **Niveau:** Undgå rene værktøjsdage, hvis målet er strategi — og omvendt.
 3. **Hold vs. individuelt:** Firmakurser og team-workshops skaber fælles sprog hurtigere end enkeltbilletter — mere i [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
-4. **Pris og dato:** Ukendte priser står som **Ukendt** her. Vi gætter ikke. Tjek altid udbyderens egen side via kilde-URL’en på kursussiden.
+4. **Pris og dato:** Ukendte priser står som **Ukendt** her. Vi gætter ikke. Tjek altid udbyderens egen side via kildeadressen på kursussiden.
 
 Til sammenligning: hvis behovet er værktøjsfærdigheder i teamet (ChatGPT, Copilot), så start hellere med [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) og [Sådan vælger du AI-kursus](/artikler/vaelg-ai-kursus-danmark).
 

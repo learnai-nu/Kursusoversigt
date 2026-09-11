@@ -71,7 +71,7 @@ Gratis academy-forløb er samlet i [Gratis AI-kurser: Claude, OpenAI og Google](
 4. **Opfølgning:** Book intern øvelse eller næste hold, før I går hjem — ellers bliver indsigter til slides.
 5. **Åbent kursus vs. firmakursus:** Åbne hold er fine til 1–3 personer; firmakursus, når afdelingen skal med samtidig.
 
-Til sammenligning: hvis I først skal beslutte *hvad* der skal læres, start med [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen). Ukendte priser står som **Ukendt** her — vi gætter ikke. Tjek altid udbyderens egen side via kilde-URL’en på kursussiden.
+Til sammenligning: hvis I først skal beslutte *hvad* der skal læres, start med [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen). Ukendte priser står som **Ukendt** her — vi gætter ikke. Tjek altid udbyderens egen side via kildeadressen på kursussiden.
 
 ## Næste skridt
 

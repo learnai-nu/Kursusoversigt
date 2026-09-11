@@ -554,7 +554,7 @@
   {
     "slug": "ida-python-til-ai",
     "title": "Python til AI",
-    "description": "Python-basics, datahåndtering og første ML-modeller for tekniske specialister.",
+    "description": "Grundlæggende Python, datahåndtering og første ML-modeller for tekniske specialister.",
     "provider_slug": "ida",
     "category": "teknisk",
     "level": "begynder",
@@ -1347,7 +1347,7 @@
   {
     "slug": "google-intro-generative-ai",
     "title": "Introduction to Generative AI",
-    "description": "Kort videokursus om generative AI-basics: hvad det er, hvordan det bruges, og forskellen til traditionel machine learning.",
+    "description": "Kort videokursus om det grundlæggende om generativ AI: hvad det er, hvordan det bruges, og forskellen til traditionel machine learning.",
     "provider_slug": "google-ai-skills",
     "category": "praktisk",
     "level": "begynder",

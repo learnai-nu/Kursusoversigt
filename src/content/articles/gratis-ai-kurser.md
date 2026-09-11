@@ -15,7 +15,7 @@ sources:
 
 “Gratis AI-kursus” betyder ofte **materiale i eget tempo fra de store model-leverandører** — ikke et dansk hold med underviser. Det kan stadig være nyttigt: du får produktnært indhold, engelsk fagterminologi og et fundament, før I investerer i workshops. Her er en oversigt over det, vi har i kataloget fra Claude Academy, OpenAI Academy og Google Learn AI Skills.
 
-**Vigtigt:** Priser og adgang kan ændre sig. Vi markerer ofte prisen som Ukendt / “se academy”. Tjek altid kilde-URL’en på kursussiden. Forløbene er **globale/online**, ikke Danmark-specifikke hold. Vi driver dem ikke.
+**Vigtigt:** Priser og adgang kan ændre sig. Vi markerer ofte prisen som Ukendt / “se academy”. Tjek altid kildeadressen på kursussiden. Forløbene er **globale/online**, ikke Danmark-specifikke hold. Vi driver dem ikke.
 
 ## Hvornår gratis academy giver mening
 
