@@ -72,8 +72,8 @@ const crumbs = breadcrumbJsonLd([
       </div>
     )}
 
-    <h2 class="mt-12 text-2xl">Kurser fra {provider.short || provider.name}</h2>
-    <p class="mt-2 max-w-2xl text-stone-600">Klik ind på et kursus for kilde-URL, prisstatus og sidst verificeret dato.</p>
+    <h2 class="mt-12 text-2xl">Kurser fra {provider.short || provider.name} i kataloget</h2>
+    <p class="mt-2 max-w-2xl text-stone-600">Klik ind på et kursus for kilde-URL, prisstatus og sidst verificeret dato. Ukendt betyder, at vi ikke gætter.</p>
     <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {courses.map((course) => <CourseCard course={course} />)}
     </div>

@@ -8,7 +8,7 @@ const { courseSlug = '', sourcePage = Astro.url.pathname } = Astro.props;
 <form id="lead-form" class="card space-y-4 p-5 sm:p-6" method="post" action="/api/lead">
   <div>
     <h2 class="text-xl">Få sparring om AI-kurser</h2>
-    <p class="mt-1 text-sm text-stone-600">Vi deler din henvendelse med LearnAI. Ingen spam — kun relevant opfølgning.</p>
+    <p class="mt-1 text-sm text-stone-600">Vi deler din henvendelse med LearnAI. Ingen spam — kun opfølgning på det, du skriver.</p>
   </div>
   <input type="hidden" name="course_slug" value={courseSlug} />
   <input type="hidden" name="source_page" value={sourcePage} />

@@ -11,7 +11,7 @@ sources:
     url: https://learnai.nu
 ---
 
-Generativ AI spreder sig hurtigt i danske organisationer, men kompetencegabene er skæve: nogle medarbejdere eksperimenterer frit, mens andre undgår værktøjerne af usikkerhed om kvalitet og compliance.
+Kompetencegabene er skæve, når generativ AI spreder sig: nogle medarbejdere eksperimenterer frit, andre undgår værktøjerne af usikkerhed om kvalitet og compliance. Start med det lag, der lukker jeres største gab.
 
 ## Tre lag af kompetencer
 
@@ -23,10 +23,10 @@ Et kursus som [Prompt engineering for praktikere](/ai-kurser/kea-prompt-engineer
 
 ## Undgå “ChatGPT-only”-fælden
 
-Et endagskursus i [ChatGPT og AI på kontoret](/ai-kurser/dania-chatgpt-for-kontoret) kan være et godt første skridt — men uden opfølgning bliver gevinsten personlig, ikke organisatorisk.
+Et endagskursus i [ChatGPT og AI på kontoret](/ai-kurser/dania-chatgpt-for-kontoret) kan være et godt første skridt. Uden opfølgning bliver gevinsten personlig, ikke organisatorisk.
 
 Hvis I konkret skal vælge et værktøjsforløb, har vi samlet [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) med links til både danske workshops og OpenAI Academy. Der er også en samlet guide til [gratis AI-kurser](/artikler/gratis-ai-kurser).
 
 Filtrer kurser under [AI-kurser](/ai-kurser?category=praktisk), eller tag en [AI-workshop for teams](/ai-kurser/learnai-team-workshop). Mere om hold- og firmakurser: [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 
-Vil I have faciliteret opstart, så kig forbi [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site).
+Vil I have en styret opstart for hele teamet, så kig forbi [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site).

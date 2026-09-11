@@ -13,11 +13,11 @@ sources:
     url: https://promptly.dk
 ---
 
-ChatGPT er ofte indgangen til generativ AI på danske arbejdspladser. Det betyder også, at “ChatGPT-kursus” dækker alt fra en dags workshop til længere forløb i prompt engineering, sikker brug og team-workflows. Her er en praktisk oversigt, så du kan matche niveau og format — uden hype.
+ChatGPT er ofte indgangen til generativ AI på danske arbejdspladser. “ChatGPT-kursus” dækker derfor alt fra en dags workshop til længere forløb i prompt engineering, sikker brug og team-workflows. Her er en oversigt, så du kan matche niveau og format.
 
-## Hvad et godt ChatGPT-kursus bør dække
+## Et godt ChatGPT-kursus går ud over én prompt
 
-Et solidt forløb går ud over “skriv en prompt”. Det bør typisk rumme:
+Et solidt forløb rummer typisk:
 
 - klare instruktioner og kontekst (hvad skal output bruges til?)
 - review og kvalitetskontrol (hvornår stoler I *ikke* på svaret?)
@@ -55,7 +55,7 @@ Vælg Academy, når I vil have officielt produktfokus og kan arbejde asynkront. 
 1. **Outcome først:** Skal I spare tid i mail, forbedre kundesvar, eller bygge interne guides?
 2. **Niveau:** Begynder-workshop vs. avanceret prompting — bland ikke de to på samme hold uden plan.
 3. **Format:** Én dag kan kickstarte; længere forløb (eller [LearnAI team-workshop](/ai-kurser/learnai-team-workshop)) skaber vaner — se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
-4. **Pris og dato:** På Kursusoversigten står ukendte priser som **Ukendt** med vilje. Tjek altid udbyderens egen side via kilde-URL’en.
+4. **Pris og dato:** På Kursusoversigten står ukendte priser som **Ukendt** med vilje. Vi gætter ikke. Tjek altid udbyderens egen side via kilde-URL’en.
 
 Læs også [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen).
 

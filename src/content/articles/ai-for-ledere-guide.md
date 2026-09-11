@@ -12,7 +12,7 @@ sources:
     url: https://learnai.nu
 ---
 
-Ledere behøver ikke træne neurale netværk. De skal kunne **prioritere use cases, styre risici og skabe læringsrum**. Et godt lederkursus kombinerer overblik, cases og konkrete beslutningsværktøjer.
+Du behøver ikke træne neurale netværk som leder. Du skal kunne **prioritere use cases, styre risici og skabe læringsrum**. Et godt lederkursus kombinerer overblik, cases og konkrete beslutningsværktøjer.
 
 ## Fem emner der bør være med
 
@@ -26,8 +26,8 @@ Kurser som [AI for ledere](/ai-kurser/itu-ai-for-ledere), [AI Strategy for Busin
 
 Se den konkrete katalogoversigt: [AI-kurser for ledere i Danmark 2026](/artikler/ai-kurser-for-ledere-2026).
 
-## Efter kurset
+## Planlæg opfølgning, før kurset er slut
 
-Uden opfølgning bliver indsigt til slides. Planlæg en intern workshop — eller et forløb som [AI-workshop for teams](/ai-kurser/learnai-team-workshop). Se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
+Uden opfølgning bliver indsigter til slides. Planlæg en intern workshop — eller et forløb som [AI-workshop for teams](/ai-kurser/learnai-team-workshop). Se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 
-Se flere ledelseskurser under [AI-kurser · ledelse](/ai-kurser?category=ledelse). Klar til sparring? [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site).
+Se flere ledelseskurser under [AI-kurser · ledelse](/ai-kurser?category=ledelse). Vil du have sparring om valg? [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site).

@@ -13,9 +13,9 @@ sources:
     url: https://ai.google/learn-ai-skills/
 ---
 
-“Gratis AI-kursus” betyder ofte **self-paced materiale fra de store model-leverandører** — ikke et dansk hold med underviser. Det er stadig værdifuldt: du får produktnært indhold, engelsk fagterminologi og et fundament, før I investerer i workshops. Her er en oversigt over det, vi har i kataloget fra Claude Academy, OpenAI Academy og Google Learn AI Skills.
+“Gratis AI-kursus” betyder ofte **self-paced materiale fra de store model-leverandører** — ikke et dansk hold med underviser. Det kan stadig være nyttigt: du får produktnært indhold, engelsk fagterminologi og et fundament, før I investerer i workshops. Her er en oversigt over det, vi har i kataloget fra Claude Academy, OpenAI Academy og Google Learn AI Skills.
 
-**Vigtigt:** Priser og adgang kan ændre sig. Vi markerer ofte prisen som Ukendt / “se academy”. Tjek altid kilde-URL’en på kursussiden. Forløbene er **globale/online**, ikke Danmark-specifikke hold.
+**Vigtigt:** Priser og adgang kan ændre sig. Vi markerer ofte prisen som Ukendt / “se academy”. Tjek altid kilde-URL’en på kursussiden. Forløbene er **globale/online**, ikke Danmark-specifikke hold. Vi driver dem ikke.
 
 ## Hvornår gratis academy giver mening
 
@@ -24,7 +24,7 @@ sources:
 - I vil have **officielt produktfokus** (ChatGPT, Claude, Gemini/Workspace)
 - Teamet kan arbejde asynkront på engelsk
 
-Vælg hellere et [dansk ChatGPT-/værktøjskursus](/artikler/chatgpt-kurser-danmark) eller et [lederkursus](/artikler/ai-kurser-for-ledere-2026), når I vil have dialog, DK-cases, holddynamik eller faciliteret forandring.
+Vælg hellere et [dansk ChatGPT-/værktøjskursus](/artikler/chatgpt-kurser-danmark) eller et [lederkursus](/artikler/ai-kurser-for-ledere-2026), når I vil have dialog, DK-cases, holddynamik eller et styret forløb med underviser.
 
 ## Claude Academy (Anthropic)
 
@@ -72,9 +72,9 @@ Udbyderside: [Google Learn AI Skills](/udbydere/google-ai-skills).
 | Sprog | Primært engelsk | Ofte dansk |
 | Format | Online, eget tempo | Hold, datoer, dialog |
 | Styrke | Produkt + fundament | Kontekst, vane, team |
-| Svaghed | Mindre facilitering | Kræver budget/kalender |
+| Svaghed | Mindre styret undervisning | Kræver budget/kalender |
 
-Mange teams kombinerer: academy først, derefter en [praktisk workshop](/ai-kurser?category=praktisk) eller [LearnAI team-forløb](/ai-kurser/learnai-team-workshop). Når I skal vælge firmakursus eller holdforløb, se [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
+Teams kombinerer ofte: academy først, derefter en [praktisk workshop](/ai-kurser?category=praktisk) eller [LearnAI team-forløb](/ai-kurser/learnai-team-workshop). Når I skal vælge firmakursus eller holdforløb, se [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
 
 ## Sådan vælger du
 
@@ -83,4 +83,4 @@ Mange teams kombinerer: academy først, derefter en [praktisk workshop](/ai-kurs
 3. **Planlæg overførsel** — hvad skal ændre sig i jeres uge efter forløbet?
 4. **Escalér bevidst** — når fundamentet er på plads, kig [kataloget](/ai-kurser) eller [sådan vælger du AI-kursus](/artikler/vaelg-ai-kursus-danmark).
 
-Klar til at oversætte gratis læring til en konkret kompetenceplan for teamet? [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=gratis-ai) kan hjælpe med næste skridt.
+Når du vil oversætte gratis læring til en konkret kompetenceplan for teamet, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=gratis-ai) hjælpe med næste skridt.

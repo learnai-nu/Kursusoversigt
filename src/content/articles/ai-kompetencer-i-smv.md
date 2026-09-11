@@ -11,11 +11,9 @@ sources:
     url: https://eadania.dk
 ---
 
-For mange SMV’er er AI allerede i mailen, regnearket og kundeservice — uformelt. Udfordringen er at gå fra enkeltpersoners eksperimenter til **fælles praksis**.
+I SMV’er er AI ofte allerede i mailen, regnearket og kundeservice — uformelt. Udfordringen er at gå fra enkeltpersoners eksperimenter til **fælles praksis**.
 
-## Et realistisk kompetenceløft
-
-Start småt:
+## Et realistisk kompetenceløft starter småt
 
 1. Fælles sprog (hvad er AI / hvad er det ikke?)
 2. 2–3 use cases med tydelig ejer
@@ -26,4 +24,4 @@ Praktiske indgange: [AI Fundamentals](/ai-kurser/sdu-ai-fundamentals), [Digital 
 
 Produktionstunge SMV’er kan kigge på [AI i produktionsvirksomheder](/ai-kurser/ti-ai-i-produktion).
 
-Browse [AI-kurser](/ai-kurser) efter format “online”, hvis tiden er knap. Og når I vil have et faciliteret forløb til hele teamet, er [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site) bygget til netop det — se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
+Browse [AI-kurser](/ai-kurser) efter format “online”, hvis tiden er knap. Vil I have et holdforløb til hele teamet, er [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=site) bygget til det — se også [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).

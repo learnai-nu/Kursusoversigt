@@ -15,11 +15,11 @@ sources:
     url: https://learnai.nu
 ---
 
-Ledere behøver sjældent et deep-learning-kursus. De har brug for **beslutningsrammer, risikostyring og evnen til at prioritere use cases**. Her er en praktisk oversigt over AI-kurser i Danmark, der især rammer ledere, bestyrelser og projektledere i 2026.
+Du behøver sjældent et deep-learning-kursus som leder. Du har brug for **beslutningsrammer, risikostyring og evnen til at prioritere use cases**. Her er en oversigt over AI-kurser i Danmark, der især rammer ledere, bestyrelser og projektledere i 2026.
 
 Læs også den mere principielle guide: [AI for ledere: hvad et godt kursus bør dække](/artikler/ai-for-ledere-guide).
 
-## Hurtigt overblik: hvilken type lederkursus?
+## Match kursustype til dit lederbehov
 
 | Behov | Typisk format | Eksempler i kataloget |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ Læs også den mere principielle guide: [AI for ledere: hvad et godt kursus bør
 
 Filtrer selv under [AI-kurser · ledelse](/ai-kurser?category=ledelse).
 
-## Anbefalede forløb i kataloget
+## Disse forløb i kataloget matcher lederroller
 
 ### Overblik og beslutningskraft
 
@@ -62,10 +62,10 @@ Filtrer selv under [AI-kurser · ledelse](/ai-kurser?category=ledelse).
 1. **Outcome:** Skal du kunne sige ja/nej til AI-initiativer, styre risiko, eller drive et program?
 2. **Niveau:** Undgå rene værktøjsdage, hvis målet er strategi — og omvendt.
 3. **Hold vs. individuelt:** Firmakurser og team-workshops skaber fælles sprog hurtigere end enkeltbilletter — mere i [AI-kurser til teams og virksomheder](/artikler/ai-kurser-til-teams-virksomheder).
-4. **Pris og dato:** Ukendte priser står som **Ukendt** her. Tjek altid udbyderens egen side via kilde-URL’en på kursussiden.
+4. **Pris og dato:** Ukendte priser står som **Ukendt** her. Vi gætter ikke. Tjek altid udbyderens egen side via kilde-URL’en på kursussiden.
 
 Til sammenligning: hvis behovet er værktøjsfærdigheder i teamet (ChatGPT, Copilot), så start hellere med [ChatGPT-kurser i Danmark](/artikler/chatgpt-kurser-danmark) og [Sådan vælger du AI-kursus](/artikler/vaelg-ai-kursus-danmark).
 
 ## Næste skridt
 
-Når kataloget er for bredt, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=ledere-2026) hjælpe med at matche lederkursus, teamforløb eller en blandet kompetenceplan — uden at du skal gætte dig frem i udbyderjunglen.
+Når kataloget er for bredt, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=ledere-2026) hjælpe dig med at matche lederkursus, teamforløb eller en blandet kompetenceplan. Vi driver ikke kurserne selv — vi hjælper dig med at vælge.

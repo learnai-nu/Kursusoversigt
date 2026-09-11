@@ -15,9 +15,9 @@ sources:
     url: https://eadania.dk
 ---
 
-En individuel billet til et AI-kursus giver personlig færdighed — men sjældent **fælles praksis**. Teams og virksomheder har brug for fælles sprog, konkrete use cases, en simpel datapolitik og opfølgning, ellers bliver gevinsten hos den ene medarbejder, der “lige prøvede ChatGPT”. Her er en praktisk oversigt over AI-kurser i Danmark, der især rammer hold, afdelinger og firmakurser.
+En individuel billet giver personlig færdighed — men sjældent **fælles praksis**. Teams har brug for fælles sprog, konkrete use cases, en simpel datapolitik og opfølgning. Ellers bliver gevinsten hos den ene medarbejder, der prøvede ChatGPT. Her er en oversigt over AI-kurser i Danmark, der især rammer hold, afdelinger og firmakurser.
 
-## Hurtigt overblik: hvilket behov har I?
+## Match format til jeres teambehov
 
 | Behov | Typisk format | Eksempler i kataloget |
 | --- | --- | --- |
@@ -29,11 +29,11 @@ En individuel billet til et AI-kursus giver personlig færdighed — men sjælde
 
 Filtrer selv under [AI-kurser · praktisk](/ai-kurser?category=praktisk). Firmakurser ligger også som konkrete slug-sider (fx TI AI Academy) — kategorien `virksomhed` findes, men er smal i kataloget.
 
-## Anbefalede forløb i kataloget
+## Disse forløb passer til hold og firmakurser
 
 ### Fælles opstart for hele teamet
 
-- [AI-workshop for teams (LearnAI)](/ai-kurser/learnai-team-workshop) — faciliteret holdforløb med fælles sprog og use cases.
+- [AI-workshop for teams (LearnAI)](/ai-kurser/learnai-team-workshop) — holdforløb med fælles sprog og use cases.
 - [AI Academy firmakursus (Teknologisk Institut)](/ai-kurser/ti-ai-academy-firma) — når ledelses- eller afdelingsteamet skal med sammen.
 
 ### Kontorværktøjer: ChatGPT og Copilot
@@ -68,11 +68,11 @@ Gratis academy-forløb er samlet i [Gratis AI-kurser: Claude, OpenAI og Google](
 1. **Outcome:** Skal I have fælles sprog, spare tid i kontorværktøjer, lande et pilotprojekt — eller styre risiko og governance?
 2. **Fælles vs. individuelt:** Én billet giver personlig færdighed; workshop/firmakursus skaber fælles praksis hurtigere.
 3. **Data og sikkerhed:** Hvad må indtastes? Hvem godkender værktøjer? Et kursus uden policy-snak løser ikke compliance.
-4. **Opfølgning:** Book intern øvelse eller næste hold inden I går hjem — ellers bliver indsigt til slides.
+4. **Opfølgning:** Book intern øvelse eller næste hold, før I går hjem — ellers bliver indsigter til slides.
 5. **Åbent kursus vs. firmakursus:** Åbne hold er fine til 1–3 personer; firmakursus, når afdelingen skal med samtidig.
 
-Til sammenligning: hvis I først skal beslutte *hvad* der skal læres, start med [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen). Ukendte priser står som **Ukendt** her — tjek altid udbyderens egen side via kilde-URL’en på kursussiden.
+Til sammenligning: hvis I først skal beslutte *hvad* der skal læres, start med [Sådan vælger du AI-kursus i Danmark](/artikler/vaelg-ai-kursus-danmark) og [Generativ AI på arbejdspladsen](/artikler/generativ-ai-pa-arbejdspladsen). Ukendte priser står som **Ukendt** her — vi gætter ikke. Tjek altid udbyderens egen side via kilde-URL’en på kursussiden.
 
 ## Næste skridt
 
-Når kataloget er for bredt, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=teams-2026) hjælpe med at matche team-workshop, firmakursus eller en blandet kompetenceplan — uden at I skal gætte jer frem i udbyderjunglen.
+Når kataloget er for bredt, kan [LearnAI](https://learnai.nu/?utm_source=kursusoversigt&utm_medium=referral&utm_campaign=teams-2026) hjælpe jer med at matche team-workshop, firmakursus eller en blandet kompetenceplan. Kursusoversigt rangerer ikke betalte placeringer — I vælger selv.
