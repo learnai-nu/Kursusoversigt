@@ -6,7 +6,7 @@ import CourseCard from '../../components/CourseCard.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getAllHubs, getHubBySlug, matchCoursesForHub } from '../../data/hubs';
-import { getCollection } from 'astro:content';
+import { getArticles } from '../../lib/articles';
 import { absoluteUrl, breadcrumbJsonLd, itemListJsonLd, siteUrl } from '../../lib/seo';
 
 export function getStaticPaths() {
@@ -20,9 +20,9 @@ if (!hub) {
 }
 
 const courses = matchCoursesForHub(hub);
-const allArticles = await getCollection('articles');
+const allArticles = await getArticles();
 const articles = hub.relatedArticleSlugs
-  .map((s) => allArticles.find((a) => a.slug === s))
+  .map((s) => allArticles.find((a) => a.id === s))
   .filter((a): a is NonNullable<typeof a> => Boolean(a));
 
 const pagePath = `/emner/${hub.slug}`;
@@ -124,7 +124,7 @@ const courseList = itemListJsonLd(
         <div class="mt-6 grid gap-5 md:grid-cols-3">
           {articles.map((a) => (
             <ArticleCard
-              href={`/artikler/${a.slug}`}
+              href={`/artikler/${a.id}`}
               title={a.data.title}
               description={a.data.description}
               date={a.data.pubDate}

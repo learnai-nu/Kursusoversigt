@@ -3,7 +3,7 @@ export const prerender = true;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
-import { getCollection } from 'astro:content';
+import { getArticles } from '../../lib/articles';
 import {
   breadcrumbJsonLd,
   jesperPersonJsonLd,
@@ -14,7 +14,7 @@ import {
   JESPER_AUTHOR_PATH,
 } from '../../lib/seo';
 
-const articles = (await getCollection('articles'))
+const articles = (await getArticles())
   .filter((a) => a.data.author === JESPER_AUTHOR_NAME)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
@@ -77,7 +77,7 @@ const profilePage = {
           <ul class="mt-4 space-y-3">
             {articles.map((a) => (
               <li>
-                <a href={`/artikler/${a.slug}`} class="text-sea-700 hover:underline font-medium">{a.data.title}</a>
+                <a href={`/artikler/${a.id}`} class="text-sea-700 hover:underline font-medium">{a.data.title}</a>
                 <p class="text-sm text-stone-500 mt-0.5">{a.data.description}</p>
               </li>
             ))}

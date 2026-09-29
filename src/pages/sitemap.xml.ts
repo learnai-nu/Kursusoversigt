@@ -1,12 +1,12 @@
 import type { APIRoute } from 'astro';
 import { getAllCourses, getAllProviders } from '../lib/courses';
-import { getCollection } from 'astro:content';
+import { getArticles } from '../lib/articles';
 import { absoluteUrl } from '../lib/seo';
 
 export const prerender = true;
 
 export const GET: APIRoute = async () => {
-  const articles = await getCollection('articles');
+  const articles = await getArticles();
   const urls = [
     '/',
     '/ai-kurser',
@@ -21,7 +21,7 @@ export const GET: APIRoute = async () => {
     '/forfattere/jesper-gunris-schneider',
     ...getAllCourses().map((c) => `/ai-kurser/${c.slug}`),
     ...getAllProviders().map((p) => `/udbydere/${p.slug}`),
-    ...articles.map((a) => `/artikler/${a.slug}`),
+    ...articles.map((a) => `/artikler/${a.id}`),
   ];
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>

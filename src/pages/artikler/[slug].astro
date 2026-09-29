@@ -4,7 +4,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SoftCTA from '../../components/SoftCTA.astro';
 import ArticleToc from '../../components/ArticleToc.astro';
-import { getCollection } from 'astro:content';
+import { render } from 'astro:content';
+import { getArticles } from '../../lib/articles';
 import { articleJsonLd, breadcrumbJsonLd, personJsonLd, JESPER_AUTHOR_NAME, JESPER_AUTHOR_PATH, authorSlug } from '../../lib/seo';
 import {
   buildToc,
@@ -14,21 +15,21 @@ import {
 } from '../../lib/article';
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles');
+  const articles = await getArticles();
   return articles.map((a) => ({
-    params: { slug: a.slug },
+    params: { slug: a.id },
     props: { article: a },
   }));
 }
 
 const { article } = Astro.props;
-const { Content, headings } = await article.render();
+const { Content, headings } = await render(article);
 const formatted = formatArticleDate(article.data.pubDate);
 const showUpdated = hasDistinctUpdatedDate(article.data.pubDate, article.data.updatedDate);
 const updatedFormatted = showUpdated && article.data.updatedDate
   ? formatArticleDate(article.data.updatedDate)
   : null;
-const minutes = readingTimeMinutes(article.body);
+const minutes = readingTimeMinutes(article.body ?? '');
 const toc = buildToc(headings);
 const authorName = article.data.author;
 const authorHref =
@@ -38,7 +39,7 @@ const authorHref =
 const crumbs = breadcrumbJsonLd([
   { name: 'Forside', path: '/' },
   { name: 'Artikler', path: '/artikler' },
-  { name: article.data.title, path: `/artikler/${article.slug}` },
+  { name: article.data.title, path: `/artikler/${article.id}` },
 ]);
 ---
 <BaseLayout
@@ -51,7 +52,7 @@ const crumbs = breadcrumbJsonLd([
     articleJsonLd({
       title: article.data.title,
       description: article.data.description,
-      slug: article.slug,
+      slug: article.id,
       author: article.data.author,
       pubDate: article.data.pubDate,
       updatedDate: article.data.updatedDate,

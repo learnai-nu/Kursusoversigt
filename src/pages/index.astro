@@ -5,7 +5,7 @@ import SoftCTA from '../components/SoftCTA.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getAllCourses, getAllProviders } from '../lib/courses';
 import { getAllHubs, matchCoursesForHub } from '../data/hubs';
-import { getCollection } from 'astro:content';
+import { getArticles } from '../lib/articles';
 
 const featuredSlugs = [
   'digital-forlomme-chatgpt',
@@ -20,7 +20,7 @@ const courses = featuredSlugs
   .map((slug) => allCourses.find((c) => c.slug === slug))
   .filter((c): c is NonNullable<typeof c> => Boolean(c));
 const providers = getAllProviders();
-const allArticles = await getCollection('articles');
+const allArticles = await getArticles();
 const articles = allArticles
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
@@ -123,7 +123,7 @@ const hubs = getAllHubs().map((h) => ({ ...h, courseCount: matchCoursesForHub(h)
     <div class="grid gap-5 md:grid-cols-3">
       {articles.map((a) => (
         <ArticleCard
-          href={`/artikler/${a.slug}`}
+          href={`/artikler/${a.id}`}
           title={a.data.title}
           description={a.data.description}
           date={a.data.pubDate}
