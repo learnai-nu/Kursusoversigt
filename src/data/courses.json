@@ -1094,16 +1094,16 @@
     "format": "onsite",
     "location": "København / Aarhus / Odense",
     "price_dkk": 4995,
-    "price_note": "Ex. moms",
+    "price_note": "ekskl. moms pr. deltager",
     "duration": "1 dag",
-    "start_date": "2026-09-09",
+    "start_date": "2026-10-19",
     "language": "da",
     "tags": [
       "chatgpt",
       "custom-gpt"
     ],
-    "source_url": "https://digitalforlomme.dk/ai-kurser/",
-    "last_verified": "2026-09-09",
+    "source_url": "https://digitalforlomme.dk/chatgpt/?utm_source=kursusoversigten&utm_medium=referral",
+    "last_verified": "2026-09-29",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },
@@ -1117,16 +1117,16 @@
     "format": "onsite",
     "location": "København / Aarhus / Odense",
     "price_dkk": 4995,
-    "price_note": "Ex. moms",
+    "price_note": "ekskl. moms pr. deltager",
     "duration": "1 dag",
-    "start_date": "2026-09-29",
+    "start_date": "2026-12-17",
     "language": "da",
     "tags": [
       "copilot",
       "microsoft-365"
     ],
     "source_url": "https://digitalforlomme.dk/copilot-kursus/",
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-29",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },
@@ -1140,16 +1140,16 @@
     "format": "onsite",
     "location": "Aarhus / København / Odense",
     "price_dkk": 4995,
-    "price_note": "Ex. moms",
+    "price_note": "ekskl. moms pr. deltager",
     "duration": "1 dag",
-    "start_date": "2026-09-15",
+    "start_date": "2026-11-11",
     "language": "da",
     "tags": [
       "claude",
       "dokumenter"
     ],
-    "source_url": "https://digitalforlomme.dk/ai-kurser-aarhus/",
-    "last_verified": "2026-09-09",
+    "source_url": "https://digitalforlomme.dk/claude/?utm_source=kursusoversigten&utm_medium=referral",
+    "last_verified": "2026-09-29",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },
@@ -1163,16 +1163,16 @@
     "format": "onsite",
     "location": "Aarhus / København / Odense",
     "price_dkk": 4995,
-    "price_note": "Ex. moms",
+    "price_note": "ekskl. moms pr. deltager",
     "duration": "1 dag",
-    "start_date": "2026-08-11",
+    "start_date": "2026-10-21",
     "language": "da",
     "tags": [
       "gemini",
       "google-workspace"
     ],
-    "source_url": "https://digitalforlomme.dk/ai-kurser/",
-    "last_verified": "2026-09-09",
+    "source_url": "https://digitalforlomme.dk/gemini/?utm_source=kursusoversigten&utm_medium=referral",
+    "last_verified": "2026-09-29",
     "provider_name": "Digital Forlomme",
     "provider_short": "Digital Forlomme"
   },

@@ -213,6 +213,16 @@ export function courseJsonLd(course: {
       url: course.source_url,
       availability: 'https://schema.org/InStock',
     };
+    const note = course.price_note || '';
+    if (/moms/i.test(note) && /\b(ex|ekskl)/i.test(note)) {
+      (data.offers as Record<string, unknown>).priceSpecification = {
+        '@type': 'UnitPriceSpecification',
+        price: course.price_dkk,
+        priceCurrency: 'DKK',
+        valueAddedTaxIncluded: false,
+      };
+    }
+    if (note) (data.offers as Record<string, unknown>).description = note;
   } else {
     data.offers = {
       '@type': 'Offer',

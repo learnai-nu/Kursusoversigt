@@ -28,6 +28,9 @@ const excerpt =
     <div>
       <p class="text-xs uppercase tracking-wide text-stone-400">Pris</p>
       <p class="font-medium text-paper-ink">{formatPrice(course)}</p>
+      {course.price_dkk != null && course.price_note && (
+        <p class="text-xs text-stone-500">{course.price_note}</p>
+      )}
     </div>
     <a href={`/ai-kurser/${course.slug}`} class="text-sea-700 no-underline hover:underline">Se kursus →</a>
   </div>
